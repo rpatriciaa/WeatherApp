@@ -9,15 +9,18 @@ import datetime
 def main():
     print(datetime.datetime.now())
     for x in sys.argv[1::]:
-        print('City: ' + x)
-        print('Forecast: ')
-        Forecast.ForecastWeather(x)
-        print('Finished.')
+        try:
+            print('City: ' + x)
+            print('Forecast: ')
+            Forecast.ForecastWeather(x)
+            print('Finished.')
 
-        print('Current:')
-        # CurrentData.CurrentData(x)
-        print('Finished.')
+            print('Current:')
+            CurrentData.CurrentData(x)
+            print('Finished.')
+        except TypeError:
+            continue
 
 
-#if __name__ == '__main__':
-    #main()
+if __name__ == '__main__':
+    main()

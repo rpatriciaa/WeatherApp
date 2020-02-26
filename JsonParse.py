@@ -1,6 +1,15 @@
 from abc import ABC, abstractmethod
 
 
+def indexFix(array_elements):
+    for index in range(len(array_elements)):
+        if array_elements[index] == 'humidity':
+            array_elements[index] = 'temp'
+        elif array_elements[index] == 'temp':
+            array_elements[index] = 'humidity'
+    return array_elements
+
+
 class AbsractDataCollector(ABC):
     def __init__(self, jsonobject, attr):
         self.jsonobject = jsonobject

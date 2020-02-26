@@ -4,15 +4,6 @@ import JsonParse
 from datetime import datetime
 
 
-def indexFix(array_elements):
-    for index in range(len(array_elements)):
-        if array_elements[index] == 'humidity':
-            array_elements[index] = 'temp'
-        elif array_elements[index] == 'temp':
-            array_elements[index] = 'humidity'
-    return array_elements
-
-
 class Forecast:
     @staticmethod
     def ForecastWeather(value):
@@ -29,7 +20,7 @@ class Forecast:
             attr.append(attr_class.selectPath())
             attr_type.append(attr_class.selectAttrType())
         print('OK')
-        print('Api:')
+        print('Api + JSON:')
         print('Dark Sky Weather')
         dark_json = JsonParse.DarkSkycollect(ApiCall.DarkSky(value).Forecast(), attr[0])
         insert_to.append(dark_json.ForecastDataCollector)
@@ -42,7 +33,7 @@ class Forecast:
         open_json = JsonParse.OpenWcollect(ApiCall.OpenWeather(value).Forecast(), attr[2])
         insert_to.append(open_json.ForecastDataCollector())
         dates.append(open_json.ForecastDate())
-        attr[2] = indexFix(attr[2])
+        attr[2] = JsonParse.indexFix(attr[2])
 
         print('Insert: ')
         for index in range(len(api_names)):
