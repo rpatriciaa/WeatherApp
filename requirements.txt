@@ -1,0 +1,4 @@
+geopy
+pyodbc
+requests
+configparser

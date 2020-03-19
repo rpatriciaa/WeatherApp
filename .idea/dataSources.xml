@@ -10,5 +10,11 @@
         <property name="applicationName" value="DataGrip" />
       </driver-properties>
     </data-source>
+    <data-source source="LOCAL" name="adatb" uuid="2b7436f7-96b8-452f-9212-2295bc8207d5">
+      <driver-ref>sqlserver.ms</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.microsoft.sqlserver.jdbc.SQLServerDriver</jdbc-driver>
+      <jdbc-url>jdbc:sqlserver://adatb-mssql.mik.uni-pannon.hu:2019;database=db_rp</jdbc-url>
+    </data-source>
   </component>
 </project>

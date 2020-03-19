@@ -1,0 +1,48 @@
+{
+  "data": [
+    {
+      "rh": 48,
+      "pod": "d",
+      "lon": 17.55892,
+      "pres": 998.553,
+      "timezone": "Europe/Budapest",
+      "ob_time": "2020-03-18 15:52",
+      "country_code": "HU",
+      "clouds": 31,
+      "ts": 1584546772,
+      "solar_rad": 115.196,
+      "state_code": "23",
+      "city_name": "Ajka",
+      "wind_spd": 1.76294,
+      "last_ob_time": "2020-03-18T13:45:00",
+      "wind_cdir_full": "south",
+      "wind_cdir": "S",
+      "slp": 1027.06,
+      "vis": 24.1351,
+      "h_angle": 38.6,
+      "sunset": "17:00",
+      "dni": 460.75,
+      "dewpt": 5.2,
+      "snow": 0,
+      "uv": 1.63878,
+      "precip": 0,
+      "wind_dir": 178,
+      "sunrise": "04:54",
+      "ghi": 116.83,
+      "dhi": 51.07,
+      "aqi": 50,
+      "lat": 47.10196,
+      "weather": {
+        "icon": "c02d",
+        "code": "801",
+        "description": "Few clouds"
+      },
+      "datetime": "2020-03-18:15",
+      "temp": 16,
+      "station": "LHPA",
+      "elev_angle": 18.98,
+      "app_temp": 16
+    }
+  ],
+  "count": 1
+}
