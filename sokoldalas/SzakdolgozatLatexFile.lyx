@@ -941,12 +941,136 @@ elakadtam :(( szívesen fogadokj tippeket miért is jobb az MSSQL, hirtelen
  csak ennyi van hogy: gyorsabb, több funkció talán, T-SQL
 \end_layout
 
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Adatbázis tervezése
 \end_layout
 
 \begin_layout Standard
-Itt fogom bemutatni a táblákat stb
+Az adatbázis tervezésénél törekedtem a rekord-orientált felépítésre.
+ Habár a mező-orientált modellezésnek is számos előnye van, például nehézség
+ nélkül programozható és effektív grafikus felhasználói felület készítése
+ is támogatott, mégis nehezen változtatható a fejlesztés későbbi szakaszaiban
+ , ami sok időveszteséggel ás hátulütővel járhat.
+ Természetesen a rekord-orientált modellnek is vannak hátrányai.
+ Az adatokat több táblából tudjuk csak elérni, ez sok lekérdezést vagy JOIN-t
+ jelenthet melyek egyes fejlesztők számára elsőre hangzásra bonyolultnak
+ tűnhet.
+ Ezzel szemben viszont nagyon rugalmas, struktúrája könnyedén változtatható,
+ módosításokat nem jelentenék az alkalmazás teljesen összeomlását.
+ Ezek mellett sokkal hatékonyabb és időtálló modell.
+\end_layout
+
+\begin_layout Subsection
+Adatbázis Séma
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename database.png
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\begin_layout Standard
+Az adatbázis összesen hét táblából áll össze.
+ Ezek rendere a következők:
+\end_layout
+
+\begin_layout Itemize
+City: Különböző városok adatait tárolja.
+ Pontosabban városok neveit, hosszúsági valamint szélességi körök koordinátáit.
+\end_layout
+
+\begin_layout Itemize
+API: API szolgáltatok adatait tárolja.
+ API-hoz tartozó kulcsok melyek segítségével az API hívások történnek, valamint
+ a forrás ahonnan az adatokat lekérjük.
+\end_layout
+
+\begin_layout Itemize
+Attribute: Tárolja az attribútumomat melyeket vizsgálunk, például: szélirány,hőm
+érséklet.
+ Ezek neveit és típusát találjuk a táblában.
+\end_layout
+
+\begin_layout Itemize
+JsonAttributes: Az adott szolgáltatóhoz tartozó attribútumokat tárolja.
+ Megtalálható az API és az attribútum azonosítója, valamint a JSON-ban használt
+ név.
+ 
+\end_layout
+
+\begin_layout Itemize
+Weather: Az időjárási adatokat azonosítására szolgál.
+ Tárolja a lekérés pontos időpontját, mely napra kértük le az előrejelzést,
+ továbbá városhoz és az API-hoz tartozó azonosítót.
+ Fontos tudni mely városra kértük le az előrejelzést milyen szolgáltatón
+ keresztül.
+\end_layout
+
+\begin_layout Itemize
+WeatherAttributes: Tárolja az pontos értékeket az adott attribútumokhoz.
+ Szöveges érték esetén csak a ezen értékek azonosítója tárolandó.
+\end_layout
+
+\begin_layout Itemize
+ValueVC: Szöveges értékek tárolására szolgál, segítségével rengeteg felesleges
+ adattól szabadulunk meg, az ugyanolyan elnevezésű adatok mint például 
+\begin_inset Quotes pld
+\end_inset
+
+napos idő
+\begin_inset Quotes prd
+\end_inset
+
+ elég egyszer eltárolni és mindig hivatkozni rá.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Az ábrán látható, hogy egyes adatokat csak úgy tudunk lekérdezni, hogyha
+ több táblát összekapcsolunk.
+ Például ha szeretnénk megtudni ,hogy Veszprémben egy bizonyos szolgáltatónál,
+ milyen hőmérsékletet ígért egy adott időpontra, szükséges összekapcsolni
+ a City, Api, JsonAttributes, Attribute, Weather és WeatherAttributes táblákat.
+ Mint említettem ezek elsőre összetettnek és körülményesnek tűnik, viszont
+ egy új tábla könnyedén beépíthető.
+\end_layout
+
+\begin_layout Subsection
+Nézetek és triggerek
+\end_layout
+
+\begin_layout Standard
+erről is gondoltam irni pár sort
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -962,7 +1086,7 @@ API hívások, API-k amiket használok
 \end_layout
 
 \begin_layout Standard
-free oldalak bemutatása, dokumtánció és lehetőségek, api hívások pythonba
+free oldalak bemutatása, dokumentáció és lehetőségek, api hívások pythonba
 \end_layout
 
 \begin_layout Subsection
