@@ -1,4 +1,3 @@
-CREATE DATABASE WeatherApplication
 
 USE WeatherApplication
 

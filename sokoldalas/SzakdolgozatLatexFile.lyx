@@ -1,0 +1,985 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\usepackage[magyar]{babel}
+\usepackage{t1enc}
+\usepackage{graphicx}% képek beillesztéséhez kell
+\usepackage{listings}
+\usepackage{tikz}
+\usepackage{pgfplots}
+
+
+
+
+\linespread{1.5}
+\author{Rácsik Patrícia}
+\title{Szakdolgozat}
+\end_preamble
+\use_default_options false
+\maintain_unincluded_children false
+\language magyar
+\language_package default
+\inputencoding utf8
+\fontencoding default
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 12
+\spacing single
+\use_hyperref false
+\papersize a4paper
+\use_geometry false
+\use_package amsmath 2
+\use_package amssymb 0
+\use_package cancel 0
+\use_package esint 1
+\use_package mathdots 0
+\use_package mathtools 0
+\use_package mhchem 0
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style polish
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\align center
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+hfil
+\end_layout
+
+\end_inset
+
+ 
+\series bold
+\size largest
+Időjárás-jelentések összehasonlítása
+\series default
+
+\begin_inset Newline newline
+\end_inset
+
+ 
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\size large
+Rácsik Patrícia 
+\begin_inset Newline newline
+\end_inset
+
+ 
+\begin_inset VSpace bigskip
+\end_inset
+
+Témavezető: Machalik Károly
+\begin_inset Newline newline
+\end_inset
+
+ 
+\begin_inset VSpace bigskip
+\end_inset
+
+2020
+\begin_inset Newline newline
+\end_inset
+
+ 
+\begin_inset VSpace vfill
+\end_inset
+
+Pannon Egyetem
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size large
+Műszaki Informatikai Kar
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size large
+Rendszer- Számítástudományi Tanszék
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size large
+Programtervező Informatikus BSc
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size large
+\begin_inset Newpage newpage
+\end_inset
+
+
+\series bold
+\size larger
+Nyilatkozat
+\series default
+\size large
+ 
+\begin_inset Newpage newpage
+\end_inset
+
+
+\series bold
+\size larger
+Köszönetnyilvánítás
+\series default
+\size large
+ 
+\begin_inset Newpage newpage
+\end_inset
+
+
+\series bold
+\size larger
+Tartalmi összefoglaló
+\series default
+\size large
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size large
+Az elmúlt évtized hatalmas technikai fejlődésének köszönhetően ma már szinte
+ mindenki hozzáfér olyan felületekhez, melyek az ember mindennapi életének
+ megkönnyítésére szolgálnak.
+ Ezek közül nagy népszerűségnek örvendenek az időjárás előrejelző oldalak.
+ De gondolkoztunk-e már azon, hogy ezek az információk mennyire hasonlítanak
+ vagy különböznek egymástól? A hétköznapi felhasználó azt várná el, hogy
+ ebben a témakörben különböző felületeken, ugyan eltérő formában, de hasonló
+ adatok birtokába juthat.
+ Sajnos a tapasztalat ettől jelentős mértékben eltér és egyelőre ezen felületek
+ tartalmának összehasonlítására sincs megoldás.
+ Szakdolgozatomban a fent felvetett problémára keresem a megoldást.
+ A dolgozatban különböző statisztikai és numerikus módszerekkel vizsgálom
+ az eltérő időjárási adatokat.
+ Szó lesz alkalmazásprogramozási interfészekről (API), az általuk biztosított
+ adatok feldolgozásáról, adatbázis tervezéséről, adatok elemzéséről, vizualizálá
+sról.
+\end_layout
+
+\begin_layout Standard
+
+\size large
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\series bold
+\size larger
+Abstract
+\series default
+\size large
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size large
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Bevezetés
+\end_layout
+
+\begin_layout Standard
+
+\size large
+Témaválasztásom fő mozgató rúgója az volt, hogy megismerjen azon jelenleg
+ rendelkezésre álló adatelemzésre, összehasonlítása és vizualizálásra alkalmas
+ módszereket melyek, alkalmasak egy olyan kérdés megoldására, mint például
+ az időjárási adatok összehasonlítása.
+ Talán az időjárás, mint fogalom elsőre nem hangzik túlságosan érdekesnek
+ a hallgatóság számára, viszont a téma mégis rengetek, dolgot magába foglal,
+ lehetőség nyílik új ismeretek elsajátítására nem csak az informatika világában,
+ de a matematika területén is.
+ Valamint a téma hatalmas irodalmi terjedelemmel rendelkezik, rengetek platform
+ ingyenes illetve korlátozott adathozzáférést biztosít, melyek mind segítik
+ az elemző munkámat.
+\end_layout
+
+\begin_layout Standard
+
+\size large
+Az időjárás az élet minden területén megtalálható.
+ Nap, mint nap találkozunk vele, de pontos tájékoztatást ritkán tudhatunk
+ a magunkévá.
+ Véleményem szerint az átlagember nem is mérlegeli, hogy a különböző időjárás
+ előrejelző platformok mennyire eltérő adatokkal szolgálnak.
+ Ha jobban beleássuk magunkat, talán azt mondhatjuk nincs két egyforma tájékozta
+tás.
+ Pedig egységes és megbízható időjárás előrejelzés minden bizonnyal nagymértékbe
+n megkönnyítené az életünk.
+ Dolgozatban erre is keresem a megoldást, melyik az általam vizsgált legmegbízha
+tóbb platform és nagyjából mi a pontos időjárási viszontagság, amire készülnie
+ kell az embernek.
+\end_layout
+
+\begin_layout Standard
+
+\size large
+Fontos megemlíteni, hogy a dolgozatomban nem csak e probléma megoldása motivált,
+ hanem szakmai kíváncsiság is vezérelt.
+ Szerettem volna komolyan megismerni az adattudományok világát, több ismertet
+ szerezni az adatbázisok terén, valamint elsajátítani a Python programozási
+ nyelv szépségét, előnyeit.
+\end_layout
+
+\begin_layout Standard
+
+\size large
+A dolgozatot két fő részre osztottam.
+ Az első részében részletezem a dolgozathoz szükséges háttér-információkat,
+ szakmai irodalmat valamint a későbbiekben használt technológiákat.
+ A következő részben pedig az általam készült szoftver készülök bemutatni,
+ elemezni a feltárt eredményeket.
+\end_layout
+
+\begin_layout Standard
+
+\size large
+A dolgozat írása során főként a magyar és külföldi szakirodalmat, internetes
+ cikkeket valamint tanulmányaim során elsajátított ismereteimet használtam
+ fel.
+\end_layout
+
+\begin_layout Standard
+
+\size large
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Időjárás alapjai
+\end_layout
+
+\begin_layout Standard
+
+\size large
+Az időjárás a napi hőmérsékletre és csapadék aktivitásra utal, aktivitására
+ illetve változására utal vagy éppen írja le mint például meleg vagy hideg,
+ nedves vagy száraz, szeles, napos vagy esős az idő.
+ Ezek a fizikai változások az atmoszférában az az a légkörben történő jelenségek
+ következménye.
+ Ezek az események általában a légkör legalacsonyabb szintjén a troposzférába,
+ a sztratoszféra alatt következnek be.
+ Nagyobbrészt az időjárás a Föld időjárására utal.
+ Éghajlat kifejezés a légköri viszonyok hosszabb ideig történő átlagolására
+ reflektál.
+ Légkörünkben több egységet különböztetünk meg, ezek rendre a következők:
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\size large
+Troposzféra 
+\end_layout
+
+\begin_layout Itemize
+
+\size large
+Sztratoszféra 
+\end_layout
+
+\begin_layout Itemize
+
+\size large
+Mezoszféra 
+\end_layout
+
+\begin_layout Itemize
+
+\size large
+Termoszféra 
+\end_layout
+
+\begin_layout Itemize
+
+\size large
+Exoszféra
+\end_layout
+
+\begin_layout Subsection
+Fontos tényezői
+\end_layout
+
+\begin_layout Standard
+
+\size large
+Az időjárást rengeteg tényező befolyásolja, ezek közül a legfontosabbak:
+ légnyomás, páratartalom, szélirány, szélerősség, felhőzet valamint a hőmérsékle
+t.
+\end_layout
+
+\begin_layout Standard
+
+\size large
+Nyomás egy felületi egységre ható nyomóerő, fizikai mennyiség amelyet a
+ nyomás felületre ható erő és felület hányadosa által értelmezünk.
+ Légnyomás esetén a nyomóerőt a légkör egy adott pontja felett elhelyezkedő
+ levegőoszlop súlya határozza meg.
+ Meteorológiába ennek mértékét hektopascalban (hPa) definiálják.
+ A légkörben emelkedő irányba haladva közelítőleg exponenciálisan csökken.
+ Akkor beszélhetnénk teljes exponenciális csökkenésről, ha a légkör hőmérséklete
+ változatlan maradna.
+\end_layout
+
+\begin_layout Standard
+
+\size large
+Egy hidegfront esetén hideg levegő érkezik a fennálló meleghez, a terjedelmesebb
+ tömeg miatt a meleg légtömeg alá nyomja magát, ennek eredményeképp a légnyomás
+ először csökken aztán pedig emelkedik.
+ A jelenséget csapadék és hőmérséklet lehűlés követi.
+ Ugyan így történik melegfront esetén is, ebben az esetben a meleg levegő
+ a hideg légtömeg alá furakodik, a légnyomás permanensen csökken de a hidegfront
+tal ellentétben nem emelkedik hanem marad az adott szinten.
+ Okklúziós frontról beszélhetünk ha a hideg és a meleg egyszerre érkezik
+ meg.
+ Általánosságában kijelenthetjük, hogy a melegfrontot utoléri egy gyorsabban
+ mozgó hideg, s ennek hatásai érvényesülnek az időjárásban.
+\end_layout
+
+\begin_layout Standard
+
+\size large
+Pára akkor jön létre ha a Nap felmelegíti a vizet, ennek következtében pedig
+ a levegőbe kerül vízgőz formájában.
+ Ennek mennyisége attól függ , hogy a víz melegedésének mértéke mekkora..
+ Ezzel párhuzamosan a légkör párakapacitása is növekszik.
+ Páratartalom definiálására két lehetőséget különböztetünk meg, abszolút
+ vízgőztartalom valamint a relatív vízgőz tartalom.
+ Az abszolút vízgőztartalom segítségével kimutathatjuk ,hogy 1
+\begin_inset Formula ${\color{black}m^{3}}$
+\end_inset
+
+ levegőben milyen mértékű a grammban vett vízgőz tartalom.
+ Ezzel ellentétben a relatív vízgőz tartalom azt jelenti , hogy a levegőben
+ lévő vízpára az adott hőmérsékleten milyen százalékos értéket mutat, a
+ vízgőzzel teljesen telített levegő víztartalmához mérten.
+\end_layout
+
+\begin_layout Standard
+
+\size large
+A levegő mely légkörünk alkotó eleme, szélnek nevezzük ha közelítő vízszintes
+ irányú áramlását végez.
+ A jelenség a helyi nyomáskülönbségeknek tudható be.
+ Sebességét méter/másodpercben, erősségét Beaufort-skálán osztályozzák.
+ A föld forgásából adódóan három egymáshoz kapcsoló szélrendszer különböztetünk
+ meg: 
+\end_layout
+
+\begin_layout Itemize
+
+\size large
+Passzátszél 
+\end_layout
+
+\begin_layout Itemize
+
+\size large
+Nyugati szél 
+\end_layout
+
+\begin_layout Itemize
+
+\size large
+Keleties sarki szél
+\end_layout
+
+\begin_layout Standard
+
+\size large
+A szél irányát az határozza meg mely égtáj felől érkezik.
+ Tehát keleti szélről beszélhetünk, ha a szél keleti irányból nyugat felé
+ fúj, ami az jelenti, hogy kelet felé fordulva szembe érkezik.
+ Sok esetben fokkal is jellemzik, 0° északi, 90° keleti, 180° déli valamint
+ 270° esetén nyugati szélnek nevezzük ezeket.
+ Meteorológiában 10 fokos pontosságot használnak.
+ Levegőmozgásának sebessége alatt, magát a szél sebességét értelmezzük.
+ A meteorológusok számára Beaufort-skála szolgál a szél sebességének jellemzéséh
+ez.
+ Szélfajták: Ciklon,Hurrikán,Tájfun,Monszun,Tornádó,Orkán.
+\end_layout
+
+\begin_layout Standard
+
+\size large
+Levegőbe a felszálló vízpárából parányi vízcseppek és jégkristályok halmaza
+ alakul ki, ezek a légkörünkben találhatóak, mindennapokban felhőnek nevezzük.
+ Ezek eredményeképp csapadék, eső vagy akár jégeső is keletkezhet, a talaj
+ közelében is találkozhatunk vele, köd formájában.
+ Diszperz rendszer azaz egymástól független részecskékből áll, amely a fény
+ útját is elejét veszi.
+ Magasságuk és kiterjedésük alapján osztályozzuk őket.
+ A felhők tipizálásánál a következő tulajdonságokat vesszük figyelembe:
+ méret, forma, szerkezet, textúra, fényhatás, szín, a felhőalap magassága.
+ Forma szerint 14 felhőtípust különböztetünk meg, anyaguk szerint pedig
+ víz-,jég és vegyes halmazállapotú felhőket.
+\end_layout
+
+\begin_layout Subsection
+Meteorológia
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename meteokep.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size large
+A meteorológia vagy ha régies nevét használjuk légtüneménytan, előrejelzésekkel
+ és időjárási folyamatokkal foglalkozik.
+ Időjárás megfigyelése már az ókorban elkezdődött, első feljegyzések már
+ mezopotámiai kultúrából származnak, de találhatunk ókori görög-római és
+ kínai annotáció is.
+ Maga a kifejezés Arisztotelész Meteorológia című művéből származik.
+ Galileo Galilei az elsők között készített termoszpókot, melynek segítségével
+ bizonyította a hőmérséklet lehetőségét.
+ Saját termoszkopja ugyanis jelezte a meleg levegő tágulásának jelenségét.
+ Blaise Pascal fedezte fel, hogyha egyre csak emelkedünk a tengerszinttől
+ akkor a légnyomás csökken, amiből következtethetünk arra , hogy a légkör
+ felett vákuum van.
+ Anders Celsius nevéhez fűződik az általunk is mindennap használt hőmérőbeosztás.
+ Robert Hooke, Edmun Halley, George Hadley, Benjamin Franklin, Luke Howard
+ és még rengetek más embert hozzájárult ahhoz, hogy napjainkban pontos méréseket
+ készíthessünk.
+\end_layout
+
+\begin_layout Standard
+
+\size large
+Numerikus időjárás előrejelzés a 20.
+ század elején vált elérhetővé, a légkör dinamika megismerésének és fejlődésének
+ eredményeképp.
+ Lewis Fry Richardson Időjárás-előrejelzés numerikus eljárásokkal című könyvében
+ olvashatunk arról, hogy rövidebb időszakok előrejelzésére numerikus megoldás
+ található,viszont csak fontos légköri áramlat elhanyagolásával lehetséges.
+ A számításokhoz létfontosságú számok túlságosan nagynak bizonyultak egészen
+ az első számítógépek megjelenéséig.
+ Az 1950-es évek elején a számítógépes számítások elérhetővé váltak.
+ Az első időjárás-előrejelzések a barotropikus modellekből származnak, amelyekbő
+l sikeresen meg lehet jósolni a középmagas légkörben elhelyezkedő nagy mozgású
+ Rossby hullámokat, amik az alacsony, illetve a magas légköri nyomást rajzolják
+ ki.
+\end_layout
+
+\begin_layout Standard
+
+\size large
+Műholdas megfigyelések lehetőségének megkezdését az 1960-as években vált
+ elérhetővé, TIROS-1 időjárás-előrejelző műhold ekkor került fellövésre.
+ Segítségével rendkívül gyorsan, mondhatni pillanatok alatt adatokat juttattak
+ a világ egyik pontjából a másikba.
+ Az időjárási műholdak és a különböző magasságokban keringő általános célú
+ megfigyelőműholdakkal elengedhetetlen eszközévé váltak.
+ Napjainkban azon éghajlati modelleket fejlesztik, amelyek összeegyeztethetőek
+ a régebbi időjárás-előrejelző rendszerekkel.
+ Ezen éjhajlati modellek segítségével megfigyelhetőek a hosszan tartó éghajlatvá
+ltozások.
+ 
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size large
+Az időjárás előrejelzéséhez különböző eljárások léteznek: 
+\end_layout
+
+\begin_layout Itemize
+
+\size large
+Változatlanság 
+\end_layout
+
+\begin_layout Itemize
+
+\size large
+Tendencia 
+\end_layout
+
+\begin_layout Itemize
+
+\size large
+Éghajlattan 
+\end_layout
+
+\begin_layout Itemize
+
+\size large
+Analóg módszer 
+\end_layout
+
+\begin_layout Itemize
+
+\size large
+Numerikus időjárás-előrejelzés 
+\end_layout
+
+\begin_layout Standard
+
+\size large
+Változatlanság szerint a kondíciók nem változnak, hosszútávú előrejelzés
+ esetén leghasznosabb módszer.
+ Tendencia alatt értjük a frontok sebességének és irányának definiálását,
+ valamint a magas és az alacsony légnyomással bíró lokációk, felhős és csapadéko
+s területeket meghatározását is.
+ Éghajlattan a tapasztalati adatok felhasználását jelenti az adott nap meghatáro
+zásához.
+ Összetett eljárásnak mondhatjuk az analóg módszert mely régi adathalmazokból
+ hasonló időjárási körülményeket mutat.
+ Numerikus időjárás-előrejelzés számítógépek segítségével magas számú változók
+ használatával, légköri modellt generál.
+ Legsikeresebb és legszélesebben használt módszer.
+ 
+\end_layout
+
+\begin_layout Subsection
+Emberre való hatása
+\end_layout
+
+\begin_layout Standard
+
+\size large
+Manapság a populáció fele időjárás-érzékeny.
+ Az időjárás-érzékenység akár társadalmi betegségnek is mondható, ha természetes
+ környezeti hatásoktól rendszeresen elszigetelődünk és ezáltal csökken a
+ szervezeti teljesítőképessége, valamint megnő az érzékenységünk az időjárással
+ szemben.
+ Minél korosabb az adott egyén annál jobban reflektál az időjárás-változásokra.
+ Mivel idővel lassabban játszódnak le a belső folyamatok, testünk nem tud
+ oly módon igazodni mint korábban , így időjárás-érzékennyé válunk.
+ Tünetek közé tartok az: idegesség, alvási zavarok, kimerültség de akár
+ a depresszió, szív- és keringési zavarok is.
+ Kisgyermekek és csecsemők szintén reagálnak a változásokra.
+ Esetükben csökken a koncentrációképesség valamint a felfogóképesség, kimerülteb
+bé is válhatnak.
+ Kutatások szerint a nők gyakrabban és jobban érzékenyebbek a szélsőséges
+ időjárás változásokra mint férfi társaik.
+ Ez a különbség már fiatalabb, kisiskolás korbán is felmerül.
+\end_layout
+
+\begin_layout Standard
+
+\size large
+Az időjárás-érzékenység a földrajzi elhelyezkedésen is múlik.
+ Példaként említeném, hogy a közép-európai népek rendkívül érzékenyek, mivel
+ a közepes szélességeken élők, átlagosan akár hat naponta ki vannak téve
+ frontátvonulásnak.
+ Vizsgálatok az mutatják, hogy mi magyarok általában a melegfrontra vagyunk
+ érzékenyek ellenben a franciák vagy az angolok a hidegre.
+\end_layout
+
+\begin_layout Standard
+
+\size large
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Használt technológiák
+\end_layout
+
+\begin_layout Standard
+\begin_inset Wrap figure
+lines 0
+placement o
+overhang 0col%
+width "50col%"
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename apikep1.png
+	scale 50
+
+\end_inset
+
+ 
+\begin_inset Graphics
+	filename sqlkep1.png
+	scale 50
+
+\end_inset
+
+ 
+\begin_inset Graphics
+	filename pythonkep1.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A szakdolgozat kezdeti fázisában alaposan átgondoltam, valamint mérlegeltem,
+ hogy melyek azok technológiák amik elengedhetetlenek lehetnek a megvalósításhoz.
+ Tanulmányaim során is találkoztam már nagy részükkel, viszont az internet
+ segítségévél és tájékozódtam, továbbá kikértem tanáraim és az egyetem munkatárs
+ainak tanácsát is.A dolgozat elkészítéséhez első sorban szükségem volt egy
+ adatbázisra, már általam is jól ismert és használt Microsoft Sql Server-re
+ esett a választásom.
+ Az adatok begyűjtéséhez és vizualizálásához, elemzéséhez a Python programozási
+ nyelv és különböző könyvtárainak lehetőségeivel éltem.
+ Fontos még megemlítenem azt is, hogy az adatok begyűjtésé alkalmazásprogramozás
+i interfészek azaz API hívások segítségével történt.
+ A következőben ezeket szeretném részletesen bemutatni, valamint szemléltetni
+ melyek azok az okok, ami miatt az említett technológiák mellett döntöttem.
+ 
+\end_layout
+
+\begin_layout Subsection
+Alkalmazási interfészek
+\end_layout
+
+\begin_layout Standard
+Angol nyelven application programming interface kifejezésként ismert, rövidítése
+ API.
+ Ha egyszerűen próbáljuk megmagyarázni az API tulajdonképpen egy olyan szoftverk
+özvetítő közeg, ahol két applikáció képes egymással kommunikálni.
+ Máshogy fogalmazva, az API egy üzenetküldő ami az egyik oldal kérését továbbítj
+a a másik oldal felé, majd ennek válaszát visszajuttatja a kezdeményezőnek.
+ Ha egy fejlesztő egy alkalmazást készít, nem feltétlen a nulláról indul
+ neki a feladatnak.
+ Az API-k lehetővé teszik a fejlesztők számára, hogy ismétlődő, mégis összetett
+ folyamatokat készítsenek egy rövidebb kódot felhasználva, és ezek a későbbiek
+ folyamán újrafelhasználhatóvá válnak .
+ Mivel az API-k kezelhetősége egyszerű és egységes, rendkívül hozzájárulnak
+ ahhoz , hogy a mai alkalmazásfejlesztés gyors ütemével képesek legyen lépést
+ tartani a fejlesztők, továbbá az alkalmazás működési sebességére is pozitív
+ hatással van az, hogy az API kérések válaszideje szűk határidőn belül megvalósu
+l.
+\end_layout
+
+\begin_layout Standard
+Számos alkalmazási interfészt különböztetünk meg, mint például Java API
+ vagy alkalmazásokon belüli interfészek , melyek lehetővé teszik az egyek
+ objektumok közötti kommunikáció a Java nyelvben.
+ A programközpontú API-k között még találkozhatunk olyan web alapú alkalmazi
+ interfészekkel mint például a Simple Object Access Protocol(röviden SOAP)
+ melynek üzenetek XML alapúak, továbbá a távoli eljáráshívás , angolul Remote
+ Procedure Call ismert.
+ Fontos megemlíteni a REST azaz Representational State Transfer API-t is
+ melyek talán napjainkban a legelterjedtebb és legismertebb API.
+ Nagyjából 15 000 publikus, bárki számára elérhető API elérhető a programozók
+ számára, ezen felül rengetek magán kézben lévő, amelyeket a vállalatok
+ saját belső és külső kapacitásuk bővítésére használnak.
+\end_layout
+
+\begin_layout Standard
+De miért is fontos ez számunkra és miben járul hozzá a megvalósításhoz?
+ Ahhoz , hogy időjárást tudjuk elemezni szükségünk van nagy mennyiségű időjárási
+ adatra.
+ Ezeket különböző már említett nyilvánosan elérhető API-k segítségével könnyen
+ birtokolhatjuk.
+ Az adatokat API hívás segítségével tudjuk elérni.
+ Sokféle, különböző típusú kérés létezik.
+ Az adatok elkérésére a leggyakrabban használt módszer a GET kérés.
+ Mivel esetünkben csak adatok lekérésére létfontosságú, ezért a hagsúlyt
+ GET kérések benyújtására fordítjuk.
+ Amikor az kérést teszünk a felület felé, az API-tól kapott válasz válaszkód
+ formájában érkezik meg, ez mutatja a művelet sikerességét.
+ Kódok azért is fontosak mert megtudhatjuk mit rontottunk el egy hibás hívás
+ esetén.
+ Annak érdekében, hogy sikeres kérést nyújtsunk be, amikor API-kkal dolgozunk,
+ fontos, hogy olvassa el a hozzátartozó dokumentációt.
+ Egy adott kiszolgálón gyakran található több API is, ezeket az API-kat
+ endpointoknak azaz végpontoknak nevezzük.
+ Végpontok tartalmazzák az adatokat melyek számunkra fontosak lehetnek.
+ Ezek legtöbb esetben JSON formátumban vannak megadva.
+\end_layout
+
+\begin_layout Standard
+A JSON (JavaScript Object Notation) az API nyelve, adatszerkezetek kódolására
+ alkalmas.
+ Főként adatok továbbítására alkalmazzák szervezek és web alapú applikációk
+ között.
+ Ember számára is olvasható adatcserére tervezték és modern programnyelvek
+ mellett is könnyen használható.
+\end_layout
+
+\begin_layout Subsection
+Python programnyelv 
+\end_layout
+
+\begin_layout Standard
+Python általános célú és maga szintű programozási nyelv.
+ 1989 végén Guido van Rossum holland származású programozó kezdett el rajta
+ dolgozni, majd 1991-ben hozta nyilvánosságra.
+ Készítésekor a fő szempontok közé tartozott , hogy könnyen olvasható legyen
+ és programozói munka megkönnyítése előtérbe kerüljön szemben a futási sebességg
+el.
+ Támogatja a funkcionális, az objektumorientált, az imperatív és a procedurális
+ programozási paradigmákat.
+ Hasonlít a Perl,Ruby,Scheme nyelvekhez, valamint szigorú típusrendszer
+ birtokában van.A legfrissebb PYPL PopularitY of Programming Language rangsorolás
+a szerint, a tíz legnépszerűbb programozási nyelv egyike.
+ Felhasználható asztali grafikus felhasználói felületek, webhelyek és webes
+ alkalmazások fejlesztésére is.
+ A programozási nyelv egyszerű szintaxisszabályai továbbá megkönnyítik a
+ kódok olvashatóságát és az alkalmazás karbantarthatóságát.
+ Számos oka van annak miért választottam a Python nyelvet a dolgozat alapjaként.
+\end_layout
+
+\begin_layout Standard
+Első szempont az volt , hogy könnyen étethető és olvasható legyen bárki
+ számára.
+ Python könnyen elsajátítható programnyelvek közé tartozik.
+ Ez elsősorban az angol nyelvhez való hasonlóságának köszönhető.A nyelv szintaxis
+ára jellemző hogy nagyon kevés a szabály és különleges eset.
+ Nyugodtan kijelenthetjük, hogy a Pythonban a kódolásra fókuszál, és nem
+ a nyelvi bonyolultságok helyezi előtérbe.
+ A programozási nyelv másik vonzó aspektusa a hatékonysága és az olvashatósága.
+\end_layout
+
+\begin_layout Standard
+Python táborát erősítette még az is, hogy Bross-Platform és nyílt forráskódú.
+ Több mint húsz év telt el azóta, hogy a szóban forgó nyelv több platformon
+ fut és nyílt forrású Legyen Linux, Windows vagy MacOS, a Python-ban írt
+ kódok minden platformon működnek.
+ Ezek mellett sokoldalú nyelv és platform: A Python továbbra is nagyon releváns,
+ mivel bármilyen szoftverfejlesztésben felhasználható, legyen az lokális
+ és felhőben kezelendő projekt.
+ Támogatja objektum-orientált programozást is, de kisebb programok, tool-ok
+ fejlesztését is alkalmas.
+\end_layout
+
+\begin_layout Standard
+Data science és mesterséges intelligenciák legelterjedtebb nyelve napjainkban,
+ mindkét témakör nagyban érinti a dolgozat témáját is.
+ Python az adattudósok körében az egyik legelterjedtebb nyelv.
+ Legyen szó szoftverfejlesztésről vagy marketingről, napjainkban minden
+ munkaügyi szektor rengeteg adatot használ és hagy maga után, és ezek elemezése
+ valamint megértése nagyban befolyásolja további működésüket, stratégiájukat.
+ A 'Numpy' és a 'Panda' könyvtárak megjelenésével a Python kiemelkedő jelentőség
+űvé vált az adatvilágban.
+ A Python statisztikai, táblázatos és mátrix adatokat is kezel, ezeket „Matplotl
+ib” és a „Seaborn” könyvtársak segítségével képes vizualizálni.
+ Jelenünkben nem vitás, hogy a jövő informatikáját a mesterséges intelligencia
+ vezetni fogja.
+ A Python machine learning könyvtárai, például a Keras és a TensorFlow,
+ lehetővé teszik a számunkra gépi tanulás fejlesztését is.
+ Az olyan könyvtárak, mint például az OpenCV pedig elősegítik a számítógépes
+ látást vagy a képfelismerést.
+\end_layout
+
+\begin_layout Standard
+Valamint rengeteg grafikus felületet is támogat ezek között a projektben
+ megjelenik a Python Kivy könyvtára, amely szintén cross-platform és nyílt
+ forráskódú, valamint nagyon modern és letisztult külsőt kölcsönöz, abszolút
+ megállja helyét napjainkban.
+\end_layout
+
+\begin_layout Subsection
+Relációs Adatbázisok és Microsoft Sql Server
+\end_layout
+
+\begin_layout Standard
+Relációs adatbázisok olyan digitális adatbázisok melyek a relációs adatmodellen
+ alapszik.
+ A relációs adatbázisok kezeléséhez használt szoftvereket relációs adatbázis-kez
+elő rendszerek röviden RDBMS nevezzük.
+ Számos relációs adatbázisrendszernek képes az SQL azaz Structured Query
+ Language(magyarul lekérdezőnyelv) használatára, ez általa lehetőségünk
+ nyílik lekérdezni és karbantartani az adatbázisok tartalmát.
+ A táblák minden sora rendelkezik a saját egyedi azonosítóval, kulccsal.
+ A táblák sorai összekapcsolhatók más táblák soraival, ha rendelkeznek úgy
+ nevezett idegen kulccsal.
+\end_layout
+
+\begin_layout Standard
+Habár a feladat nem követeli meg az Microsoft Sql Server használatát, mégis
+ úgy láttam hosszútávon kifizetődőbb vele dolgozni.
+\end_layout
+
+\begin_layout Standard
+elakadtam :(( szívesen fogadokj tippeket miért is jobb az MSSQL, hirtelen
+ csak ennyi van hogy: gyorsabb, több funkció talán, T-SQL
+\end_layout
+
+\begin_layout Section
+Adatbázis tervezése
+\end_layout
+
+\begin_layout Standard
+Itt fogom bemutatni a táblákat stb
+\end_layout
+
+\begin_layout Section
+Adatgyűjtés Python segítségével
+\end_layout
+
+\begin_layout Standard
+rövid ismertető
+\end_layout
+
+\begin_layout Subsection
+API hívások, API-k amiket használok
+\end_layout
+
+\begin_layout Standard
+free oldalak bemutatása, dokumtánció és lehetőségek, api hívások pythonba
+\end_layout
+
+\begin_layout Subsection
+JSON Feldolgozás
+\end_layout
+
+\begin_layout Standard
+Json feldolgozása python segítségével
+\end_layout
+
+\begin_layout Subsection
+Adatbázis és Python kapcsolata
+\end_layout
+
+\begin_layout Standard
+milyen király hogy adatbázisba minden benne -> letudok kérni minden + tárolás
+\end_layout
+
+\end_body
+\end_document
