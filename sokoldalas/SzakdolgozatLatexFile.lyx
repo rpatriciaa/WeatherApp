@@ -1,0 +1,3072 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\usepackage[magyar]{babel}
+\usepackage{t1enc}
+\usepackage{graphicx}% képek beillesztéséhez kell
+\usepackage{listings}
+\usepackage{tikz}
+\usepackage{pgfplots}
+
+
+
+\linespread{1.5}
+\author{Rácsik Patrícia}
+\title{Szakdolgozat}
+\end_preamble
+\use_default_options false
+\maintain_unincluded_children false
+\language magyar
+\language_package default
+\inputencoding utf8
+\fontencoding default
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 12
+\spacing single
+\use_hyperref false
+\papersize a4paper
+\use_geometry false
+\use_package amsmath 2
+\use_package amssymb 0
+\use_package cancel 0
+\use_package esint 1
+\use_package mathdots 0
+\use_package mathtools 0
+\use_package mhchem 0
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style polish
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes true
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\author 415188692 "Machalik Károly"
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\align center
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+hfil
+\end_layout
+
+\end_inset
+
+ 
+\series bold
+\size largest
+Időjárás-jelentések összehasonlítása
+\series default
+
+\begin_inset Newline newline
+\end_inset
+
+ 
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\size large
+Rácsik Patrícia 
+\begin_inset Newline newline
+\end_inset
+
+ 
+\begin_inset VSpace bigskip
+\end_inset
+
+Témavezető: Machalik Károly
+\begin_inset Newline newline
+\end_inset
+
+ 
+\begin_inset VSpace bigskip
+\end_inset
+
+2020
+\begin_inset Newline newline
+\end_inset
+
+ 
+\begin_inset VSpace vfill
+\end_inset
+
+Pannon Egyetem
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size large
+Műszaki Informatikai Kar
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size large
+Rendszer- Számítástudományi Tanszék
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size large
+Programtervező Informatikus BSc
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size large
+\begin_inset Newpage newpage
+\end_inset
+
+
+\series bold
+\size larger
+Nyilatkozat
+\series default
+\size large
+ 
+\begin_inset Newpage newpage
+\end_inset
+
+
+\series bold
+\size larger
+Köszönetnyilvánítás
+\series default
+\size large
+ 
+\begin_inset Newpage newpage
+\end_inset
+
+
+\series bold
+\size larger
+Tartalmi összefoglaló
+\series default
+\size large
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size large
+Az elmúlt évtized hatalmas technikai fejlődésének köszönhetően ma már szinte
+ mindenki hozzáfér olyan felületekhez, melyek az ember mindennapi életének
+ megkönnyítésére szolgálnak.
+ Ezek közül nagy népszerűségnek örvendenek az időjárás előrejelző oldalak.
+ De gondolkoztunk-e már azon, hogy ezek az információk mennyire hasonlítanak
+ vagy különböznek egymástól? A hétköznapi felhasználó azt várná el, hogy
+ ebben a témakörben különböző felületeken, ugyan eltérő formában, de hasonló
+ adatok birtokába juthat.
+ Sajnos a tapasztalat ettől jelentős mértékben eltér és egyelőre ezen felületek
+ tartalmának összehasonlítására sincs megoldás.
+ Szakdolgozatomban a fent felvetett problémára keresem a megoldást.
+ A dolgozatban különböző statisztikai és numerikus módszerekkel vizsgálom
+ az eltérő időjárási adatokat.
+ Szó lesz alkalmazásprogramozási interfészekről (API), az általuk biztosított
+ adatok feldolgozásáról, adatbázis tervezéséről, adatok elemzéséről
+\change_inserted 415188692 1584959155
+ és
+\change_deleted 415188692 1584959156
+,
+\change_unchanged
+ vizualizálásról.
+\end_layout
+
+\begin_layout Standard
+
+\size large
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\series bold
+\size larger
+Abstract
+\series default
+\size large
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size large
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Bevezetés
+\end_layout
+
+\begin_layout Standard
+
+\size large
+Témaválasztásom fő mozgató rúgója az volt, hogy megismerje
+\change_deleted 415188692 1584960040
+n
+\change_inserted 415188692 1584960040
+m
+\change_unchanged
+ azon jelenleg rendelkezésre álló adatelemzésre, összehasonlítása és vizualizálá
+sra alkalmas módszereket melyek, alkalmasak egy olyan kérdés megoldására,
+ mint például az időjárási adatok összehasonlítása.
+ Talán az időjárás, mint fogalom elsőre nem hangzik túlságosan érdekesnek
+ 
+\change_deleted 415188692 1584960108
+a hallgatóság
+\change_inserted 415188692 1584960111
+egy felhasználó
+\change_unchanged
+ számára, viszont a téma mégis rengete
+\change_deleted 415188692 1584960115
+k
+\change_inserted 415188692 1584960115
+g
+\change_deleted 415188692 1584968401
+,
+\change_unchanged
+ dolgot 
+\change_inserted 415188692 1584968413
+foglal 
+\change_unchanged
+magába
+\change_deleted 415188692 1584968416
+ foglal
+\change_unchanged
+, lehetőség nyílik új ismeretek elsajátítására nem csak az informatika világában
+, de a matematika területén is.
+ 
+\change_deleted 415188692 1584960137
+Valamint a
+\change_inserted 415188692 1584960137
+A
+\change_unchanged
+ téma 
+\change_inserted 415188692 1584960141
+ezek mellett 
+\change_unchanged
+hatalmas irodalmi terjedelemmel rendelkezik, rengete
+\change_deleted 415188692 1584960151
+k
+\change_inserted 415188692 1584960151
+g
+\change_unchanged
+ platform
+\change_inserted 415188692 1584960163
+on
+\change_unchanged
+ ingyenes illetve korlátozott adathozzáférést biztosít, melyek mind segítik
+ az elemző
+\change_deleted 415188692 1584960271
+ 
+\change_unchanged
+munkámat.
+\end_layout
+
+\begin_layout Standard
+
+\size large
+Az időjárás az élet minden területén megtalálható.
+ Nap, mint nap találkozunk vele, de pontos tájékoztatást ritkán tudhatunk
+ a magunké
+\change_deleted 415188692 1584960307
+vá
+\change_inserted 415188692 1584960308
+nak
+\change_unchanged
+.
+ Véleményem szerint az átlagember nem is mérlegeli, hogy a különböző időjárás
+\change_deleted 415188692 1584960328
+ 
+\change_inserted 415188692 1584960328
+-
+\change_unchanged
+előrejelző platformok mennyire eltérő adatokkal szolgálnak.
+ Ha jobban beleássuk magunkat, talán azt mondhatjuk nincs 
+\change_inserted 415188692 1584960345
+is 
+\change_unchanged
+két egyforma tájékoztatás.
+ Pedig 
+\change_inserted 415188692 1584960358
+az 
+\change_unchanged
+egységes és megbízható időjárás
+\change_deleted 415188692 1584960374
+ 
+\change_inserted 415188692 1584960374
+-
+\change_unchanged
+előrejelzés minden bizonnyal nagymértékben megkönnyítené az életünk
+\change_inserted 415188692 1584960385
+et
+\change_unchanged
+.
+ Dolgozat
+\change_inserted 415188692 1584960473
+om
+\change_unchanged
+ban erre is keresem a megoldást
+\change_inserted 415188692 1584960495
+:
+\change_deleted 415188692 1584960495
+,
+\change_unchanged
+ melyik az általam vizsgált leg
+\change_inserted 415188692 1584960505
+inkább 
+\change_unchanged
+megbízható
+\change_deleted 415188692 1584960507
+bb
+\change_unchanged
+ platform és nagyjából mi
+\change_inserted 415188692 1584960557
+lyen
+\change_unchanged
+ 
+\change_deleted 415188692 1584960559
+a pontos 
+\change_unchanged
+időjárási viszontagság
+\change_inserted 415188692 1584960570
+okra kell 
+\change_deleted 415188692 1584960572
+, amire 
+\change_unchanged
+készülnie 
+\change_deleted 415188692 1584960576
+kell 
+\change_unchanged
+az embernek.
+\end_layout
+
+\begin_layout Standard
+
+\size large
+Fontos megemlíteni, hogy a dolgozatomban nem csak e probléma megoldása motivált,
+ hanem 
+\change_inserted 415188692 1584960587
+a 
+\change_unchanged
+szakmai kíváncsiság is vezérelt.
+ Szerettem volna komolyan megismerni az adattudományok világát, több 
+\change_deleted 415188692 1584960663
+ismertet
+\change_inserted 415188692 1584960667
+gyakorlati tudást
+\change_unchanged
+ szerezni az adatbázisok terén, valamint elsajátítani a Python programozási
+ nyelv 
+\change_deleted 415188692 1584960637
+szépségét
+\change_inserted 415188692 1584960640
+lehetőségeit
+\change_unchanged
+, előnyeit.
+\end_layout
+
+\begin_layout Standard
+
+\size large
+A dolgozatot két fő részre osztottam.
+ Az első részében részletezem a dolgozathoz szükséges háttér-információkat,
+ szakmai irodalmat
+\change_inserted 415188692 1584960727
+,
+\change_unchanged
+ valamint a későbbiekben használt technológiákat.
+ A 
+\change_deleted 415188692 1584960744
+következő
+\change_inserted 415188692 1584960745
+második
+\change_unchanged
+ részben pedig az általam 
+\change_deleted 415188692 1584960764
+készült
+\change_inserted 415188692 1584960765
+fejlesztett
+\change_unchanged
+ szoftver
+\change_inserted 415188692 1584960766
+t
+\change_unchanged
+ készülök bemutatni
+\change_inserted 415188692 1584960776
+ és
+\change_deleted 415188692 1584960776
+,
+\change_unchanged
+ elemezni a feltárt eredményeket.
+\end_layout
+
+\begin_layout Standard
+
+\size large
+A dolgozat írása során főként a magyar és külföldi szakirodalmat, internetes
+ cikkeket valamint tanulmányaim során elsajátított ismereteimet használtam
+ fel.
+\end_layout
+
+\begin_layout Standard
+
+\size large
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+
+\change_inserted 415188692 1584960797
+Az i
+\change_deleted 415188692 1584960797
+I
+\change_unchanged
+dőjárás alapjai
+\end_layout
+
+\begin_layout Standard
+
+\size large
+Az időjárás a napi hőmérséklet
+\change_deleted 415188692 1584960843
+re
+\change_unchanged
+ és csapadék 
+\change_deleted 415188692 1584960850
+aktivitásra utal, 
+\change_unchanged
+aktivitására illetve változására utal vagy éppen 
+\change_inserted 415188692 1584960876
+azt 
+\change_unchanged
+írja le
+\change_inserted 415188692 1584960889
+, hogy
+\change_unchanged
+ 
+\change_deleted 415188692 1584960891
+mint 
+\change_unchanged
+például meleg vagy hideg, nedves vagy száraz, szeles, napos vagy esős az
+ idő.
+ Ezek a fizikai változások az atmoszférában az az a légkörben történő jelenségek
+ következménye.
+ Ezek az események általában a légkör legalacsonyabb szintjén a troposzférába
+\change_inserted 415188692 1584960935
+n
+\change_unchanged
+, a sztratoszféra alatt következnek be.
+ 
+\change_inserted 415188692 1584961341
+Az időjárás kifejezés jellemzően 
+\change_deleted 415188692 1584961343
+Nagyobbrészt az időjárás 
+\change_unchanged
+a Föld 
+\change_inserted 415188692 1584961359
+rövidtávú 
+\change_deleted 415188692 1584961374
+időjárására
+\change_inserted 415188692 1584961377
+jellemzőire
+\change_unchanged
+ utal
+\change_inserted 415188692 1584961380
+, míg
+\change_deleted 415188692 1584961378
+.
+
+\change_unchanged
+ 
+\change_inserted 415188692 1584961383
+az 
+\change_deleted 415188692 1584961384
+É
+\change_inserted 415188692 1584961384
+é
+\change_unchanged
+ghajlat kifejezés a légköri viszonyok hosszabb ideig történő átlagolására
+ reflektál.
+ Légkörünkben több 
+\change_deleted 415188692 1584961408
+egységet
+\change_inserted 415188692 1584961409
+réteget
+\change_unchanged
+ különböztetünk meg, ezek rendre a következők: 
+\end_layout
+
+\begin_layout Itemize
+
+\size large
+Troposzféra 
+\end_layout
+
+\begin_layout Itemize
+
+\size large
+Sztratoszféra 
+\end_layout
+
+\begin_layout Itemize
+
+\size large
+Mezoszféra 
+\end_layout
+
+\begin_layout Itemize
+
+\size large
+Termoszféra 
+\end_layout
+
+\begin_layout Itemize
+
+\size large
+Exoszféra
+\change_inserted 415188692 1584961468
+
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 415188692 1584961546
+
+\size large
+Ide még nekem hiányzik valami.
+ Miért van itt a felsorolás? Lehet, hogy jó lenne egy kép a légkörről, jelölve,
+ hogy csak a troposzféra fontos az időjárással kapcsolatban.
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+
+\end_layout
+
+\begin_layout Subsection
+Fontos tényezői
+\end_layout
+
+\begin_layout Standard
+
+\size large
+Az időjárást rengeteg tényező befolyásolja, 
+\change_deleted 415188692 1584961559
+ezek
+\change_inserted 415188692 1584961559
+melyek
+\change_unchanged
+ közül a legfontosabbak: légnyomás, páratartalom, szélirány, szélerősség,
+ felhőzet valamint a hőmérséklet.
+\end_layout
+
+\begin_layout Standard
+
+\change_inserted 415188692 1584961577
+
+\size large
+A 
+\change_deleted 415188692 1584961577
+N
+\change_inserted 415188692 1584961577
+n
+\change_unchanged
+yomás egy felületi egységre ható nyomóerő, fizikai mennyiség amelyet a nyomás
+ felületre ható erő és felület hányadosa által értelmezünk.
+ Légnyomás esetén a nyomóerőt a légkör egy adott pontja felett elhelyezkedő
+ levegőoszlop súlya határozza meg.
+ 
+\change_inserted 415188692 1584961609
+A m
+\change_deleted 415188692 1584961610
+M
+\change_unchanged
+eteorológiába
+\change_inserted 415188692 1584961612
+n
+\change_unchanged
+ ennek mértékét hektopascalban (hPa) definiálják.
+ A 
+\change_inserted 415188692 1584961680
+légnyomás a 
+\change_unchanged
+légkörben
+\change_inserted 415188692 1584961660
+,
+\change_unchanged
+ emelkedő irányba
+\change_inserted 415188692 1584961667
+n
+\change_unchanged
+ haladva 
+\change_inserted 415188692 1584961692
+meg
+\change_unchanged
+közelítőleg exponenciálisan csökken.
+ Akkor beszélhetnénk teljes
+\change_inserted 415188692 1584961710
+en
+\change_unchanged
+ exponenciális csökkenésről, ha a légkör hőmérséklete változatlan maradna
+\change_inserted 415188692 1584961740
+, azonban az folyamatosan csökken
+\change_unchanged
+.
+\end_layout
+
+\begin_layout Standard
+
+\size large
+Egy hidegfront esetén 
+\change_deleted 415188692 1584961751
+hideg
+\change_inserted 415188692 1584961753
+hűvösebb
+\change_unchanged
+ levegő érkezik a fennálló meleghez
+\change_deleted 415188692 1584962431
+,
+\change_inserted 415188692 1584962431
+.
+
+\change_unchanged
+ 
+\change_deleted 415188692 1584962433
+a
+\change_inserted 415188692 1584962433
+A
+\change_unchanged
+ 
+\change_deleted 415188692 1584961801
+terjedelmesebb
+\change_inserted 415188692 1584961801
+nagyobb
+\change_unchanged
+ tömeg miatt a meleg 
+\change_deleted 415188692 1584962445
+légtömeg
+\change_inserted 415188692 1584962446
+levegő
+\change_unchanged
+ alá nyomja magát, ennek eredményeképp a légnyomás először csökken aztán
+ pedig emelkedik.
+ A jelenséget 
+\change_deleted 415188692 1584962499
+csapadék és
+\change_unchanged
+ hőmérséklet 
+\change_deleted 415188692 1584962476
+lehűlés
+\change_inserted 415188692 1584962478
+csökkenés
+\change_unchanged
+ 
+\change_inserted 415188692 1584962511
+és esetlegesen csapadék is 
+\change_unchanged
+követi.
+ 
+\change_deleted 415188692 1584962518
+Ugyan így
+\change_inserted 415188692 1584962521
+Hasonlóan
+\change_unchanged
+ történik melegfront esetén is
+\change_deleted 415188692 1584962525
+,
+\change_inserted 415188692 1584962525
+.
+
+\change_unchanged
+ 
+\change_deleted 415188692 1584962526
+e
+\change_inserted 415188692 1584962526
+E
+\change_unchanged
+bben az esetben a meleg levegő a hideg légtömeg alá furakodik, a légnyomás
+ permanensen csökken de a hidegfronttal ellentétben nem emelkedik hanem
+ marad az adott szinten.
+\change_inserted 415188692 1584962590
+
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 415188692 1584962609
+
+\size large
+Ezt beszéljük meg, mert elvesztettem a fonalat.
+ A meleg könnyebb, miért megy alúlra és marad is ott?
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+ Okklúziós frontról beszél
+\change_deleted 415188692 1584962650
+het
+\change_unchanged
+ünk ha a hideg és a meleg 
+\change_inserted 415188692 1584962659
+levegő 
+\change_unchanged
+egyszerre érkez
+\change_deleted 415188692 1584962982
+ik
+\change_inserted 415188692 1584962982
+nek
+\change_unchanged
+ meg.
+ Általánosságában kijelenthetjük, hogy a melegfrontot utoléri egy gyorsabban
+ mozgó hideg, s ennek hatásai érvényesülnek az időjárásban.
+\end_layout
+
+\begin_layout Standard
+
+\size large
+Pára akkor jön létre ha a Nap felmelegíti a vizet, 
+\change_inserted 415188692 1584963012
+majd 
+\change_unchanged
+ennek következtében pedig a levegőbe kerül vízgőz formájában.
+ Ennek mennyisége attól függ , hogy a víz melegedésének mértéke mekkora.
+\change_deleted 415188692 1584963034
+.
+
+\change_unchanged
+ Ezzel párhuzamosan a légkör párakapacitása is növekszik.
+ Páratartalom definiálására két 
+\change_deleted 415188692 1584963080
+lehetőséget különböztetünk meg
+\change_inserted 415188692 1584963089
+mérőszámot használhatunk:
+\change_deleted 415188692 1584963090
+,
+\change_unchanged
+ abszolút
+\change_inserted 415188692 1584963093
+-
+\change_unchanged
+ 
+\change_deleted 415188692 1584963097
+vízgőztartalom 
+\change_unchanged
+valamint 
+\change_deleted 415188692 1584963099
+a
+\change_unchanged
+ relatív vízgőz
+\change_deleted 415188692 1584963115
+ 
+\change_unchanged
+tartalom.
+ Az abszolút vízgőztartalom segítségével kimutathatjuk
+\change_deleted 415188692 1584963120
+ 
+\change_unchanged
+,
+\change_inserted 415188692 1584963121
+ 
+\change_unchanged
+hogy 1
+\begin_inset Formula ${\color{black}m^{3}}$
+\end_inset
+
+ levegőben milyen mértékű a grammban 
+\change_deleted 415188692 1584963150
+vett
+\change_inserted 415188692 1584963151
+mért
+\change_unchanged
+ vízgőz tartalom.
+ Ezzel ellentétben a relatív vízgőz
+\change_deleted 415188692 1584963158
+ 
+\change_unchanged
+tartalom azt jelenti
+\change_deleted 415188692 1584963161
+ 
+\change_unchanged
+, hogy a levegőben lévő vízpára az adott hőmérsékleten milyen százalékos
+ értéket mutat, a vízgőzzel teljesen telített levegő víztartalmához mérten.
+\end_layout
+
+\begin_layout Standard
+
+\size large
+A levegő
+\change_inserted 415188692 1584963233
+ esetében -
+\change_unchanged
+ mely légkörünk 
+\change_inserted 415188692 1584963241
+alapvető 
+\change_unchanged
+alkotó
+\change_deleted 415188692 1584963253
+ 
+\change_unchanged
+eleme
+\change_deleted 415188692 1584963256
+,
+\change_inserted 415188692 1584963256
+ -
+\change_unchanged
+ szélnek nevezzük 
+\change_inserted 415188692 1584963268
+azt a jelenséget, 
+\change_deleted 415188692 1584963269
+ha
+\change_inserted 415188692 1584963270
+amikor
+\change_unchanged
+ 
+\change_inserted 415188692 1584963288
+az 
+\change_unchanged
+közelítő
+\change_inserted 415188692 1584963296
+
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 415188692 1584963305
+
+\size large
+ha távolodik akkor az nem szél?
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+ vízszintes irányú áramlását végez.
+ A jelenség a helyi nyomáskülönbségeknek tudható be.
+ Sebességét méter/másodpercben
+\change_inserted 415188692 1584963360
+ adják meg
+\change_unchanged
+, erősségét 
+\change_inserted 415188692 1584963347
+pedig 
+\change_unchanged
+Beaufort-skálán osztályozzák.
+ A föld forgásából adódóan három egymáshoz kapcsoló
+\change_inserted 415188692 1584963452
+dó
+\change_unchanged
+ szélrendszer
+\change_inserted 415188692 1584963378
+t
+\change_unchanged
+ különböztetünk meg: 
+\end_layout
+
+\begin_layout Itemize
+
+\size large
+Passzátszél 
+\end_layout
+
+\begin_layout Itemize
+
+\size large
+Nyugati szél 
+\end_layout
+
+\begin_layout Itemize
+
+\size large
+Keleties sarki szél
+\end_layout
+
+\begin_layout Standard
+
+\change_inserted 415188692 1584963497
+
+\size large
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 415188692 1584963506
+
+\size large
+Ez direkt nincs behúzva? 
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+A szél irányát az határozza meg mely égtáj felől érkezik.
+ Tehát keleti szélről beszélhetünk, ha a szél keleti irányból nyugat felé
+ fúj
+\change_inserted 415188692 1584963572
+.
+\change_deleted 415188692 1584963575
+, ami az jelenti, hogy kelet felé fordulva szembe érkezik.
+
+\change_unchanged
+ Sok esetben fokkal is jellemzik,
+\change_inserted 415188692 1584963603
+ így
+\change_unchanged
+ 0° északi, 90° keleti, 180° déli valamint 270° esetén nyugati szélnek nevezzük
+ ezeket.
+ 
+\change_inserted 415188692 1584963628
+A 
+\change_deleted 415188692 1584963629
+M
+\change_inserted 415188692 1584963629
+m
+\change_unchanged
+eteorológiában 10 fokos pontosságot használnak.
+ 
+\change_inserted 415188692 1584963640
+A 
+\change_deleted 415188692 1584963660
+Levegő
+\change_inserted 415188692 1584963665
+lég
+\change_unchanged
+mozgás
+\change_deleted 415188692 1584963668
+ának
+\change_unchanged
+ sebessége alatt, magát a szél sebességét ért
+\change_deleted 415188692 1584963678
+elmezzük
+\change_inserted 415188692 1584963679
+jük
+\change_unchanged
+.
+ A meteorológusok számára Beaufort-skála szolgál a szél sebességének jellemzéséh
+ez.
+\change_inserted 415188692 1584963711
+
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 415188692 1584963751
+
+\size large
+Többször is említed a Beaufort-skálát, de sehol sem 
+\begin_inset Quotes pld
+\end_inset
+
+magyarázod
+\begin_inset Quotes prd
+\end_inset
+
+ meg.
+ Szerintem egy mondat jó lenne, hogy mi a skála jellemzője.
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+ Szélfajták: 
+\change_deleted 415188692 1584963784
+C
+\change_inserted 415188692 1584963784
+c
+\change_unchanged
+iklon,
+\change_inserted 415188692 1584963692
+ 
+\change_deleted 415188692 1584963787
+H
+\change_inserted 415188692 1584963787
+h
+\change_unchanged
+urrikán,
+\change_inserted 415188692 1584963694
+ 
+\change_deleted 415188692 1584963788
+T
+\change_inserted 415188692 1584963788
+t
+\change_unchanged
+ájfun,
+\change_inserted 415188692 1584963696
+ 
+\change_deleted 415188692 1584963790
+M
+\change_inserted 415188692 1584963790
+m
+\change_unchanged
+onszun,
+\change_inserted 415188692 1584963698
+ 
+\change_deleted 415188692 1584963793
+T
+\change_inserted 415188692 1584963793
+t
+\change_unchanged
+ornádó,
+\change_inserted 415188692 1584963700
+ 
+\change_deleted 415188692 1584963794
+O
+\change_inserted 415188692 1584963794
+o
+\change_unchanged
+rkán.
+
+\change_inserted 415188692 1584963801
+ 
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 415188692 1584963817
+
+\size large
+Ezekről is kellene egy-egy mondat, vagy nem kell az egész felsorolás ;)
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+
+\end_layout
+
+\begin_layout Standard
+
+\change_inserted 415188692 1584963822
+
+\size large
+A 
+\change_deleted 415188692 1584963822
+L
+\change_inserted 415188692 1584963823
+l
+\change_unchanged
+evegőbe 
+\change_deleted 415188692 1584963835
+a 
+\change_unchanged
+felszálló vízpárából parányi vízcseppek és jégkristályok halmaza alakul
+ ki
+\change_inserted 415188692 1584963868
+.
+ Ez a jelenség
+\change_deleted 415188692 1584963871
+, ezek 
+\change_unchanged
+a légkörünkben 
+\change_inserted 415188692 1584963877
+jól 
+\change_unchanged
+található
+\change_deleted 415188692 1584963887
+ak
+\change_unchanged
+, 
+\change_inserted 415188692 1584963890
+és a 
+\change_unchanged
+mindennapokban felhőnek nevezzük.
+ Ezek eredményeképp
+\change_inserted 415188692 1584963910
+en
+\change_unchanged
+ csapadék, 
+\change_inserted 415188692 1584963932
+pl.
+ 
+\change_unchanged
+eső vagy akár jégeső is keletkezhet, 
+\change_inserted 415188692 1584963938
+de 
+\change_unchanged
+a talaj közelében is találkozhatunk vele, köd formájában.
+ Diszperz rendszer
+\change_inserted 415188692 1584963985
+,
+\change_unchanged
+ azaz egymástól független részecskékből áll, amely a fény útját is elejét
+ veszi
+\change_inserted 415188692 1584964029
+
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 415188692 1584964043
+Hogy, mit csinál a fény útjával? :)
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+.
+ 
+\change_deleted 415188692 1584964083
+Magasságuk és kiterjedésük alapján osztályozzuk őket.
+
+\change_unchanged
+ A felhők tipizálásánál a következő tulajdonságokat vesszük figyelembe:
+ méret, forma, szerkezet, textúra, fényhatás, szín, 
+\change_inserted 415188692 1584964105
+valamint 
+\change_unchanged
+a felhőalap magassága.
+ Forma szerint 14 felhőtípust különböztetünk meg, anyaguk szerint pedig
+ víz-,
+\change_inserted 415188692 1584964114
+ 
+\change_unchanged
+jég és vegyes halmazállapotú felhőket.
+\end_layout
+
+\begin_layout Subsection
+Meteorológia
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename meteokep.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size large
+A meteorológia 
+\change_inserted 415188692 1584964157
+- 
+\change_unchanged
+vagy ha régies nevét használjuk légtüneménytan
+\change_inserted 415188692 1584964168
+ -
+\change_deleted 415188692 1584964169
+,
+\change_unchanged
+ előrejelzésekkel és időjárási folyamatokkal foglalkozik.
+ 
+\change_inserted 415188692 1584964176
+Az 
+\change_deleted 415188692 1584964176
+I
+\change_inserted 415188692 1584964177
+i
+\change_unchanged
+dőjárás megfigyelése már az ókorban elkezdődött, 
+\change_inserted 415188692 1584964186
+az 
+\change_unchanged
+első feljegyzések már 
+\change_inserted 415188692 1584964192
+a 
+\change_unchanged
+mezopotámiai kultúrából származnak, de találhatunk ókori görög-római és
+ kínai annotáció
+\change_inserted 415188692 1584964205
+t
+\change_unchanged
+ is.
+ Maga a kifejezés Arisztotelész Meteorológia című művéből származik.
+ Galileo Galilei az elsők között készített termosz
+\change_deleted 415188692 1584964271
+pók
+\change_inserted 415188692 1584964273
+kóp
+\change_unchanged
+ot
+\change_inserted 415188692 1584964280
+
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 415188692 1584964304
+
+\size large
+Azért az biztos, hogy a termoszpók sokkal izgalmasabb lenne :D
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+, melynek segítségével bizonyította a hőmérséklet lehetőségét.
+ Saját termoszk
+\change_deleted 415188692 1584964318
+o
+\change_inserted 415188692 1584964318
+ó
+\change_unchanged
+pja ugyanis jelezte a meleg levegő tágulásának jelenségét.
+ Blaise Pascal fedezte fel, hogyha 
+\change_deleted 415188692 1584964347
+egyre csak 
+\change_unchanged
+emelkedünk a tengerszinttől akkor a légnyomás csökken, amiből következtethetünk
+ arra , hogy a légkör felett vákuum van.
+ Anders Celsius nevéhez fűződik az általunk is mindennap használt hőmérőbeosztás.
+ Robert Hooke, Edmun Halley, George Hadley, Benjamin Franklin, Luke Howard
+ és még rengetek más embert hozzájárult ahhoz, hogy napjainkban pontos méréseket
+ készíthessünk.
+\end_layout
+
+\begin_layout Standard
+
+\change_inserted 415188692 1584964414
+
+\size large
+A 
+\change_deleted 415188692 1584964415
+N
+\change_inserted 415188692 1584964415
+n
+\change_unchanged
+umerikus időjárás
+\change_inserted 415188692 1584964429
+-
+\change_deleted 415188692 1584964428
+ 
+\change_unchanged
+előrejelzés a 
+\change_deleted 415188692 1584964453
+20
+\change_inserted 415188692 1584964453
+XX
+\change_unchanged
+.
+ század elején vált elérhetővé, a légkör
+\change_inserted 415188692 1584964474
+i
+\change_unchanged
+ dinamika megismerésének és fejlődésének eredményeképp.
+ Lewis Fry Richardson 
+\change_inserted 415188692 1584964487
+
+\begin_inset Quotes pld
+\end_inset
+
+
+\change_unchanged
+Időjárás-előrejelzés numerikus eljárásokkal
+\change_inserted 415188692 1584964490
+
+\begin_inset Quotes prd
+\end_inset
+
+
+\change_unchanged
+ című könyvében olvashatunk arról, hogy rövidebb időszakok előrejelzésére
+ numerikus megoldás található,
+\change_inserted 415188692 1584964501
+ 
+\change_unchanged
+viszont csak fontos légköri áramlat elhanyagolásával lehetséges
+\change_inserted 415188692 1584964530
+
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 415188692 1584964540
+
+\size large
+Én - bevallom - nem nagyon értem ezt a mondatot.
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+.
+ A
+\change_inserted 415188692 1584964610
+ kezdeti időjárás-előrejelzéseknél komoly gondot okozott, hogy a
+\change_unchanged
+ 
+\change_deleted 415188692 1584964550
+számításokhoz
+\change_inserted 415188692 1584964562
+kalkulációkhoz
+\change_unchanged
+ létfontosságú számok túlságosan nagynak bizonyultak 
+\change_inserted 415188692 1584964617
+- 
+\change_unchanged
+egészen az első számítógépek megjelenéséig.
+ Az 1950-es évek elején a számítógépe
+\change_deleted 415188692 1584964638
+s
+\change_inserted 415188692 1584964645
+k már lehetővé tették a 
+\change_deleted 415188692 1584964650
+ 
+\change_unchanged
+számítások 
+\change_deleted 415188692 1584964655
+elérhetővé váltak
+\change_inserted 415188692 1584964657
+elvégzését
+\change_unchanged
+.
+ Az első időjárás-előrejelzések a barotropikus modellekből származ
+\change_deleted 415188692 1584964719
+n
+\change_inserted 415188692 1584964719
+t
+\change_unchanged
+ak, 
+\change_deleted 415188692 1584964725
+a
+\change_unchanged
+melyekből sikeresen meg lehet
+\change_inserted 415188692 1584964728
+ett
+\change_unchanged
+ 
+\change_deleted 415188692 1584964677
+jósolni
+\change_inserted 415188692 1584964678
+becsülni
+\change_unchanged
+ a középmagas légkörben elhelyezkedő
+\change_inserted 415188692 1584964706
+,
+\change_unchanged
+ nagy mozgású Rossby hullámokat, amik az alacsony, illetve a magas légköri
+ nyomást rajzolják ki.
+\end_layout
+
+\begin_layout Standard
+
+\change_inserted 415188692 1584964758
+
+\size large
+A 
+\change_deleted 415188692 1584964760
+M
+\change_inserted 415188692 1584964760
+m
+\change_unchanged
+űholdas megfigyelések 
+\change_deleted 415188692 1584964772
+lehetőségének megkezdését
+\change_unchanged
+ az 1960-as években vált
+\change_inserted 415188692 1584964780
+ak
+\change_unchanged
+ elérhetővé, 
+\change_inserted 415188692 1584964789
+mivel a 
+\change_unchanged
+TIROS-1 időjárás-előrejelző műhold ekkor került fellövésre.
+ Segítségével rendkívül gyorsan, mondhatni pillanatok alatt adatokat juttattak
+ a világ egyik pontjából a másikba.
+ Az időjárási
+\change_inserted 415188692 1584964859
+-
+\change_unchanged
+ 
+\change_deleted 415188692 1584964861
+műholdak 
+\change_unchanged
+és a különböző magasságokban keringő
+\change_inserted 415188692 1584964824
+,
+\change_unchanged
+ általános célú megfigyelőműholdak
+\change_deleted 415188692 1584964851
+kal
+\change_unchanged
+ elengedhetetlen eszközévé váltak
+\change_inserted 415188692 1584964880
+ a meteorológusoknak
+\change_unchanged
+.
+ Napjainkban azon éghajlati modelleket fejlesztik, amelyek összeegyeztethetőek
+ a régebbi időjárás-előrejelző rendszerekkel.
+ Ezen éjhajlati modellek segítségével megfigyelhetőek a hosszan tartó éghajlatvá
+ltozások.
+ 
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size large
+Az időjárás előrejelzéséhez különböző eljárások léteznek: 
+\end_layout
+
+\begin_layout Itemize
+
+\size large
+Változatlanság 
+\end_layout
+
+\begin_layout Itemize
+
+\size large
+Tendencia 
+\end_layout
+
+\begin_layout Itemize
+
+\size large
+Éghajlattan 
+\end_layout
+
+\begin_layout Itemize
+
+\size large
+Analóg módszer 
+\end_layout
+
+\begin_layout Itemize
+
+\size large
+Numerikus időjárás-előrejelzés 
+\end_layout
+
+\begin_layout Standard
+
+\change_inserted 415188692 1584964944
+
+\size large
+A 
+\change_deleted 415188692 1584964944
+V
+\change_inserted 415188692 1584964944
+v
+\change_unchanged
+áltozatlanság szerint a kondíciók nem változnak, hosszútávú előrejelzés
+ esetén
+\change_inserted 415188692 1584964953
+ a
+\change_unchanged
+ leghasznosabb módszer.
+ 
+\change_inserted 415188692 1584964960
+A 
+\change_deleted 415188692 1584964960
+T
+\change_inserted 415188692 1584964961
+t
+\change_unchanged
+endencia alatt értjük a frontok sebességének és irányának definiálását,
+ valamint a magas és 
+\change_deleted 415188692 1584965007
+az 
+\change_unchanged
+alacsony légnyomással bíró lokációk, felhős és csapadékos területek
+\change_deleted 415188692 1584964984
+et
+\change_unchanged
+ meghatározását is.
+ 
+\change_inserted 415188692 1584965015
+Az 
+\change_deleted 415188692 1584965016
+É
+\change_inserted 415188692 1584965016
+é
+\change_unchanged
+ghajlattan a tapasztalati adatok felhasználását jelenti az adott nap meghatározá
+sához.
+ Összetett eljárásnak mondhatjuk az analóg módszert
+\change_inserted 415188692 1584965041
+,
+\change_unchanged
+ mely régi adathalmazokból hasonló időjárási körülményeket mutat
+\change_inserted 415188692 1584965060
+
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 415188692 1584965066
+
+\size large
+Ez a mondat így fura
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+.
+ 
+\change_inserted 415188692 1584965075
+A 
+\change_deleted 415188692 1584965075
+N
+\change_inserted 415188692 1584965076
+n
+\change_unchanged
+umerikus időjárás-előrejelzés 
+\change_inserted 415188692 1584965082
+pedig 
+\change_unchanged
+számítógépek segítségével
+\change_inserted 415188692 1584965095
+,
+\change_unchanged
+ magas számú változó
+\change_deleted 415188692 1584965218
+k
+\change_unchanged
+ használatával, légköri modellt generál.
+ 
+\change_inserted 415188692 1584965147
+Napjainkban ez a 
+\change_deleted 415188692 1584965148
+L
+\change_inserted 415188692 1584965148
+l
+\change_unchanged
+egsikeresebb és legszélesebben használt módszer.
+ 
+\end_layout
+
+\begin_layout Subsection
+Ember
+\change_inserted 415188692 1584965263
+i hatásai
+\change_deleted 415188692 1584965265
+re való hatása
+\change_unchanged
+
+\end_layout
+
+\begin_layout Standard
+
+\size large
+Manapság a populáció fele időjárás-érzékeny.
+ Az időjárás-érzékenység akár társadalmi betegségnek is mondható
+\change_inserted 415188692 1584965436
+.
+\change_deleted 415188692 1584965438
+,
+\change_unchanged
+ 
+\change_deleted 415188692 1584965378
+ha 
+\change_inserted 415188692 1584965467
+Ha a 
+\change_unchanged
+természetes környezeti hatásoktól rendszeresen elszigetelődünk
+\change_inserted 415188692 1584965477
+, akkor
+\change_unchanged
+ 
+\change_deleted 415188692 1584965478
+és
+\change_unchanged
+ 
+\change_deleted 415188692 1584965488
+ezáltal
+\change_unchanged
+ csökken a 
+\change_inserted 415188692 1584965496
+teljes társadalmi 
+\change_deleted 415188692 1584965396
+szervezeti teljesítőképessége
+\change_inserted 415188692 1584965504
+teljesítőképesség.
+\change_deleted 415188692 1584965507
+, valamint megnő az érzékenységünk az időjárással szemben.
+
+\change_unchanged
+ Minél korosabb az adott egyén annál 
+\change_inserted 415188692 1584965527
+inkább jellemző, hogy 
+\change_unchanged
+jobban reflektál az időjárás-változásokra.
+ Mivel idővel lassabban játszódnak le a belső folyamatok, testünk nem tud
+ oly módon 
+\change_deleted 415188692 1584965544
+igazodni
+\change_inserted 415188692 1584965546
+alkalmazkodni
+\change_unchanged
+ mint korábban
+\change_deleted 415188692 1584965549
+ 
+\change_unchanged
+, így időjárás-érzékennyé válunk.
+ Tünetek közé tartok az: idegesség, alvási zavarok, kimerültség de akár
+ a depresszió, szív- és keringési zavarok is.
+ Kisgyermekek és csecsemők szintén 
+\change_deleted 415188692 1584965578
+reagálnak
+\change_inserted 415188692 1584965581
+érzékenyek lehetnek
+\change_unchanged
+ a
+\change_inserted 415188692 1584965589
+z
+\change_unchanged
+ 
+\change_inserted 415188692 1584965592
+időjárás-
+\change_unchanged
+változásokra.
+ Esetükben csökken a koncentrációképesség valamint a felfogóképesség,
+\change_inserted 415188692 1584965605
+ és
+\change_unchanged
+ kimerültebbé is válhatnak.
+ Kutatások szerint a nők gyakrabban és 
+\change_deleted 415188692 1584965636
+jobban 
+\change_unchanged
+érzékenyebbe
+\change_inserted 415188692 1584965641
+n reagálnak
+\change_deleted 415188692 1584965648
+k
+\change_unchanged
+ a szélsőséges időjárás
+\change_deleted 415188692 1584965651
+ 
+\change_inserted 415188692 1584965652
+-
+\change_unchanged
+változásokra mint férfi társaik.
+ Ez a különbség már fiatalabb, kisiskolás korb
+\change_deleted 415188692 1584965665
+á
+\change_inserted 415188692 1584965665
+a
+\change_unchanged
+n is 
+\change_deleted 415188692 1584965668
+felmerül
+\change_inserted 415188692 1584965670
+előfordul
+\change_unchanged
+.
+\end_layout
+
+\begin_layout Standard
+
+\size large
+Az időjárás-érzékenység a földrajzi elhelyezkedésen is múlik.
+ Példaként említeném, hogy a közép-európai népek rendkívül érzékenyek, mivel
+ a közepes szélességeken élők, átlagosan akár hat naponta ki vannak téve
+ 
+\change_inserted 415188692 1584965690
+egy-egy 
+\change_unchanged
+front
+\change_inserted 415188692 1584965693
+ 
+\change_unchanged
+átvonulás
+\change_inserted 415188692 1584965697
+á
+\change_unchanged
+nak.
+ Vizsgálatok az mutatják, hogy mi magyarok általában a melegfrontra vagyunk
+ érzékenyek
+\change_inserted 415188692 1584965717
+,
+\change_unchanged
+ ellenben a franciák vagy az angolok a hidegre.
+\end_layout
+
+\begin_layout Standard
+
+\size large
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Használt technológiák
+\end_layout
+
+\begin_layout Standard
+\begin_inset Wrap figure
+lines 0
+placement o
+overhang 0col%
+width "50col%"
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename apikep1.png
+	scale 50
+
+\end_inset
+
+ 
+\begin_inset Graphics
+	filename sqlkep1.png
+	scale 50
+
+\end_inset
+
+ 
+\begin_inset Graphics
+	filename pythonkep1.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\change_inserted 415188692 1584965746
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 415188692 1584965754
+Miért kisebb inentől a betű?
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+A szakdolgozat kezdeti fázisában alaposan átgondoltam, valamint mérlegeltem,
+ hogy melyek azok technológiák amik elengedhetetlenek lehetnek a megvalósításhoz.
+ Tanulmányaim során is találkoztam már nagy részükkel, viszont az internet
+ segítségévél 
+\change_deleted 415188692 1584965798
+é
+\change_inserted 415188692 1584965798
+i
+\change_unchanged
+s tájékozódtam, továbbá kikértem tanáraim és az egyetem munkatársainak tanácsát
+ is.
+
+\change_inserted 415188692 1584965809
+ 
+\change_unchanged
+A dolgozat elkészítéséhez első
+\change_deleted 415188692 1584965833
+ 
+\change_unchanged
+sorban szükségem volt egy adatbázisra, 
+\change_inserted 415188692 1584965848
+amihez 
+\change_deleted 415188692 1584965851
+már
+\change_inserted 415188692 1584965851
+az
+\change_unchanged
+ általam is jól ismert és 
+\change_inserted 415188692 1584965888
+korábban már 
+\change_unchanged
+használt Microsoft S
+\change_deleted 415188692 1584965868
+ql
+\change_inserted 415188692 1584965871
+QL
+\change_unchanged
+ Server-re esett a választásom.
+ Az adatok begyűjtéséhez
+\change_inserted 415188692 1584965896
+,
+\change_unchanged
+ 
+\change_deleted 415188692 1584965898
+és 
+\change_unchanged
+vizualizálásához
+\change_inserted 415188692 1584965900
+ és
+\change_deleted 415188692 1584965901
+,
+\change_inserted 415188692 1584965903
+ az
+\change_unchanged
+ elemzéséhez a Python programozási nyelv és 
+\change_inserted 415188692 1584965925
+annak 
+\change_unchanged
+különböző könyvtárainak lehetőségeivel éltem.
+ Fontos még megemlítenem azt is, hogy az adatok begyűjtés
+\change_inserted 415188692 1584965940
+e
+\change_deleted 415188692 1584965940
+é
+\change_unchanged
+ alkalmazásprogramozási interfészek azaz API hívások segítségével történt.
+ A következőben ezeket szeretném részletesen bemutatni, valamint szemléltetni
+ melyek azok az okok, ami
+\change_inserted 415188692 1584965959
+k
+\change_unchanged
+ miatt az említett technológiák mellett döntöttem.
+ 
+\end_layout
+
+\begin_layout Subsection
+Alkalmazási interfészek
+\end_layout
+
+\begin_layout Standard
+Angol nyelven application programming interface kifejezésként ismert, rövidítése
+ API.
+ Ha egyszerűen próbáljuk megmagyarázni az API tulajdonképpen egy olyan szoftverk
+özvetítő közeg, ahol két applikáció képes egymással kommunikálni.
+ Máshogy fogalmazva, az API egy üzenetküldő ami az egyik oldal kérését továbbítj
+a a másik oldal felé, majd ennek válaszát visszajuttatja a kezdeményezőnek.
+ Ha egy fejlesztő egy alkalmazást készít, nem feltétlen a nulláról indul
+ neki a feladatnak.
+ Az API-k lehetővé teszik a fejlesztők számára, hogy ismétlődő, mégis összetett
+ folyamatokat készítsenek egy rövidebb kódot felhasználva, és ezek a későbbiek
+ folyamán újrafelhasználhatóvá válnak .
+ Mivel az API-k kezelhetősége egyszerű és egységes, rendkívül
+\change_inserted 415188692 1584966032
+i mértékben
+\change_unchanged
+ hozzájárulnak ahhoz , hogy a mai alkalmazásfejlesztés gyors ütemével képesek
+ legyen
+\change_inserted 415188692 1584966052
+ek
+\change_unchanged
+ lépést tartani a fejlesztők
+\change_deleted 415188692 1584966069
+,
+\change_inserted 415188692 1584966069
+:
+\change_unchanged
+ 
+\change_deleted 415188692 1584966072
+t
+\change_inserted 415188692 1584966072
+T
+\change_unchanged
+ovábbá
+\change_inserted 415188692 1584966077
+i előny, hogy
+\change_unchanged
+ az alkalmazás működési sebességére is pozitív hatással van az, hogy az
+ API kérések válaszideje szűk határidőn belül megvalósul.
+\end_layout
+
+\begin_layout Standard
+Számos alkalmazási interfészt különböztetünk meg, mint például Java API
+ vagy alkalmazásokon belüli interfészek
+\change_deleted 415188692 1584966097
+ 
+\change_unchanged
+, melyek lehetővé teszik az egye
+\change_inserted 415188692 1584966133
+de
+\change_unchanged
+k objektumok közötti kommunikáció
+\change_inserted 415188692 1584966140
+t
+\change_unchanged
+ a Java nyelvben
+\change_inserted 415188692 1584966161
+
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 415188692 1584966166
+Ez egy furcsa mondat.
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+.
+ A programközpontú API-k között még találkozhatunk olyan web alapú alkalmazi
+ interfészekkel mint például a Simple Object Access Protocol
+\change_inserted 415188692 1584966152
+ 
+\change_unchanged
+(röviden SOAP) melynek üzenete
+\change_deleted 415188692 1584966174
+k
+\change_inserted 415188692 1584966174
+i
+\change_unchanged
+ XML alapúak, 
+\change_deleted 415188692 1584966198
+továbbá
+\change_inserted 415188692 1584966198
+vagy
+\change_unchanged
+ a távoli eljáráshívás
+\change_deleted 415188692 1584966179
+ 
+\change_unchanged
+, angolul Remote Procedure Call
+\change_deleted 415188692 1584966221
+ ismert
+\change_unchanged
+.
+ Fontos megemlíteni a REST azaz Representational State Transfer 
+\change_deleted 415188692 1584966266
+API-
+\change_inserted 415188692 1584966269
+protokol
+\change_unchanged
+t is mely
+\change_deleted 415188692 1584966276
+ek
+\change_unchanged
+ 
+\change_deleted 415188692 1584966284
+talán 
+\change_unchanged
+napjainkban 
+\change_inserted 415188692 1584966287
+talán 
+\change_unchanged
+a legelterjedtebb és legismertebb API
+\change_inserted 415188692 1584966256
+ technológia
+\change_unchanged
+.
+ Nagyjából 15 000 publikus, bárki számára 
+\change_deleted 415188692 1584966305
+elérhető
+\change_inserted 415188692 1584966308
+használható
+\change_unchanged
+ API 
+\change_deleted 415188692 1584966311
+el
+\change_unchanged
+érhető 
+\change_inserted 415188692 1584966313
+el 
+\change_unchanged
+a programozók számára, ezen felül 
+\change_inserted 415188692 1584966360
+pedig 
+\change_unchanged
+rengete
+\change_deleted 415188692 1584966344
+k
+\change_inserted 415188692 1584966344
+g
+\change_unchanged
+ magán
+\change_deleted 415188692 1584966339
+ 
+\change_unchanged
+kézben lévő
+\change_inserted 415188692 1584966370
+ szolgáltatás létezik
+\change_unchanged
+, 
+\change_deleted 415188692 1584966376
+a
+\change_unchanged
+melyeket a vállalatok saját belső és külső kapacitásuk bővítésére használnak.
+\end_layout
+
+\begin_layout Standard
+De miért is fontos ez számunkra és miben járul hozzá a megvalósításhoz?
+ Ahhoz
+\change_deleted 415188692 1584966394
+ 
+\change_unchanged
+, hogy időjárást tudjuk elemezni 
+\change_deleted 415188692 1584966415
+szükségünk van 
+\change_unchanged
+nagy mennyiségű időjárási adatra
+\change_inserted 415188692 1584966407
+ van szükségünk
+\change_unchanged
+.
+ Ezeket különböző
+\change_inserted 415188692 1584966434
+,
+\change_unchanged
+ már említett nyilvánosan elérhető API-k segítségével könnyen birtokolhatjuk.
+ Az adatokat API hívás segítségével tudjuk elérni.
+ Sokféle, különböző típusú kérés létezik.
+ Az adatok 
+\change_deleted 415188692 1584966452
+el
+\change_inserted 415188692 1584966452
+le
+\change_unchanged
+kérésére a leggyakrabban használt módszer a GET kérés.
+ Mivel eset
+\change_deleted 415188692 1584966499
+ünk
+\change_inserted 415188692 1584966500
+em
+\change_unchanged
+ben csak 
+\change_inserted 415188692 1584966474
+az 
+\change_unchanged
+adatok lekérésére létfontosságú, ezért a hagsúlyt GET kérések benyújtására
+ fordít
+\change_deleted 415188692 1584966507
+juk
+\change_inserted 415188692 1584966508
+ottam
+\change_unchanged
+.
+ Amikor 
+\change_deleted 415188692 1584966520
+az 
+\change_inserted 415188692 1584966653
+egy 
+\change_unchanged
+kérést 
+\change_deleted 415188692 1584966523
+teszünk
+\change_inserted 415188692 1584966656
+küldünk
+\change_unchanged
+ a 
+\change_deleted 415188692 1584966532
+felület
+\change_inserted 415188692 1584966534
+szolgáltató
+\change_unchanged
+ felé, az API-tól kapott 
+\change_deleted 415188692 1584966545
+válasz
+\change_inserted 415188692 1584966545
+eredmény
+\change_unchanged
+ válaszkód formájában érkezik meg
+\change_inserted 415188692 1584966579
+.
+ A kapott eredmény nem csak a kért adatokat tartalmazza, hanem
+\change_deleted 415188692 1584966580
+,
+\change_unchanged
+ ez mutatja a művelet sikerességét
+\change_inserted 415188692 1584966583
+ is
+\change_unchanged
+.
+ 
+\change_inserted 415188692 1584966588
+A 
+\change_deleted 415188692 1584966588
+K
+\change_inserted 415188692 1584966590
+k
+\change_unchanged
+ódok azért is fontosak mert megtudhatjuk
+\change_inserted 415188692 1584966601
+, hogy 
+\change_deleted 415188692 1584966601
+ 
+\change_unchanged
+mi
+\change_deleted 415188692 1584966602
+t
+\change_inserted 415188692 1584966607
+lyen hiba
+\change_unchanged
+ 
+\change_deleted 415188692 1584966610
+rontottunk el
+\change_inserted 415188692 1584966611
+történt
+\change_unchanged
+ 
+\change_inserted 415188692 1584966612
+egy-
+\change_unchanged
+egy hibás hívás esetén.
+ Annak érdekében, hogy sikeres kérést nyújtsunk be, 
+\change_inserted 415188692 1584966727
+nagy segítséget nyújtanak a fejlesztési dokumentációk.
+ 
+\change_deleted 415188692 1584966733
+amikor API-kkal dolgozunk, fontos, hogy olvassa el a hozzátartozó dokumentációt.
+\change_inserted 415188692 1584966734
+
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 415188692 1584966747
+amikor API-kkal dolgozunk, fontos, hogy olvassa el a hozzátartozó dokumentációt.
+ Ez kb Google Translate, nem?
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+ 
+\change_inserted 415188692 1584966778
+Gyakori eset, hogy 
+\change_deleted 415188692 1584966779
+E
+\change_inserted 415188692 1584966779
+e
+\change_unchanged
+gy adott kiszolgálón 
+\change_deleted 415188692 1584966784
+gyakran található 
+\change_unchanged
+több API is
+\change_inserted 415188692 1584966788
+ található.
+\change_deleted 415188692 1584966789
+,
+\change_unchanged
+ 
+\change_deleted 415188692 1584966790
+e
+\change_inserted 415188692 1584966790
+E
+\change_unchanged
+zeket az API-kat endpointoknak azaz végpontoknak nevezzük.
+ 
+\change_inserted 415188692 1584966805
+A 
+\change_deleted 415188692 1584966806
+V
+\change_inserted 415188692 1584966806
+v
+\change_unchanged
+égpontok tartalmazzák az
+\change_inserted 415188692 1584966814
+okat
+\change_unchanged
+ 
+\change_inserted 415188692 1584966816
+az 
+\change_unchanged
+adatokat melyek számunkra fontosak lehetnek.
+
+\change_inserted 415188692 1584966836
+ A mai, korszerű API-k 
+\change_deleted 415188692 1584966841
+ Ezek 
+\change_unchanged
+legtöbb esetben JSON formátum
+\change_inserted 415188692 1584966847
+ú 
+\change_deleted 415188692 1584966851
+ban vannak megadva
+\change_inserted 415188692 1584966856
+adatokkal kommunikálnak
+\change_unchanged
+.
+\end_layout
+
+\begin_layout Standard
+A JSON (JavaScript Object Notation) az API nyelve, adatszerkezetek kódolására
+ alkalmas.
+ Főként adatok továbbítására alkalmazzák szerve
+\change_deleted 415188692 1584966875
+z
+\change_inserted 415188692 1584966875
+r
+\change_unchanged
+ek és web alapú applikációk között.
+ Ember számára is olvasható adatcserére tervezték és modern programnyelvek
+ mellett is könnyen használható.
+\change_inserted 415188692 1584966917
+
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 415188692 1584966942
+Ezt egy kicsit rakd össze kérlek! Próbáltam, de se füle, se farka :)
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+
+\end_layout
+
+\begin_layout Subsection
+
+\change_inserted 415188692 1584966954
+A 
+\change_unchanged
+Python programnyelv 
+\end_layout
+
+\begin_layout Standard
+
+\change_inserted 415188692 1584966957
+A 
+\change_unchanged
+Python általános célú és maga
+\change_inserted 415188692 1584966961
+s
+\change_unchanged
+ szintű programozási nyelv.
+ 1989 végén Guido van Rossum holland származású programozó kezd
+\change_inserted 415188692 1584966988
+te meg a fejlesztését
+\change_deleted 415188692 1584966990
+ett el rajta dolgozni
+\change_unchanged
+, majd 1991-ben hozta nyilvánosságra.
+ Készítésekor a fő szempontok közé tartozott
+\change_deleted 415188692 1584966996
+ 
+\change_unchanged
+, hogy könnyen olvasható legyen és 
+\change_inserted 415188692 1584967005
+a 
+\change_unchanged
+programozói munka megkönnyítése előtérbe kerüljön szemben a futási sebességgel.
+ Támogatja a funkcionális, az objektumorientált, az imperatív és a procedurális
+ programozási paradigmákat.
+ Hasonlít
+\change_inserted 415188692 1584967087
+
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 415188692 1584967090
+Miben?
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+ a Perl,
+\change_inserted 415188692 1584967026
+ 
+\change_unchanged
+Ruby
+\change_inserted 415188692 1584967029
+ és 
+\change_deleted 415188692 1584967030
+,
+\change_unchanged
+Scheme nyelvekhez, valamint szigorú típusrendszer
+\change_inserted 415188692 1584967041
+
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 415188692 1584967042
+???
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+ birtokában van.
+
+\change_inserted 415188692 1584967035
+ 
+\change_unchanged
+A legfrissebb PYPL PopularitY of Programming Language rangsorolása szerint,
+ a tíz legnépszerűbb programozási nyelv egyike.
+ Felhasználható asztali grafikus felhasználói felületek, webhelyek és webes
+ alkalmazások fejlesztésére is.
+\change_inserted 415188692 1584967112
+
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 415188692 1584967127
+Már embedded-re is használható :( 
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+ A programozási nyelv egyszerű szintaxisszabályai továbbá megkönnyítik a
+ kódok olvashatóságát és az alkalmazás karbantarthatóságát.
+\change_inserted 415188692 1584967202
+
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 415188692 1584967170
+Ez megint Google Translate?
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\change_deleted 415188692 1584967208
+ Számos
+\change_inserted 415188692 1584967208
+Több
+\change_unchanged
+ oka 
+\change_inserted 415188692 1584967212
+is 
+\change_unchanged
+van annak
+\change_inserted 415188692 1584967215
+, hogy
+\change_unchanged
+ miért választottam a Python nyelvet a dolgozat alapjaként.
+\change_deleted 415188692 1584967197
+
+\end_layout
+
+\begin_layout Standard
+Első szempont az volt
+\change_deleted 415188692 1584967222
+ 
+\change_unchanged
+, hogy könnyen é
+\change_inserted 415188692 1584967225
+r
+\change_unchanged
+t
+\change_deleted 415188692 1584967231
+et
+\change_unchanged
+hető és olvasható legyen bárki számára.
+ 
+\change_inserted 415188692 1584967265
+A 
+\change_unchanged
+Python 
+\change_inserted 415188692 1584967269
+a 
+\change_unchanged
+könnyen elsajátítható programnyelvek közé tartozik
+\change_inserted 415188692 1584967280
+, mely
+\change_deleted 415188692 1584967282
+.
+ Ez
+\change_unchanged
+ elsősorban az angol nyelvhez való hasonlóságának köszönhető.
+
+\change_inserted 415188692 1584967248
+ 
+\change_unchanged
+A nyelv szintaxisára jellemző
+\change_inserted 415188692 1584967352
+,
+\change_unchanged
+ hogy nagyon kevés a szabály és 
+\change_inserted 415188692 1584967292
+a 
+\change_unchanged
+különleges eset.
+ Nyugodtan kijelenthetjük, hogy a Python
+\change_deleted 415188692 1584967310
+ban
+\change_unchanged
+ a kódolásra fókuszál, és nem a nyelvi bonyolultságok
+\change_inserted 415188692 1584967323
+at
+\change_unchanged
+ helyezi előtérbe.
+ A programozási nyelv 
+\change_deleted 415188692 1584967371
+másik
+\change_inserted 415188692 1584967372
+további
+\change_unchanged
+ vonzó aspektusa a hatékonysága és az olvashatósága
+\change_inserted 415188692 1584967384
+ is
+\change_unchanged
+.
+\end_layout
+
+\begin_layout Standard
+
+\change_inserted 415188692 1584967389
+A 
+\change_unchanged
+Python 
+\change_deleted 415188692 1584967437
+táborát
+\change_inserted 415188692 1584967440
+nyelv választását
+\change_unchanged
+ erősítette még az is, hogy 
+\change_deleted 415188692 1584967398
+B
+\change_inserted 415188692 1584967398
+C
+\change_unchanged
+ross-Platform 
+\change_inserted 415188692 1584967447
+valamint
+\change_deleted 415188692 1584967446
+és
+\change_unchanged
+ nyílt forráskódú.
+ Több mint húsz év telt el 
+\change_inserted 415188692 1584967491
+nyelv fejlesztésének kezdete óta, valamint
+\change_deleted 415188692 1584967498
+azóta, hogy a szóban forgó nyelv több platformon fut és nyílt forrású L
+\change_inserted 415188692 1584967498
+l
+\change_unchanged
+egyen Linux, Windows vagy 
+\change_deleted 415188692 1584967503
+M
+\change_inserted 415188692 1584967503
+m
+\change_unchanged
+acOS
+\change_inserted 415188692 1584967508
+ rendszerünk 
+\change_deleted 415188692 1584967508
+, 
+\change_unchanged
+a Python-ban írt kódok minden platformon működnek.
+ Ezek mellett sokoldalú 
+\change_inserted 415188692 1584967537
+is a 
+\change_unchanged
+nyelv és platform: A Python továbbra is nagyon releváns, mivel bármilyen
+ szoftverfejlesztésben felhasználható, legyen az lokális és felhőben kezelendő
+ projekt.
+ Támogatja objektum-orientált programozást is, de kisebb programok, tool-ok
+ fejlesztését is alkalmas
+\change_inserted 415188692 1584967614
+
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 415188692 1584967712
+Na ez már sok és sokk :) Ennyire nem jó a Python.
+ De ha igen, akkor át kellene kicsit dolgozni.
+ Egy fejezet arról, hogy mennyire jó a Python.
+ Tulajdonságok, az 
+\begin_inset Quotes pld
+\end_inset
+
+összes
+\begin_inset Quotes prd
+\end_inset
+
+ és pont.
+ Majd utána, hogy neked, a szakdolgozathoz miért jó.
+ De majd megbeszéljük szóban, ha nem tudod, hogy mire gondolok.
+ ;)
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+.
+\end_layout
+
+\begin_layout Standard
+
+\change_inserted 415188692 1584967748
+A Python a 
+\change_unchanged
+Data 
+\change_deleted 415188692 1584967729
+s
+\change_inserted 415188692 1584967729
+S
+\change_unchanged
+cience és 
+\change_inserted 415188692 1584967735
+a 
+\change_unchanged
+mesterséges intelligenciák legelterjedtebb nyelve napjainkban, mindkét témakör
+ nagyban érinti a dolgozat
+\change_inserted 415188692 1584967764
+om
+\change_unchanged
+ témáját is.
+ 
+\change_deleted 415188692 1584967778
+Python az adattudósok körében az egyik legelterjedtebb nyelv.
+ 
+\change_unchanged
+Legyen szó szoftverfejlesztésről vagy marketingről, napjainkban minden munkaügyi
+ szektor rengeteg adatot használ és hagy maga után, és ezek elemezése valamint
+ megértése nagyban befolyásolja további működésüket, stratégiájukat.
+ A 'Numpy' és a 'Panda' könyvtárak megjelenésével a Python kiemelkedő jelentőség
+űvé vált az adatvilágban.
+\change_inserted 415188692 1584967818
+
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 415188692 1584967841
+Jó lenne korábban említést tenni arról, hogy van könyvtár a Pythonban.
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+ A Python statisztikai, táblázatos és mátrix 
+\change_inserted 415188692 1584967856
+struktúrájú 
+\change_unchanged
+adatokat is kezel, ezeket „Matplotlib” és a „Seaborn” könyvtársak segítségével
+ képes vizualizálni.
+ Jelenünkben nem vitás, hogy a jövő informatikáját a mesterséges intelligencia
+ vezetni fogja.
+ A Python machine learning könyvtárai, például a Keras és a TensorFlow,
+ lehetővé teszik a számunkra gépi tanulás fejlesztését is.
+ Az olyan könyvtárak, mint például az OpenCV pedig elősegítik a számítógépes
+ látást vagy a képfelismerést.
+\end_layout
+
+\begin_layout Standard
+Valamint rengeteg grafikus felületet is támogat ezek között a projektben
+ megjelenik a Python Kivy könyvtára, amely szintén cross-platform és nyílt
+ forráskódú, valamint nagyon modern és letisztult külsőt kölcsönöz, abszolút
+ megállja helyét napjainkban.
+\end_layout
+
+\begin_layout Subsection
+Relációs Adatbázisok és Microsoft Sql Server
+\end_layout
+
+\begin_layout Standard
+Relációs adatbázisok olyan digitális adatbázisok melyek a relációs adatmodellen
+ alapszik.
+ A relációs adatbázisok kezeléséhez használt szoftvereket relációs adatbázis-kez
+elő rendszerek röviden RDBMS nevezzük.
+ Számos relációs adatbázisrendszernek képes az SQL azaz Structured Query
+ Language(magyarul lekérdezőnyelv) használatára, ez általa lehetőségünk
+ nyílik lekérdezni és karbantartani az adatbázisok tartalmát.
+ A táblák minden sora rendelkezik a saját egyedi azonosítóval, kulccsal.
+ A táblák sorai összekapcsolhatók más táblák soraival, ha rendelkeznek úgy
+ nevezett idegen kulccsal.
+\end_layout
+
+\begin_layout Standard
+Habár a feladat nem követeli meg az Microsoft Sql Server használatát, mégis
+ úgy láttam hosszútávon kifizetődőbb vele dolgozni.
+\end_layout
+
+\begin_layout Standard
+elakadtam :(( szívesen fogadokj tippeket miért is jobb az MSSQL, hirtelen
+ csak ennyi van hogy: gyorsabb, több funkció talán, T-SQL
+\change_inserted 415188692 1584967968
+
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 415188692 1584967983
+Megbeszéljük!
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Adatbázis tervezése
+\end_layout
+
+\begin_layout Standard
+Az adatbázis tervezésénél törekedtem a rekord-orientált felépítésre.
+ Habár a mező-orientált modellezésnek is számos előnye van
+\change_inserted 415188692 1584968011
+ -
+\change_deleted 415188692 1584968012
+,
+\change_unchanged
+ például nehézség nélkül programozható és effektív grafikus felhasználói
+ felület készítése is támogatott
+\change_deleted 415188692 1584968018
+,
+\change_inserted 415188692 1584968019
+ -
+\change_unchanged
+ 
+\change_deleted 415188692 1584968026
+mégis
+\change_inserted 415188692 1584968029
+ azonban
+\change_unchanged
+ nehezen változtatható a fejlesztés későbbi szakaszaiban
+\change_deleted 415188692 1584968039
+ 
+\change_unchanged
+, ami sok időveszteséggel ás hátulütővel járhat.
+ Természetesen a rekord-orientált modellnek is vannak hátrányai.
+ Az adatokat több táblából tudjuk csak elérni, ez 
+\change_deleted 415188692 1584968055
+sok
+\change_inserted 415188692 1584968056
+több
+\change_unchanged
+ lekérdezést vagy JOIN-t jelenthet melyek egyes fejlesztők számára első
+\change_deleted 415188692 1584968066
+re
+\change_unchanged
+ hangzásra bonyolultnak tűnhet.
+ Ezzel szemben viszont nagyon rugalmas, struktúrája könnyedén változtatható,
+ 
+\change_inserted 415188692 1584968080
+a 
+\change_unchanged
+módosítások
+\change_deleted 415188692 1584968082
+at
+\change_unchanged
+ nem jelentenék az alkalmazás teljesen összeomlását.
+ Ezek mellett 
+\change_inserted 415188692 1584968093
+legtöbbször 
+\change_unchanged
+sokkal hatékonyabb és időtálló modell.
+\end_layout
+
+\begin_layout Subsection
+Adatbázis Séma
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename database.png
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Az adatbázis összesen hét táblából áll össze.
+ Ezek rendere a következők:
+\change_inserted 415188692 1584968161
+
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 415188692 1584968180
+Lehet, hogy ezt később kéne csak megnézni, akkor ha már fix a séma.
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+
+\end_layout
+
+\begin_layout Itemize
+City: Különböző városok adatait tárolja.
+ 
+\change_deleted 415188692 1584968123
+Pontosabban
+\change_inserted 415188692 1584968128
+Részletesebben a
+\change_unchanged
+ városok neveit, hosszúsági
+\change_inserted 415188692 1584968133
+-
+\change_unchanged
+ valamint szélességi körök koordinátáit.
+\end_layout
+
+\begin_layout Itemize
+API: API szolgáltatok adatait tárolja.
+ API-hoz tartozó kulcsok melyek segítségével az API hívások történnek, valamint
+ a forrás ahonnan az adatokat lekérjük.
+\end_layout
+
+\begin_layout Itemize
+Attribute: Tárolja az attribútumomat melyeket vizsgálunk, például: szélirány,hőm
+érséklet.
+ Ezek neveit és típusát találjuk a táblában.
+\end_layout
+
+\begin_layout Itemize
+JsonAttributes: Az adott szolgáltatóhoz tartozó attribútumokat tárolja.
+ Megtalálható az API és az attribútum azonosítója, valamint a JSON-ban használt
+ név.
+ 
+\end_layout
+
+\begin_layout Itemize
+Weather: Az időjárási adatokat azonosítására szolgál.
+ Tárolja a lekérés pontos időpontját, mely napra kértük le az előrejelzést,
+ továbbá városhoz és az API-hoz tartozó azonosítót.
+ Fontos tudni mely városra kértük le az előrejelzést milyen szolgáltatón
+ keresztül.
+\end_layout
+
+\begin_layout Itemize
+WeatherAttributes: Tárolja az pontos értékeket az adott attribútumokhoz.
+ Szöveges érték esetén csak a ezen értékek azonosítója tárolandó.
+\end_layout
+
+\begin_layout Itemize
+ValueVC: Szöveges értékek tárolására szolgál, segítségével rengeteg felesleges
+ adattól szabadulunk meg, az ugyanolyan elnevezésű adatok mint például 
+\begin_inset Quotes pld
+\end_inset
+
+napos idő
+\begin_inset Quotes prd
+\end_inset
+
+ elég egyszer eltárolni és mindig hivatkozni rá.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Az ábrán látható, hogy egyes adatokat csak úgy tudunk lekérdezni, hogyha
+ több táblát összekapcsolunk.
+ Például ha szeretnénk megtudni
+\change_deleted 415188692 1584968201
+ 
+\change_unchanged
+,
+\change_inserted 415188692 1584968202
+ 
+\change_unchanged
+hogy Veszprémben egy bizonyos szolgáltató
+\change_deleted 415188692 1584968227
+nál
+\change_unchanged
+, milyen hőmérsékletet ígért egy adott időpontra, szükséges összekapcsolni
+ a City, Api, JsonAttributes, Attribute, Weather és WeatherAttributes táblákat.
+ Mint említettem ezek elsőre összetettnek és körülményesnek tűnik, viszont
+ egy új tábla 
+\change_inserted 415188692 1584968249
+vagy egy új attribútum 
+\change_unchanged
+könnyedén beépíthető.
+\end_layout
+
+\begin_layout Subsection
+Nézetek és triggerek
+\end_layout
+
+\begin_layout Standard
+erről is gondoltam irni pár sort
+\change_inserted 415188692 1584968192
+
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 415188692 1584968266
+Mindenképp! :) Pont itt oldanád fel a rekord-orientált adatmodell 
+\begin_inset Quotes pld
+\end_inset
+
+hibáit
+\begin_inset Quotes prd
+\end_inset
+
+.
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Adatgyűjtés Python segítségével
+\end_layout
+
+\begin_layout Standard
+rövid ismertető
+\end_layout
+
+\begin_layout Subsection
+API hívások, API-k amiket használok
+\end_layout
+
+\begin_layout Standard
+free oldalak bemutatása, dokumentáció és lehetőségek, api hívások pythonba
+\change_inserted 415188692 1584968607
+n
+\change_unchanged
+
+\end_layout
+
+\begin_layout Subsection
+JSON Feldolgozás
+\end_layout
+
+\begin_layout Standard
+Json feldolgozása python segítségével
+\end_layout
+
+\begin_layout Subsection
+Adatbázis és Python kapcsolata
+\end_layout
+
+\begin_layout Standard
+milyen király hogy adatbázisba
+\change_inserted 415188692 1584968279
+n
+\change_unchanged
+ minden benne -> le
+\change_inserted 415188692 1584968282
+ 
+\change_unchanged
+tudok kérni minden
+\change_inserted 415188692 1584968286
+t
+\change_unchanged
+ + tárolás
+\end_layout
+
+\end_body
+\end_document
