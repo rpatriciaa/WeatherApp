@@ -1,5 +1,6 @@
 import json
 from abc import ABC
+from datetime import datetime
 
 
 class DataCollector(ABC):
@@ -15,8 +16,8 @@ class DataCollector(ABC):
     def forecast_data_collector(self):
         return self.__data_collector(False)
 
-    def forecast_date(self):
-        print('TODO')
+    def forecast_data_time(self):
+        return self.__forecast_time()
 
     @staticmethod
     def __getvalue(path, data):
@@ -42,6 +43,23 @@ class DataCollector(ABC):
         except ValueError as err:
             return True
         return False
+
+    def __forecast_time(self):
+        values = []
+        data = self.forecast_json
+        base = self.api['api']['JSON_Path_FC']
+        time_attr = self.api['api']['TIME_FC']
+        if isinstance(data, int):  # AccuWeather int-ed ad vissza, ha hiba van...
+            return None
+        data = self.__getvalue(base, data)
+        if time_attr != 'Date':
+            for i in range(len(data)):
+                dt_object = datetime.fromtimestamp(self.__getvalue(time_attr, data[i]))
+                values.append(str(dt_object))
+        else:
+            for i in range(len(data)):
+                values.append(self.__getvalue(time_attr, data[i]))
+        return values
 
     def __data_collector(self, current=True):
         if current:

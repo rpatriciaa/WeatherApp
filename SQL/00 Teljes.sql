@@ -45,6 +45,7 @@ CREATE TABLE [API] (
   [APIName]      VARCHAR(30),
   [JSON_Path_CC] VARCHAR(200),
   [JSON_Path_FC] VARCHAR(200),
+  [TIME_FC] VARCHAR(200),
   [Active]       BIT DEFAULT 1
 )
 GO
@@ -135,7 +136,8 @@ CREATE OR ALTER VIEW [dbo].[vCityWeather] AS
     FROM [City] AS [c]
     JOIN      [Weather] AS [w] ON [c].[CityID] = [w].[CityID]
     JOIN      [API] AS [a] ON [a].[APIID] = [w].[APIID]
-    JOIN      [JSONAttributes] AS [j] ON [j].[APIID] = [a].[APIID]
+    JOIN     [JSONAttributes] AS [j] ON [j].[APIID] = [a].[APIID]
+    JOIN      [Attribute] AS [attr] ON [attr].[AttrID] =  [j].[AttrID]
     JOIN      [WeatherValues] AS [wv] ON [wv].[WeatherID] = [w].[WeatherID]
     LEFT JOIN [ValueVC] AS [v] ON [wv].[ValueVC_ID] = [v].[ValueVC_ID]
 GO
@@ -171,15 +173,14 @@ BEGIN
     JOIN [API] AS [a] ON [a].[Name] = [i].[Name]
     JOIN [City] AS [c] ON [c].[CityName] = [i].[CityName]
 
-  --   INSERT [WeatherValues] ([WeatherID], [AttrID], [ValueVC_ID], [ValuesInt], [ValuesMoney])
---   SELECT DISTINCT [w].[WeatherID], [ja].[AttrID], [v].[ValueVC_ID], [i].[ValuesInt], [i].[ValuesMoney]
---     FROM [inserted] AS [i]
---     JOIN      [API] AS [a] ON [a].[Name] = [i].[Name]
---     JOIN      [City] AS [c] ON [c].[CityName] = [i].[CityName]
---     JOIN      [Weather] AS [w] ON [w].[APIID] = [a].[APIID] AND [w].[CityID] = [c].[CityID] AND [w].[QueryDate] = @date
---     LEFT JOIN [ValueVC] AS [v] ON [i].[ValueVarchar] = [v].[ValueVarchar]
---     LEFT JOIN [JSONAttributes] AS [ja] ON [i].[JSON_Path_CC] = [ja].[JSON_Path_CC]
---         AND [i].[JSON_Attr_CC] = [ja].[JSON_Attr_CC]
+  INSERT [WeatherValues] ([WeatherID], [AttrID], [ValueVC_ID], [ValuesInt], [ValuesMoney])
+    SELECT DISTINCT [w].[WeatherID], [attr].[AttrID], [v].[ValueVC_ID], [i].[ValuesInt], [i].[ValuesMoney]
+     FROM [inserted] AS [i]
+     JOIN      [API] AS [a] ON [a].[Name] = [i].[Name]
+     JOIN      [City] AS [c] ON [c].[CityName] = [i].[CityName]
+     JOIN      [Weather] AS [w] ON [w].[APIID] = [a].[APIID] AND [w].[CityID] = [c].[CityID] AND [w].[QueryDate] = @date
+     LEFT JOIN [ValueVC] AS [v] ON [i].[ValueVarchar] = [v].[ValueVarchar]
+     LEFT JOIN [Attribute] AS [attr] ON [i].[AttrID] = [attr].[AttrID]
 END
 GO
 
@@ -256,38 +257,41 @@ GO
 
 SET IDENTITY_INSERT [dbo].[API] ON
 INSERT [dbo].[API] ([APIID], [APIKey], [Name], [URL], [CurrentCast], [ForeCast], [Location], [APIName],
-                    [JSON_Path_CC], [JSON_Path_FC], [Active])
+                    [JSON_Path_CC], [JSON_Path_FC],[TIME_FC], [Active])
   VALUES (1, 'd43412fab3e9aa840c40c50ad38cc6e9', 'Dark Sky',
           'https://api.darksky.net/forecast/',
           '{url}{apikey}/{location}?&units=ca&lang=en',
           '{url}{apikey}/{location}?&units=ca&lang=en&exclude=daily&extend=hourly',
           '',
           'DarkSky',
-          'currently', 'hourly/data',
+          'currently', 'hourly/data','time',
           1),
+
          (2, 'G6XBgWa9eLvzcIIRsJj6abhi4OsEXz0k', 'Accu Weather',
           'http://dataservice.accuweather.com/',
           '{url}forecasts/v1/hourly/1hour/{location}?apikey={apikey}&language=en-us&details=true&metric=true',
           '{url}forecasts/v1/daily/5day/{location}?apikey={apikey}&language=en-us&details=true&metric=true',
           '{url}locations/v1/cities/search?apikey={apikey}&q={location},HU&language=en-us',
           'AccuWeather',
-          '', 'DailyForecasts',
+          '', 'DailyForecasts','Date',
           1),
+
          (3, '63f727b2e84f011a46f960fd7e1a3680', 'Open Weather',
           'https://api.openweathermap.org/data/',
           '{url}2.5/weather?q={location},hu&units=metric&appid={apikey}&%22',
           '{url}2.5/forecast?q={location},hu&units=metric&appid={apikey}&%22',
           '',
           'WeatherAPIBase',
-          '', 'list',
+          '', 'list','dt',
           1),
+
          (4, '5bfdc7a7a51841cc9ddb4f35462ae665', 'Weather Bit',
           'https://api.weatherbit.io/v2.0/',
           '{url}current?city={location}&country=HU&tz=local&key={apikey}&units=metric',
           '{url}forecast/daily?city={location}&country=HU&tz=local&key={apikey}&units=metric',
           '',
           'WeatherAPIBase',
-          'data', 'data',
+          'data', 'data','ts',
           1)
 SET IDENTITY_INSERT [dbo].[API] OFF
 GO

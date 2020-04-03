@@ -1,7 +1,8 @@
 import platform
-
+import json
+import time
 import pyodbc
-
+from datetime import datetime
 from Config import config
 
 
@@ -29,8 +30,7 @@ class SQLConnection:
                                          server=__SERVER,
                                          database=__DATABASE,
                                          user=config.get(__DB, 'user'),
-                                         password=config.get(__DB, 'password'),
-                                         port=config.get(__DB, 'port'))
+                                         password=config.get(__DB, 'password'))
 
     def connection(self):
         return self.__conn
@@ -118,36 +118,76 @@ class APIAttributes:
         self.data = sqlconnection.get_data('vSelectAttr', 'Json_Path_CC', 'Json_Path_FC', 'AttrType')
 
 
-# Nincs használatban, de majd lesz ;)
 class SQLInsertData:
-    def __init__(self, attr, values, attrtype, city, api, forecast, conn):
-        self.attr = attr,
-        self.values = values,
-        self.type = attrtype,
+
+    def __init__(self, data, city, api, forecast):
+        self.data = data
         self.city = city,
         self.api = api,
         self.forecast = forecast
-        self.conn = conn
+        self.conn = SQLConnection().connection()
+        self.cursor = SQLConnection().get_cursor()
 
-    def InsertValues(self):
-        cursor = self.conn.cursor()
+    @staticmethod
+    def set_attr_value(data, key):
+        value = []
+        if data is not None:
+            json_data = json.loads(json.dumps(data))
+            for i in json_data:
+                value.append(i[key])
+            return value
+        else:
+            return None
 
-        sql_statement = 'INSERT INTO CityWeather(' \
-                        'CityName, Source, ForecastDay, ValuesInt, ValuesMoney, ValueVarchar, Json_Path) VALUES '
+    @staticmethod
+    def attr_type(attr):
+        return SQLConnection().get_filtered_data('Attribute',
+                                                 '[AttrID] = \'{attr}\''.format(attr=attr),
+                                                 'AttrType')
+
+    def insert_execute(self, attr_id, values, forecast):
+        cursor = self.cursor
+        sql_statement = 'INSERT INTO vCityWeather(' \
+                             'ForecastDay, CityName, Name, ValuesInt, ValuesMoney, ValueVarchar, AttrID ) VALUES '
         sql_values = []
-        for attr, value, val_type in zip(self.attr[0], self.values[0], self.type[0]):
-            sql_statement += '(?,?,?,?,?,?,?),'
-            v_int = None
-            v_money = None
-            v_vc = None
-            if val_type == 'ValuesInt':
-                v_int = value
-            elif val_type == 'ValuesMoney':
-                v_money = value
-            elif val_type == 'ValueVarchar':
-                v_vc = value
+        if attr_id is not None:
+            for attr, value in zip(attr_id, values):
+                val_type = self.attr_type(attr)
+                val_type = val_type[0]
 
-            sql_values += [self.city[0], self.api[0], self.forecast, v_int, v_money, v_vc, attr]
+                v_int = None
+                v_money = None
+                v_vc = None
 
-        cursor.execute(sql_statement[:-1], sql_values)
-        self.conn.commit()
+                if val_type == 'ValuesInt':
+                    v_int = value
+                elif val_type == 'ValuesMoney':
+                    v_money = value
+                elif val_type == 'ValueVarchar':
+                    v_vc = value
+
+                sql_statement += '(?,?,?,?,?,?,?),'
+                sql_values += [forecast, self.city[0], self.api[0], v_int, v_money, v_vc, attr]
+            cursor.execute(sql_statement[:-1],sql_values)
+            return self.conn.commit()
+        else:
+            return None
+
+    def InsertData(self, current=True):
+        if current:
+            attr_id = self.set_attr_value(self.data, 'AttrID')
+            values = self.set_attr_value(self.data, 'Value')
+            forecast = datetime.now()
+            self.insert_execute(attr_id, values, forecast)
+
+        else:
+            if self.data is not None:
+                for i in range(len(self.data)):
+                    if i <= 120:
+                        attr_id = self.set_attr_value(self.data[i], 'AttrID')
+                        values = self.set_attr_value(self.data[i], 'Value')
+                        forecast = self.forecast[i]
+                        self.insert_execute(attr_id, values, forecast)
+                    else:
+                        break
+
