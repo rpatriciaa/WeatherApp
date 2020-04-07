@@ -126,7 +126,6 @@ class SQLInsertData:
         self.api = api,
         self.forecast = forecast
         self.conn = SQLConnection().connection()
-        self.cursor = SQLConnection().get_cursor()
 
     @staticmethod
     def set_attr_value(data, key):
@@ -146,9 +145,9 @@ class SQLInsertData:
                                                  'AttrType')
 
     def insert_execute(self, attr_id, values, forecast):
-        cursor = self.cursor
+        cursor = self.conn.cursor()
         sql_statement = 'INSERT INTO vCityWeather(' \
-                             'ForecastDay, CityName, Name, ValuesInt, ValuesMoney, ValueVarchar, AttrID ) VALUES '
+                        'ForecastDay, CityName, Name, ValuesInt, ValuesMoney, ValueVarchar, AttrID ) VALUES '
         sql_values = []
         if attr_id is not None:
             for attr, value in zip(attr_id, values):
@@ -168,8 +167,8 @@ class SQLInsertData:
 
                 sql_statement += '(?,?,?,?,?,?,?),'
                 sql_values += [forecast, self.city[0], self.api[0], v_int, v_money, v_vc, attr]
-            cursor.execute(sql_statement[:-1],sql_values)
-            return self.conn.commit()
+            cursor.execute(sql_statement[:-1], sql_values)
+            self.conn.commit()
         else:
             return None
 
@@ -183,11 +182,8 @@ class SQLInsertData:
         else:
             if self.data is not None:
                 for i in range(len(self.data)):
-                    if i <= 120:
                         attr_id = self.set_attr_value(self.data[i], 'AttrID')
                         values = self.set_attr_value(self.data[i], 'Value')
                         forecast = self.forecast[i]
+                        print(attr_id,values,forecast)
                         self.insert_execute(attr_id, values, forecast)
-                    else:
-                        break
-
