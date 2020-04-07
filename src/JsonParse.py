@@ -56,9 +56,7 @@ class DataCollector(ABC):
             for i in range(len(data)):
                 dt_object = datetime.fromtimestamp(self.__getvalue(time_attr, data[i]))
                 values.append(str(dt_object))
-        else:
-            for i in range(len(data)):
-                values.append(self.__getvalue(time_attr, data[i]))
+
         return values
 
     def __data_collector(self, current=True):

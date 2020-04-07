@@ -185,5 +185,4 @@ class SQLInsertData:
                         attr_id = self.set_attr_value(self.data[i], 'AttrID')
                         values = self.set_attr_value(self.data[i], 'Value')
                         forecast = self.forecast[i]
-                        print(attr_id,values,forecast)
                         self.insert_execute(attr_id, values, forecast)

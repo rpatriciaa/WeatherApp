@@ -1,8 +1,4 @@
--- CREATE DATABASE [WeatherApplication]
--- GO
---
--- USE [WeatherApplication]
--- GO
+
 
 DROP VIEW IF EXISTS [vAPI]
 DROP VIEW IF EXISTS [vLocation]
@@ -130,13 +126,11 @@ GO
 
 CREATE OR ALTER VIEW [dbo].[vCityWeather] AS
   SELECT [w].[ForecastDay], [c].[CityName],
-         [a].[Name], [wv].[ValuesInt], [wv].[ValuesMoney], [v].[ValueVarchar],
-         [a].[JSON_Path_CC], [j].[JSON_Attr_CC],
-         [a].[JSON_Path_FC], ISNULL([j].[JSON_Attr_FC], [j].[JSON_Attr_CC]) AS [JSON_Attr_FC]
+         [a].[Name], [wv].[ValuesInt], [wv].[ValuesMoney], [v].[ValueVarchar],[attr].[AttrID]
     FROM [City] AS [c]
     JOIN      [Weather] AS [w] ON [c].[CityID] = [w].[CityID]
     JOIN      [API] AS [a] ON [a].[APIID] = [w].[APIID]
-    JOIN     [JSONAttributes] AS [j] ON [j].[APIID] = [a].[APIID]
+    JOIN      [JSONAttributes] AS [j] ON [j].[APIID] = [a].[APIID]
     JOIN      [Attribute] AS [attr] ON [attr].[AttrID] =  [j].[AttrID]
     JOIN      [WeatherValues] AS [wv] ON [wv].[WeatherID] = [w].[WeatherID]
     LEFT JOIN [ValueVC] AS [v] ON [wv].[ValueVC_ID] = [v].[ValueVC_ID]
@@ -178,7 +172,7 @@ BEGIN
      FROM [inserted] AS [i]
      JOIN      [API] AS [a] ON [a].[Name] = [i].[Name]
      JOIN      [City] AS [c] ON [c].[CityName] = [i].[CityName]
-     JOIN      [Weather] AS [w] ON [w].[APIID] = [a].[APIID] AND [w].[CityID] = [c].[CityID] AND [w].[QueryDate] = @date
+     JOIN      [Weather] AS [w] ON [w].[APIID] = [a].[APIID] AND [w].[CityID] = [c].[CityID] AND [w].[QueryDate] = @date AND [w].ForecastDay = [i].[ForecastDay]
      LEFT JOIN [ValueVC] AS [v] ON [i].[ValueVarchar] = [v].[ValueVarchar]
      LEFT JOIN [Attribute] AS [attr] ON [i].[AttrID] = [attr].[AttrID]
 END
@@ -273,7 +267,7 @@ INSERT [dbo].[API] ([APIID], [APIKey], [Name], [URL], [CurrentCast], [ForeCast],
           '{url}forecasts/v1/daily/5day/{location}?apikey={apikey}&language=en-us&details=true&metric=true',
           '{url}locations/v1/cities/search?apikey={apikey}&q={location},HU&language=en-us',
           'AccuWeather',
-          '', 'DailyForecasts','Date',
+          '', 'DailyForecasts','EpochDate',
           1),
 
          (3, '63f727b2e84f011a46f960fd7e1a3680', 'Open Weather',
