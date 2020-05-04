@@ -44,10 +44,10 @@
 \index_command default
 \float_placement H
 \paperfontsize 12
-\spacing single
+\spacing onehalf
 \use_hyperref false
 \papersize a4paper
-\use_geometry false
+\use_geometry true
 \use_package amsmath 2
 \use_package amssymb 0
 \use_package cancel 0
@@ -204,20 +204,20 @@ Programtervező Informatikus BSc
 
 \series bold
 \size larger
-Nyilatkozat
+Nyilatkozat 
 \series default
-\size large
- 
+\size default
+
 \begin_inset Newpage newpage
 \end_inset
 
 
 \series bold
 \size larger
-Köszönetnyilvánítás
+Köszönetnyilvánítás 
 \series default
-\size large
- 
+\size default
+
 \begin_inset Newpage newpage
 \end_inset
 
@@ -226,7 +226,7 @@ Köszönetnyilvánítás
 \size larger
 Tartalmi összefoglaló
 \series default
-\size large
+\size default
 
 \begin_inset Newline newline
 \end_inset
@@ -235,8 +235,6 @@ Tartalmi összefoglaló
 \end_layout
 
 \begin_layout Standard
-
-\size large
 Az elmúlt évtized hatalmas technikai fejlődésének köszönhetően ma már szinte
  mindenki hozzáfér olyan felületekhez, melyek az ember mindennapi életének
  megkönnyítésére szolgálnak.
@@ -259,18 +257,16 @@ Az elmúlt évtized hatalmas technikai fejlődésének köszönhetően ma már s
 \end_layout
 
 \begin_layout Standard
-
-\size large
 \begin_inset Newpage pagebreak
 \end_inset
 
 
 \series bold
-\size larger
-Abstract
-\series default
 \size large
- 
+Abstract 
+\series default
+\size default
+
 \begin_inset Newline newline
 \end_inset
 
@@ -278,8 +274,6 @@ Abstract
 \end_layout
 
 \begin_layout Standard
-
-\size large
 \begin_inset Newpage pagebreak
 \end_inset
 
@@ -301,8 +295,6 @@ Bevezetés
 \end_layout
 
 \begin_layout Standard
-
-\size large
 Témaválasztásom fő mozgató rúgója az volt, hogy megismerje
 \change_deleted 415188692 1584960040
 n
@@ -324,8 +316,6 @@ munkámat.
 \end_layout
 
 \begin_layout Standard
-
-\size large
 Az időjárás az élet minden területén megtalálható.
  Nap, mint nap találkozunk vele, de pontos tájékoztatást ritkán tudhatunk
  a magunkénak.
@@ -344,8 +334,6 @@ kben megkönnyítené az életünket.
 \end_layout
 
 \begin_layout Standard
-
-\size large
 Fontos megemlíteni, hogy a dolgozatomban nem csak e probléma megoldása motivált,
  hanem a szakmai kíváncsiság is vezérelt.
  Szerettem volna komolyan megismerni az adattudományok világát, több gyakorlati
@@ -354,8 +342,6 @@ si nyelv lehetőségeit, előnyeit.
 \end_layout
 
 \begin_layout Standard
-
-\size large
 A dolgozatot két fő részre osztottam.
  Az első részében részletezem a dolgozathoz szükséges háttér-információkat,
  szakmai irodalmat
@@ -368,16 +354,12 @@ A dolgozatot két fő részre osztottam.
 \end_layout
 
 \begin_layout Standard
-
-\size large
 A dolgozat írása során főként a magyar és külföldi szakirodalmat, internetes
  cikkeket valamint tanulmányaim során elsajátított ismereteimet használtam
  fel.
 \end_layout
 
 \begin_layout Standard
-
-\size large
 \begin_inset Newpage pagebreak
 \end_inset
 
@@ -389,8 +371,6 @@ Az időjárás alapjai
 \end_layout
 
 \begin_layout Standard
-
-\size large
 Az időjárás a napi hőmérséklet és csapadék aktivitására illetve változására
  utal vagy éppen azt írja le, hogy például meleg vagy hideg, nedves vagy
  száraz, szeles, napos vagy esős az idő.
@@ -408,8 +388,6 @@ Fontos tényezői
 \end_layout
 
 \begin_layout Standard
-
-\size large
 \begin_inset Float figure
 wide false
 sideways false
@@ -417,8 +395,6 @@ status collapsed
 
 \begin_layout Plain Layout
 \align center
-
-\size large
 \begin_inset Graphics
 	filename retegek.jpg
 	lyxscale 30
@@ -440,8 +416,8 @@ Légkörünk rétegei
 
 \end_inset
 
-Légkörünkben több réteget különböztetünk meg.Legalsó réteget troposzférának
- nevezzük, ez egyben a Föld a felszíne.
+Légkörünkben több réteget különböztetünk meg.
+ Legalsó réteget troposzférának nevezzük, ez egyben a Föld a felszíne.
  Jellemző a rétegre, hogy a hőmérséklet a magassággal növekedésével arányosan
  csökken, 100 méterenként átlagosan 0,60-0,70°C -ot.
  A troposzféra felső határán a hőmérséklet -56°C, alsó rétegeiben körülbelül
@@ -462,8 +438,6 @@ C közötti.
 \end_layout
 
 \begin_layout Standard
-
-\size large
 Az időjárást rengeteg tényező befolyásolja, 
 \change_deleted 415188692 1584961559
 ezek
@@ -482,8 +456,6 @@ te változatlan maradna, azonban az folyamatosan csökken.
 \end_layout
 
 \begin_layout Standard
-
-\size large
 Egy hidegfront esetén hűvösebb levegő érkezik a fennálló meleghez.
  A nagyobb tömeg miatt a meleg levegő alá nyomja magát, ennek eredményeképp
  a légnyomás először csökken aztán pedig emelkedik.
@@ -504,8 +476,6 @@ status collapsed
 \begin_layout Plain Layout
 
 \change_inserted 415188692 1584962609
-
-\size large
 Ezt beszéljük meg, mert elvesztettem a fonalat.
  A meleg könnyebb, miért megy alúlra és marad is ott?
 \change_unchanged
@@ -523,8 +493,6 @@ Okklúziós frontról beszélünk ha a hideg és a meleg levegő egyszerre érke
 \end_layout
 
 \begin_layout Standard
-
-\size large
 Pára akkor jön létre ha a Nap felmelegíti a vizet, majd ennek következtében
  pedig a levegőbe kerül vízgőz formájában.
  Ennek mennyisége attól függ , hogy a víz melegedésének mértéke mekkora.
@@ -550,8 +518,6 @@ mához mérten.
 \end_layout
 
 \begin_layout Standard
-
-\size large
 A levegő esetében - mely légkörünk alapvető alkotóeleme - szélnek nevezzük
  azt a jelenséget, amikor az közelítő
 \change_inserted 415188692 1584963296
@@ -562,8 +528,6 @@ status collapsed
 \begin_layout Plain Layout
 
 \change_inserted 415188692 1584963305
-
-\size large
 ha távolodik akkor az nem szél?
 \change_unchanged
 
@@ -587,8 +551,6 @@ a használatos fokozatrendszer.
 \end_layout
 
 \begin_layout Standard
-
-\size large
 A szél irányát az határozza meg mely égtáj felől érkezik.
  Tehát keleti szélről beszélhetünk, ha a szél keleti irányból nyugat felé
  fúj.
@@ -606,8 +568,6 @@ status collapsed
 \begin_layout Plain Layout
 
 \change_inserted 415188692 1584963751
-
-\size large
 Többször is említed a Beaufort-skálát, de sehol sem 
 \begin_inset Quotes pld
 \end_inset
@@ -642,8 +602,6 @@ status collapsed
 \begin_layout Plain Layout
 
 \change_inserted 415188692 1584963817
-
-\size large
 Ezekről is kellene egy-egy mondat, vagy nem kell az egész felsorolás ;)
 \change_unchanged
 
@@ -657,8 +615,6 @@ Ezekről is kellene egy-egy mondat, vagy nem kell az egész felsorolás ;)
 \end_layout
 
 \begin_layout Standard
-
-\size large
 A levegőbe felszálló vízpárából parányi vízcseppek és jégkristályok halmaza
  alakul ki.
  Ez a jelenség
@@ -758,8 +714,6 @@ Meteorológia
 \end_layout
 
 \begin_layout Standard
-
-\size large
 A meteorológia - vagy ha régies nevét használjuk légtüneménytan - előrejelzésekk
 el és időjárási folyamatokkal foglalkozik.
  Az időjárás megfigyelése már az ókorban elkezdődött, az első feljegyzések
@@ -775,8 +729,6 @@ status collapsed
 \begin_layout Plain Layout
 
 \change_inserted 415188692 1584964304
-
-\size large
 Azért az biztos, hogy a termoszpók sokkal izgalmasabb lenne :D
 \change_unchanged
 
@@ -797,8 +749,6 @@ Azért az biztos, hogy a termoszpók sokkal izgalmasabb lenne :D
 \end_layout
 
 \begin_layout Standard
-
-\size large
 A numerikus időjárás-előrejelzés a XX.
  század elején vált elérhetővé, a légköri dinamika megismerésének és fejlődéséne
 k eredményeképp.
@@ -833,8 +783,6 @@ számítások elvégzését.
 \end_layout
 
 \begin_layout Standard
-
-\size large
 A műholdas megfigyelések az 1960-as években váltak elérhetővé, mivel a TIROS-1
  időjárás-előrejelző műhold ekkor került fellövésre.
  Segítségével rendkívül gyorsan, mondhatni pillanatok alatt adatokat juttattak
@@ -853,44 +801,30 @@ ltozások.
 \end_layout
 
 \begin_layout Standard
-
-\size large
 Az időjárás előrejelzéséhez különböző eljárások léteznek: 
 \end_layout
 
 \begin_layout Itemize
-
-\size large
 Változatlanság 
 \end_layout
 
 \begin_layout Itemize
-
-\size large
 Tendencia 
 \end_layout
 
 \begin_layout Itemize
-
-\size large
 Éghajlattan 
 \end_layout
 
 \begin_layout Itemize
-
-\size large
 Analóg módszer 
 \end_layout
 
 \begin_layout Itemize
-
-\size large
 Numerikus időjárás-előrejelzés 
 \end_layout
 
 \begin_layout Standard
-
-\size large
 A változatlanság szerint a kondíciók nem változnak, hosszútávú előrejelzés
  esetén a leghasznosabb módszer.
  A tendencia alatt értjük a frontok sebességének és irányának definiálását,
@@ -910,8 +844,6 @@ Emberi hatásai
 \end_layout
 
 \begin_layout Standard
-
-\size large
 Manapság a populáció fele időjárás-érzékeny.
  Az időjárás-érzékenység akár társadalmi betegségnek is mondható.
  Ha a természetes környezeti hatásoktól rendszeresen elszigetelődünk, akkor
@@ -935,8 +867,6 @@ csökken a teljes társadalmi teljesítőképesség.
 \end_layout
 
 \begin_layout Standard
-
-\size large
 Az időjárás-érzékenység a földrajzi elhelyezkedésen is múlik.
  Példaként említeném, hogy a közép-európai népek rendkívül érzékenyek, mivel
  a közepes szélességeken élők, átlagosan akár hat naponta ki vannak téve
@@ -946,8 +876,6 @@ Az időjárás-érzékenység a földrajzi elhelyezkedésen is múlik.
 \end_layout
 
 \begin_layout Standard
-
-\size large
 \begin_inset Newpage pagebreak
 \end_inset
 
@@ -1011,8 +939,6 @@ Használt technológiák logói
 \end_layout
 
 \begin_layout Standard
-
-\size large
 A szakdolgozat kezdeti fázisában alaposan átgondoltam, valamint mérlegeltem,
  hogy melyek azok technológiák amik elengedhetetlenek lehetnek a megvalósításhoz.
  Tanulmányaim során is találkoztam már nagy részükkel, viszont az internet
@@ -1034,8 +960,6 @@ Alkalmazási interfészek
 \end_layout
 
 \begin_layout Standard
-
-\size large
 Angol nyelven application programming interface kifejezésként ismert, rövidítése
  API.
  Ha egyszerűen próbáljuk megmagyarázni az API tulajdonképpen egy olyan szoftverk
@@ -1054,8 +978,6 @@ a a másik oldal felé, majd ennek válaszát visszajuttatja a kezdeményezőnek
 \end_layout
 
 \begin_layout Standard
-
-\size large
 Számos alkalmazási interfészt különböztetünk meg, mint például Java API
  vagy alkalmazásokon belüli interfészek.
  A programközpontú API-k között még találkozhatunk olyan web alapú alkalmazi
@@ -1064,14 +986,12 @@ Számos alkalmazási interfészt különböztetünk meg, mint például Java API
  Procedure Call.
  Fontos megemlíteni a REST azaz Representational State Transfer protokolt
  is mely napjainkban talán a legelterjedtebb és legismertebb API technológia.
- Nagyjából 15 000 publikus, bárki számára használható API érhető el a programozó
-k számára, ezen felül pedig rengeteg magánkézben lévő szolgáltatás létezik,
- melyeket a vállalatok saját belső és külső kapacitásuk bővítésére használnak.
+ Nagyjából 15 000 publikus, bárki számára használható API érhető el a világban,
+ ezen felül pedig rengeteg magánkézben lévő szolgáltatás létezik, melyeket
+ a vállalatok saját belső és külső kapacitásuk bővítésére használnak.
 \end_layout
 
 \begin_layout Standard
-
-\size large
 De miért is fontos ez számunkra és miben járul hozzá a megvalósításhoz?
  Ahhoz, hogy időjárást tudjuk elemezni nagy mennyiségű időjárási adatra
  van szükségünk.
@@ -1103,8 +1023,6 @@ De miért is fontos ez számunkra és miben járul hozzá a megvalósításhoz?
 \end_layout
 
 \begin_layout Standard
-
-\size large
 A JSON (JavaScript Object Notation) az API nyelve, adatszerkezetek kódolására
  alkalmas.
  Főként adatok továbbítására alkalmazzák szerverek és web alapú applikációk
@@ -1118,8 +1036,6 @@ A Python programnyelv
 \end_layout
 
 \begin_layout Standard
-
-\size large
 1989 végén Guido van Rossum holland származású programozó kezdte meg a fejleszté
 sét, majd 1991-ben hozta nyilvánosságra.
  Készítésekor a fő szempontok közé tartozott, hogy könnyen olvasható legyen.
@@ -1128,21 +1044,25 @@ sét, majd 1991-ben hozta nyilvánosságra.
  Hasonlíta Perl, Ruby és Scheme nyelvekhez mivel automatikus memóriakezelést
  és dinamikus típusokat használ.
  A legfrissebb PYPL PopularitY of Programming Language 2020 márciusi rangsorolás
-a szerint, az első helyen szerepel programozási nyelvek közül.
+a szerint
+\begin_inset CommandInset citation
+LatexCommand cite
+key "key-1"
+literal "false"
+
+\end_inset
+
+, az első helyen szerepel programozási nyelvek közül.
  Felhasználható asztali grafikus felhasználói felületek, webhelyek és webes
  alkalmazások fejlesztésére is.
 \end_layout
 
 \begin_layout Standard
-
-\size large
 Több oka is van annak, hogy miért választottam a Python nyelvet a dolgozat
  alapjaként:
 \end_layout
 
 \begin_layout Itemize
-
-\size large
 Fontos szempont volt, hogy könnyen érthető és olvasható legyen bárki számára.
  A Python a könnyen elsajátítható programnyelvek közé tartozik, mely elsősorban
  az angol nyelvhez való hasonlóságának köszönhető.
@@ -1153,17 +1073,14 @@ Fontos szempont volt, hogy könnyen érthető és olvasható legyen bárki szám
 \end_layout
 
 \begin_layout Itemize
-
-\size large
 Cross-Platform valamint nyílt forráskódú.
- Linux, Windows vagy macOS platformonon is működnek a Python-ban írt kódok.
+ A Python-ban írt kódok Linux, Windows vagy macOS platformonon is egyaránt
+ müködnek.
  Támogatja objektum-orientált programozást is, de kisebb programok, tool-ok
  fejlesztését is alkalmas
 \end_layout
 
 \begin_layout Itemize
-
-\size large
 A Python a Data Science és a mesterséges intelligenciák legelterjedtebb
  nyelve napjainkban, mindkét témakör nagyban érinti a dolgozatom témáját
  is.
@@ -1175,245 +1092,68 @@ A Python a Data Science és a mesterséges intelligenciák legelterjedtebb
 \end_layout
 
 \begin_layout Itemize
-
-\size large
 Valamint rengeteg grafikus felületet is támogat ezek között a projektben
  megjelenik a Python Kivy könyvtára amely nagyon modern és letisztult külsőt
  kölcsönöz, abszolút megállja helyét napjainkban.
 \end_layout
 
 \begin_layout Subsection
-Python általánosságban- és az adattudományokban használt könyvtárak
+Adattudományokban használt Python könyvtárak
 \end_layout
 
 \begin_layout Standard
-
-\size large
 A Python nagy előnye, hogy rengetek problémára már megoldással rendelkezik.
  Funkciók és metódusok rengetege van már könyvtárakba foglalva annak érdekében,
  hogy kevesebb kódot kelljen írnia a fejlesztőknek.
- Rengeteg standard könyvtárral rendelkezik mint például 
-\begin_inset Quotes pld
-\end_inset
-
-time
-\begin_inset Quotes prd
-\end_inset
-
-, 
-\begin_inset Quotes pld
-\end_inset
-
-random
-\begin_inset Quotes prd
-\end_inset
-
-, 
-\begin_inset Quotes pld
-\end_inset
-
-urlib
-\begin_inset Quotes prd
-\end_inset
-
-,
-\begin_inset Quotes prd
-\end_inset
-
-math
-\begin_inset Quotes prd
-\end_inset
-
-.
+ Rengeteg standard könyvtárral rendelkezik mint például time, random, math.
  Különböző SQL modulokkal is rendelkezik, ezek közül kiemelném a Microsoft
- Sql Server-hez általam is használt 
-\begin_inset Quotes pld
-\end_inset
-
-pyodbc
-\begin_inset Quotes prd
-\end_inset
-
-, mely többek közt felel az adatbázishoz való kapcsolódásért, adat- lekérdezésér
-t és beszúrásért.
+ Sql Server-hez általam is használt pyodbc, mely többek közt felel az adatbázish
+oz való kapcsolódásért, adat- lekérdezésért és beszúrásért.
  Természetesen léteznek más, nem csak MSSQL használatát támogató könyvtárak
- is mint például a 
+ is mint például a SQLite vagy a
 \begin_inset Quotes pld
 \end_inset
 
-SQLite
-\begin_inset Quotes prd
-\end_inset
-
- vagy a 
-\begin_inset Quotes pld
-\end_inset
-
-xc_Oracle
-\begin_inset Quotes prd
-\end_inset
-
-.
+xc_Oracle.
  
 \end_layout
 
 \begin_layout Standard
-
-\size large
-Talán a könytárak sokasága tette oly népszerűvé a Python az adattudományok
+Talán a könytárak sokasága tette oly népszerűvé a Python-t az adattudományok
  világában.
- A 
-\begin_inset Quotes pld
-\end_inset
-
-Numpy
-\begin_inset Quotes prd
-\end_inset
-
- és a 
-\begin_inset Quotes pld
-\end_inset
-
-Pandas
-\begin_inset Quotes prd
-\end_inset
-
- könyvtárak megjelenésével a Python kiemelkedő jelentőségűvé vált az adatvilágba
-n.
- Statisztikai, táblázatos és mátrix struktúrájú adatokat is kezel, ezeket
- „Matplotlib” és a „Seaborn” könyvtársak segítségével képes vizualizálni.
+ A Numpy támogatja és elősegíti többdimenziós mátrixok és tömbök magas szintű
+ matematikai műveleteit, Pandas adatfeldolgozó és elemző műveletek, feladatok
+ elvégézését segíti valamint statisztikai, táblázatos és mátrix struktúrájú
+ adatokat is kezel.
+ Említett két könyvtár megjelenésével, azt gondolom, hogy a Python kiemelkedő
+ jelentőségűvé vált az adatvilágban.
+ Az adatokokat Matplotlib és a Seaborn könyvtársak segítségével képes vizualizál
+ni.
  Jelenünkben nem vitás, hogy a jövő informatikáját a mesterséges intelligencia
  vezetni fogja.
  A Python machine learning könyvtárai, például a Keras és a TensorFlow,
- lehetővé teszik a számunkra gépi tanulás fejlesztését is.
- Az olyan könyvtárak, mint például az 
-\begin_inset Quotes pld
-\end_inset
-
-OpenCV
-\begin_inset Quotes prd
-\end_inset
-
- pedig elősegítik a számítógépes látást vagy a képfelismerést.
-\end_layout
-
-\begin_layout Standard
-
-\size large
-Az .edureka.co weboldal 2020 februári cikkje szerint a top tíz python könytár
- rendre a következők:
-\end_layout
-
-\begin_layout Itemize
-
-\size large
-TensorFlow 
-\end_layout
-
-\begin_layout Itemize
-
-\size large
-Scikit-Learn 
-\end_layout
-
-\begin_layout Itemize
-
-\size large
-Numpy Keras 
-\end_layout
-
-\begin_layout Itemize
-
-\size large
-PyTorch 
-\end_layout
-
-\begin_layout Itemize
-
-\size large
-LightGBM 
-\end_layout
-
-\begin_layout Itemize
-
-\size large
-Eli5
-\end_layout
-
-\begin_layout Itemize
-
-\size large
-SciPy
-\end_layout
-
-\begin_layout Itemize
-
-\size large
-Theano 
-\end_layout
-
-\begin_layout Itemize
-
-\size large
-Pandas
+ lehetővé teszik a számunkra gépi tanulás fejlesztését is, melyenk módszerei
+ magába foglalják a neurális hálok fejlesztését is.
+ Az olyan könyvtárak, mint például az OpenCV pedig elősegítik a számítógépes
+ látást vagy a képfelismerést.
 \end_layout
 
 \begin_layout Subsection
-Relációs Adatbázisok és Microsoft Sql Server
+Microsoft Sql Server
 \end_layout
 
 \begin_layout Standard
-
-\size large
-Relációs adatbázisok olyan digitális adatbázisok melyek a relációs adatmodellen
- alapszik.
- A relációs adatbázisok kezeléséhez használt szoftvereket relációs adatbázis-kez
-elő rendszerek röviden RDBMS nevezzük.
- Számos relációs adatbázisrendszernek képes az SQL azaz Structured Query
- Language(magyarul lekérdezőnyelv) használatára, ez általa lehetőségünk
- nyílik lekérdezni és karbantartani az adatbázisok tartalmát.
- A táblák minden sora rendelkezik a saját egyedi azonosítóval, kulccsal.
- A táblák sorai összekapcsolhatók más táblák soraival, ha rendelkeznek úgy
- nevezett idegen kulccsal.
+A szoftverhez szükséges adatokat Microsoft Sql Server adatbázis tárolja.
+ A döntésem azért esett ezen technológia alkalmazására, mivel már tanulmányaim
+ során is volt alkalmam találkozni vele, véleményem szerint sokkal többet
+ nyújt mint a MYSQL és nagy mennyiségű adattárolására is alkalmas.
+ Jelenleg az adatbázis az egyetem által biztosított szerveren fut, azonban
+ könnyedén konfigurálható egy localhost is, így a fejlesztés korai szakaszában
+ a tesztelés is kényelmesen történt.
+ 
 \end_layout
 
 \begin_layout Standard
-
-\size large
-Habár a feladat nem követeli meg az Microsoft Sql Server használatát, mégis
- úgy láttam hosszútávon kifizetődőbb vele dolgozni.
-\end_layout
-
-\begin_layout Standard
-
-\size large
-elakadtam :(( szívesen fogadokj tippeket miért is jobb az MSSQL, hirtelen
- csak ennyi van hogy: gyorsabb, több funkció talán, T-SQL
-\change_inserted 415188692 1584967968
-
-\begin_inset Note Comment
-status open
-
-\begin_layout Plain Layout
-
-\change_inserted 415188692 1584967983
-
-\size large
-Megbeszéljük!
-\change_unchanged
-
-\end_layout
-
-\end_inset
-
-
-\change_unchanged
-
-\end_layout
-
-\begin_layout Standard
-
-\size large
 \begin_inset Newpage pagebreak
 \end_inset
 
@@ -1421,66 +1161,22 @@ Megbeszéljük!
 \end_layout
 
 \begin_layout Section
-
-\size large
 Adatbázis tervezése
 \end_layout
 
 \begin_layout Standard
-
-\size large
 Az adatbázis tervezésénél törekedtem a rekord-orientált felépítésre.
- Habár a mező-orientált modellezésnek is számos előnye van
-\change_inserted 415188692 1584968011
- -
-\change_deleted 415188692 1584968012
-,
-\change_unchanged
- például nehézség nélkül programozható és effektív grafikus felhasználói
- felület készítése is támogatott
-\change_deleted 415188692 1584968018
-,
-\change_inserted 415188692 1584968019
- -
-\change_unchanged
- 
-\change_deleted 415188692 1584968026
-mégis
-\change_inserted 415188692 1584968029
- azonban
-\change_unchanged
- nehezen változtatható a fejlesztés későbbi szakaszaiban
-\change_deleted 415188692 1584968039
- 
-\change_unchanged
+ Habár a mező-orientált modellezésnek is számos előnye van - például nehézség
+ nélkül programozható és effektív grafikus felhasználói felület készítése
+ is támogatott - azonban nehezen változtatható a fejlesztés későbbi szakaszaiban
 , ami sok időveszteséggel ás hátulütővel járhat.
  Természetesen a rekord-orientált modellnek is vannak hátrányai.
- Az adatokat több táblából tudjuk csak elérni, ez 
-\change_deleted 415188692 1584968055
-sok
-\change_inserted 415188692 1584968056
-több
-\change_unchanged
- lekérdezést vagy JOIN-t jelenthet melyek egyes fejlesztők számára első
-\change_deleted 415188692 1584968066
-re
-\change_unchanged
- hangzásra bonyolultnak tűnhet.
+ Az adatokat több táblából tudjuk csak elérni, ez több lekérdezést vagy
+ JOIN-t jelenthet melyek egyes fejlesztők számára első hangzásra bonyolultnak
+ tűnhet.
  Ezzel szemben viszont nagyon rugalmas, struktúrája könnyedén változtatható,
- 
-\change_inserted 415188692 1584968080
-a 
-\change_unchanged
-módosítások
-\change_deleted 415188692 1584968082
-at
-\change_unchanged
- nem jelentenék az alkalmazás teljesen összeomlását.
- Ezek mellett 
-\change_inserted 415188692 1584968093
-legtöbbször 
-\change_unchanged
-sokkal hatékonyabb és időtálló modell.
+ a módosítások nem jelentenék az alkalmazás teljesen összeomlását.
+ Ezek mellett legtöbbször sokkal hatékonyabb és időtálló modell.
 \end_layout
 
 \begin_layout Subsection
@@ -1488,12 +1184,50 @@ Adatbázis Séma
 \end_layout
 
 \begin_layout Standard
-\align center
+Az adatbázis kezdetben kevesebb táblát tartalmazott, valamint a táblák is
+ kisebb mennyiségű információt tároltak.
+ Ebből kifolyólag a program fejlesztése is hosszadalmas és átláthatatlanná
+ vált.
+ Habár az adatbázis már akkor is rekord-orientált formában volt elkészítve,
+ mégis a csekély rendelkezésre álló adat miatt ezt a program nem tudta kamatozta
+tni.
+ A fő célkitűzés továbbra is a rugalmas, könnyedén bővíthető szoftver készítése
+ maradt, ennélfogva át kellett gondolni a már meglévő sémát.
+ Szerencsésnek gondolom, hogy már kezdetben is rekord-orientált formában
+ volt tervezve, hiszen az új táblák és attribútumok felvétele egyáltalán
+ nem jelentett különösebb gondot.
+ Az séma kibővítésévél létrejött, egy olyan rendkívül jól összetett és használha
+tó adatbázis amely a szoftver működősének közel teljesen egészében az alappillér
+évé vált.
+ 
+\end_layout
 
-\size large
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
 \begin_inset Graphics
 	filename database.png
-	scale 40
+	scale 70
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Adatbázis felépítése
+\end_layout
+
+\end_inset
+
+
+\end_layout
 
 \end_inset
 
@@ -1501,78 +1235,65 @@ Adatbázis Séma
 \end_layout
 
 \begin_layout Standard
-
-\size large
-Az adatbázis összesen hét táblából áll össze.
+Az adatbázis összesen nyolc táblából áll össze.
  Ezek rendere a következők:
-\begin_inset Note Comment
-status collapsed
-
-\begin_layout Plain Layout
-
-\size large
-Lehet, hogy ezt később kéne csak megnézni, akkor ha már fix a séma.
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Itemize
-
-\size large
 City: Különböző városok adatait tárolja.
- Részletesebben a városok neveit, hosszúsági- valamint szélességi körök
- koordinátáit.
+ Részletesebben a városok neveit valamint, hogy aktív tehát lekérdezhető-e
+ a város.
 \end_layout
 
 \begin_layout Itemize
+CityAPILocation: Egyes API szolgáltatók a városokat egyedi azonosítókkal
+ különböztetik meg, elérésük minden hívásnál egy plusz API hívást jelentene,
+ így gyors hozzáférés érdekében ezek is tárolásra kerülnek.
+\end_layout
 
-\size large
+\begin_layout Itemize
 API: API szolgáltatok adatait tárolja.
- API-hoz tartozó kulcsok melyek segítségével az API hívások történnek, valamint
- a forrás ahonnan az adatokat lekérjük.
+ Részét képezik az API-hoz tartozó kulcsok melyek segítségével az API hívások
+ történnek, meghívandó URL, JSON objektum azon részéhez egy elérési útvonal,
+ ahol az adatokat találja a program.
+ Mivel ez függ attól is, hogy az objektum előrejelzett vagy aktuális időjárást
+ tartalmaz így ez megkülönböztetésre került CC az az Current Cast és FC
+ az az Forecast jelöléssel.
+ A előrejelzés válaszában megtalálhatóak a dátumok is, melyeket a későbbiek
+ létfontpontosságú eltárolni, így ezek elérési útvonala is megtalálható
+ a táblában.
 \end_layout
 
 \begin_layout Itemize
-
-\size large
 Attribute: Tárolja az attribútumomat melyeket vizsgálunk, például: szélirány,hőm
 érséklet.
- Ezek neveit és típusát találjuk a táblában.
+ Ezek nevei és típusai VARCHAR,INT,MONEY megtalálhatóak a táblában.
 \end_layout
 
 \begin_layout Itemize
-
-\size large
-JsonAttributes: Az adott szolgáltatóhoz tartozó attribútumokat tárolja.
- Megtalálható az API és az attribútum azonosítója, valamint a JSON-ban használt
- név.
+JsonAttributes: Az attribútum nevek és elérési útvonalaik szolgáltatóként
+ eltérnek, ennek következtében tárolása került az egyes APIk-hoz tartozó
+ attribútumok útvonalai.
+ Az azonosítás okán, a táblában megtalálható az API és az attribútum egyedi
+ kulcsa.
 \end_layout
 
 \begin_layout Itemize
-
-\size large
 Weather: Az időjárási adatokat azonosítására szolgál.
- Tárolja a lekérés pontos időpontját, mely napra kértük le az előrejelzést,
- továbbá városhoz és az API-hoz tartozó azonosítót.
- Fontos tudni mely városra kértük le az előrejelzést milyen szolgáltatón
- keresztül.
+ Tárolja a hívás időpontját valamint az előrejelzés dátumát is.
+ Megtalálható még a leinformált város azonosítója és API azonosítója is
+ ami meghívásra került.
 \end_layout
 
 \begin_layout Itemize
-
-\size large
-WeatherAttributes: Tárolja az pontos értékeket az adott attribútumokhoz.
- Szöveges érték esetén csak a ezen értékek azonosítója tárolandó.
+WeatherAttributes: Kapcsolódik a Weather táblához, itt találhatóak az időjárási
+ adatok részletei.Attribútumokhoz tartozó értékek, szöveges érték esetén
+ csak egy azonosítót tárol, melynek értéke a ValueVC táblában található.
 \end_layout
 
 \begin_layout Itemize
-
-\size large
 ValueVC: Szöveges értékek tárolására szolgál, segítségével rengeteg felesleges
- adattól szabadulunk meg, az ugyanolyan elnevezésű adatok mint például 
+ adat tárolása kerülhető el, az azonos elnevezésű adatok mint például 
 \begin_inset Quotes pld
 \end_inset
 
@@ -1580,12 +1301,10 @@ napos idő
 \begin_inset Quotes prd
 \end_inset
 
- elég egyszer eltárolni és mindig hivatkozni rá.
+ elég egyszer eltárolni és a későbbiekben hivatkozni rá.
 \end_layout
 
 \begin_layout Standard
-
-\size large
 \begin_inset Separator plain
 \end_inset
 
@@ -1593,58 +1312,561 @@ napos idő
 \end_layout
 
 \begin_layout Standard
-
-\size large
 Az ábrán látható, hogy egyes adatokat csak úgy tudunk lekérdezni, hogyha
  több táblát összekapcsolunk.
  Például ha szeretnénk megtudni, hogy Veszprémben egy bizonyos szolgáltató,
  milyen hőmérsékletet ígért egy adott időpontra, szükséges összekapcsolni
  a City, Api, JsonAttributes, Attribute, Weather és WeatherAttributes táblákat.
  Mint említettem ezek elsőre összetettnek és körülményesnek tűnik, viszont
- egy új tábla vagy egy új attribútum könnyedén beépíthető.
+ egy új tábla vagy egy új attribútum könnyedén beépíthető, valamint a felmerülő
+ hibák javítása sem okoz teljes összeomlást a rendszerben.
 \end_layout
 
 \begin_layout Subsection
-Nézetek és triggerek
+Fejlesztés során használt nézetek és trigger-ek
 \end_layout
 
 \begin_layout Standard
+A már említett rekord-orientált adatbázis egyik legnagyobb hátulütője azaz
+ a kapcsolatok sokasága már a fejlesztés korai szakaszában jelenetezett,
+ azonban ez a probléma egyszerűen kiküszöbölhető.
+ Az adatok gyors és egyszerű tárolása valamint elérése érdekébe különböző
+ nézeteket és triggereket alkalmaztam, így sikerült elkerülni, hogy a bonyolult
+ lekérdezéseket magában a programkódban kelljen megírni.
+\end_layout
 
-\size large
-erről is gondoltam irni pár sort
-\change_inserted 415188692 1584968192
+\begin_layout Standard
+Elsősorban, ahhoz hogy az API hívások rugalmasan történhessenek, szükségessé
+ vált egy 
+\series bold
+vAPI
+\series default
+ nézet, amely visszaadja az aktív szolgáltatok adatait.
+ E mellett egy 
+\series bold
+vCity
+\series default
+ nézet készítése is megtörtént, mely tárolja az aktív városok nevét.
+ Az adatok feldolgozása során tudni kell azt is, hogy egyes attribútumokat
+ mint például a szélirány vagy a hőmérséklet milyen néven találhatóak meg
+ az adott szolgáltatónál.
+ Erre szolgál a 
+\series bold
+vSelectAttr
+\series default
+ nézet mely összeköti az 
+\series bold
+API, Attributes 
+\series default
+és
+\series bold
+ JSONAttributes
+\series default
+ táblákat.
+ Már szó esett arról , hogy vannak olyan szolgáltatók, melyek nem város
+ név alapján dolgozzák fel a hívások, hanem egyedi azonosítót használnak.
+ Az adatbázisban a 
+\series bold
+City
+\series default
+ és a 
+\series bold
+CityAPILocation
+\series default
+ táblákat össze kell kapcsolni ahhoz, hogy elérhető legyen a városhoz tartozó
+ kulcs.
+ vLocation nézet összeköti ezeket a táblákat, azonban van olyan eset is,
+ amikor olyan várost ad bementenek a felhasználó, amely még nem szerepel
+ az adatbázisban.
+ Ebben az esetben elkerülhetetlenné válik az extra API hívás intézése a
+ szolgáltató felé.
+ Hívás sikeres elvégzése után termesztésen az új információk tárolásra kerülnek,
+ viszont a program csak a nézet táblába szúrja be azokat.
+ A 
+\series bold
+City
+\series default
+ és a 
+\series bold
+CityAPILocation
+\series default
+ táblákban trigger az az 
+\series bold
+tr_CAL
+\series default
+ segítségével jut el.
+ A folyamat egyszerű, első sorban a 
+\series bold
+City
+\series default
+ táblába kerülnek be a városok neveit, az ezekhez tartozó azonosítóhoz pedig
+ hozzárendeli a lekért kulcsot a 
+\series bold
+CityAPILocation
+\series default
+ táblában.
+\end_layout
 
-\begin_inset Note Comment
-status collapsed
+\begin_layout Standard
+Ahhoz, hogy az adatok megfelelő formában kerüljenek és készen álljanak a
+ tárolásra rengeteg folyamatnak kell lefutnia azonban ez csak a dolgozat
+ későbbi szakaszában kerül részletezésre.
+ Tegyük fel, hogy az összes folyamat sikeresen végbe megy és már csak egyetlen
+ fázis van hátra az: adatbázisban való tárolás.
+ Az adatbázis felépítése miatt több táblát is össze kell kapcsolni.
+ Ennek megvalósítása problémás lett volna a programozás során.
+ A feladat megkönnyítésére szolgál a 
+\series bold
+vCityWeather
+\series default
+ nézet, mely a legfontosabb feladatot látja el mind közül.
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset listings
+lstparams "language=SQL,basicstyle={\small},breaklines=true,showstringspaces=false,tabsize=6"
+inline false
+status open
 
 \begin_layout Plain Layout
 
-\change_inserted 415188692 1584968266
+CREATE OR ALTER VIEW [dbo].[vCityWeather] AS
+\end_layout
 
-\size large
-Mindenképp! :) Pont itt oldanád fel a rekord-orientált adatmodell 
-\begin_inset Quotes pld
-\end_inset
+\begin_layout Plain Layout
 
-hibáit
-\begin_inset Quotes prd
-\end_inset
+  SELECT [w].[ForecastDay], [c].[CityName],
+\end_layout
 
-.
-\change_unchanged
+\begin_layout Plain Layout
 
+         [a].[Name], [wv].[ValuesInt], [wv].[ValuesMoney],
+\end_layout
+
+\begin_layout Plain Layout
+
+	[v].[ValueVarchar],[attr].[AttrID]
+\end_layout
+
+\begin_layout Plain Layout
+
+    FROM [City] AS [c]
+\end_layout
+
+\begin_layout Plain Layout
+
+    JOIN  [Weather] AS [w] ON [c].[CityID] = [w].[CityID]
+\end_layout
+
+\begin_layout Plain Layout
+
+    JOIN  [API] AS [a] ON [a].[APIID] = [w].[APIID]
+\end_layout
+
+\begin_layout Plain Layout
+
+    JOIN  [JSONAttributes] AS [j] ON [j].[APIID] = [a].[APIID]
+\end_layout
+
+\begin_layout Plain Layout
+
+    JOIN  [Attribute] AS [attr]
+\end_layout
+
+\begin_layout Plain Layout
+
+		ON [attr].[AttrID] =  [j].[AttrID]
+\end_layout
+
+\begin_layout Plain Layout
+
+    JOIN  [WeatherValues] AS [wv] 
+\end_layout
+
+\begin_layout Plain Layout
+
+		ON [wv].[WeatherID] = [w].[WeatherID]
+\end_layout
+
+\begin_layout Plain Layout
+
+    LEFT JOIN [ValueVC] AS [v] 
+\end_layout
+
+\begin_layout Plain Layout
+
+		ON [wv].[ValueVC_ID] = [v].[ValueVC_ID]
+\end_layout
+
+\begin_layout Plain Layout
+
+GO
 \end_layout
 
 \end_inset
 
 
-\change_unchanged
+\begin_inset Caption Standard
 
+\begin_layout Plain Layout
+vCityWeather felépítése
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ 
 \end_layout
 
 \begin_layout Standard
+A 5.
+ ábrán jól látható, hogy pontosan hét táblát köt össze, ezek név szerint:
+ 
+\series bold
+City, Api, JSONAttributes, Attribute, Weather, WeatherValues és ValueVC
+\series default
+.
+ A szolgáltatóktól gyűjtött adatokat a 
+\series bold
+Weather, WeatherValues 
+\series default
+és a
+\series bold
+ ValueVC
+\series default
+ táblákban található de az azonosításhoz szükségesek a már említett 
+\series bold
+City, Api, JSONAttributes, Attribute
+\series default
+ táblák is.
+ Táblák sokasága nem csak sok kapcsolatot jelent de rengeteg adat beszúrási
+ műveletet is.
+ A nézethez tartozik
+\series bold
+ tr_CW 
+\series default
+elnevezésű trigger is, ennek segítségévél könnyedén és egyszerre beszúrható
+ az összes adat.
+\begin_inset Float figure
+wide false
+sideways false
+status open
 
-\size large
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=SQL,basicstyle={\small},breaklines=true,showstringspaces=false,tabsize=6"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+INSERT [City] ([CityName])
+\end_layout
+
+\begin_layout Plain Layout
+
+  SELECT DISTINCT [i].[CityName]
+\end_layout
+
+\begin_layout Plain Layout
+
+    FROM [inserted] AS [i]
+\end_layout
+
+\begin_layout Plain Layout
+
+    WHERE [i].[CityName] IS NOT NULL
+\end_layout
+
+\begin_layout Plain Layout
+
+      AND NOT EXISTS(SELECT 1
+\end_layout
+
+\begin_layout Plain Layout
+
+                       FROM [City] AS [c]
+\end_layout
+
+\begin_layout Plain Layout
+
+                       WHERE [c].[CityName] = [i].[CityName])
+\end_layout
+
+\begin_layout Plain Layout
+
+  INSERT [ValueVC] ([ValueVarchar])
+\end_layout
+
+\begin_layout Plain Layout
+
+  SELECT DISTINCT [i].[ValueVarchar]
+\end_layout
+
+\begin_layout Plain Layout
+
+    FROM [inserted] AS [i]
+\end_layout
+
+\begin_layout Plain Layout
+
+    WHERE [i].[ValueVarchar] IS NOT NULL 
+\end_layout
+
+\begin_layout Plain Layout
+
+     AND NOT EXISTS(SELECT 1 
+\end_layout
+
+\begin_layout Plain Layout
+
+                      FROM [ValueVC] AS [v]
+\end_layout
+
+\begin_layout Plain Layout
+
+                       WHERE [v].[ValueVarchar] = 
+\end_layout
+
+\begin_layout Plain Layout
+
+				[i].[ValueVarchar]) 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+City és VARHCAR tipusú változok tárolása
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+Először ahogy az 6.
+ ábrán látható tárolja, azon városok valamint 
+\begin_inset Quotes pld
+\end_inset
+
+VARCHAR
+\begin_inset Quotes prd
+\end_inset
+
+ típusú adatok mint például 
+\begin_inset Quotes pld
+\end_inset
+
+sunny
+\begin_inset Quotes prd
+\end_inset
+
+ vagy 
+\begin_inset Quotes pld
+\end_inset
+
+cloudy
+\begin_inset Quotes prd
+\end_inset
+
+ nevét melyek nem szerepelnek az adatbázisban, illetve kiválasztja az ezekhez
+ tartozó azonosítót.
+ 
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=SQL,basicstyle={\footnotesize},breaklines=true,showstringspaces=false,tabsize=6"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+  DECLARE @date SMALLDATETIME = GETDATE()
+\end_layout
+
+\begin_layout Plain Layout
+
+  INSERT [Weather] ([APIID], [CityID], [QueryDate], [ForecastDay])
+\end_layout
+
+\begin_layout Plain Layout
+
+  SELECT DISTINCT [a].[APIID], [c].[CityID], @date, [i].[ForecastDay]
+\end_layout
+
+\begin_layout Plain Layout
+
+    FROM [inserted] AS [i]     JOIN [API] AS [a] ON [a].[Name] = [i].[Name]
+\end_layout
+
+\begin_layout Plain Layout
+
+    JOIN [City] AS [c] ON [c].[CityName] = [i].[CityName]
+\end_layout
+
+\begin_layout Plain Layout
+
+  INSERT [WeatherValues] ([WeatherID], [AttrID],
+\end_layout
+
+\begin_layout Plain Layout
+
+	[ValueVC_ID], [ValuesInt], [ValuesMoney])
+\end_layout
+
+\begin_layout Plain Layout
+
+    SELECT DISTINCT [w].[WeatherID], [attr].[AttrID],
+\end_layout
+
+\begin_layout Plain Layout
+
+	[v].[ValueVC_ID], [i].[ValuesInt], [i].[ValuesMoney]
+\end_layout
+
+\begin_layout Plain Layout
+
+     FROM [inserted] AS [i]
+\end_layout
+
+\begin_layout Plain Layout
+
+     JOIN      [API] AS [a]
+\end_layout
+
+\begin_layout Plain Layout
+
+	ON [a].[Name] = [i].[Name]
+\end_layout
+
+\begin_layout Plain Layout
+
+     JOIN      [City] AS [c] 
+\end_layout
+
+\begin_layout Plain Layout
+
+	ON [c].[CityName] = [i].[CityName]
+\end_layout
+
+\begin_layout Plain Layout
+
+     JOIN      [Weather] AS [w]
+\end_layout
+
+\begin_layout Plain Layout
+
+	ON [w].[APIID] = [a].[APIID]
+\end_layout
+
+\begin_layout Plain Layout
+
+	AND [w].[CityID] = [c].[CityID]
+\end_layout
+
+\begin_layout Plain Layout
+
+	AND [w].[QueryDate] = @date
+\end_layout
+
+\begin_layout Plain Layout
+
+	AND [w].ForecastDay = [i].[ForecastDay]
+\end_layout
+
+\begin_layout Plain Layout
+
+     LEFT JOIN [ValueVC] AS [v]
+\end_layout
+
+\begin_layout Plain Layout
+
+	ON [i].[ValueVarchar] = [v].[ValueVarchar]
+\end_layout
+
+\begin_layout Plain Layout
+
+     LEFT JOIN [Attribute] AS [attr]
+\end_layout
+
+\begin_layout Plain Layout
+
+	ON [i].[AttrID] = [attr].[AttrID] END GO
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Weather és WeatherValues táblák feltöltése
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+Ez után a 
+\series bold
+Weather
+\series default
+ táblába beszúrja a hívás dátumát, a lekért időszak dátumát továbbá a szolgáltat
+ó azonosítóját és a korábban lekérdezett város azonosítóját is.
+ Az adatok részletes tárolása a 
+\series bold
+WeatherValues
+\series default
+ táblában történik.Az adatokat 
+\series bold
+Weather
+\series default
+ tábla azonosítójához köti.
+ Táblában be kerülnek az időjárási adatok értékei az adott attribútumokhoz,
+ VARCHAR típusú attribútum esetén szintén csak egy azonosítót tárol, hiszen
+ egy-egy érték szerepelhet többször is, ezeket felesleges többször tárolni.
+ 
+\end_layout
+
+\begin_layout Standard
+.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Newpage pagebreak
 \end_inset
 
@@ -1652,61 +1874,1428 @@ hibáit
 \end_layout
 
 \begin_layout Section
-
-\size large
 Adatgyűjtés Python segítségével
 \end_layout
 
 \begin_layout Standard
-
-\size large
-rövid ismertető
-\end_layout
-
-\begin_layout Subsection
-API hívások, API-k amiket használok
-\end_layout
-
-\begin_layout Standard
-
-\size large
-free oldalak bemutatása, dokumentáció és lehetőségek, api hívások pythonba
-\change_inserted 415188692 1584968607
-n
-\change_unchanged
-
-\end_layout
-
-\begin_layout Subsection
-JSON Feldolgozás
-\end_layout
-
-\begin_layout Standard
-
-\size large
-Json feldolgozása python segítségével
-\end_layout
-
-\begin_layout Subsection
-Adatbázis és Python kapcsolata
-\end_layout
-
-\begin_layout Standard
-
-\size large
-milyen király hogy adatbázisba
-\change_inserted 415188692 1584968279
-n
-\change_unchanged
- minden benne -> le
-\change_inserted 415188692 1584968282
+Ebben a fejezetben részletesen szeretném kifejteni ezek működését, valamint
+ bemutatni a program felépítését.
+ A program készítése során fő szempont volt, hogy rugalmas legyen és átlátható.
+ Ebben nagyban hozzájárult a már jól felépített adatbázis is.
+ Szeretnék kitérni a már sokszor említett API szolgáltatókra , ezek dokumentáció
+jára valamint a szolgáltatásra amit nyújtanak.
+ Az adatok gyűjtése majd továbbítása Python-ban történik.
+ A programban különböző osztályok felelnek az egyes folyamatokért legyen
+ az API hívás vagy JSON feldolgozás.
+ Ezen osztályok funkciói pedig különböző feladatokat látnak el.
  
-\change_unchanged
-tudok kérni minden
-\change_inserted 415188692 1584968286
-t
-\change_unchanged
- + tárolás
+\end_layout
+
+\begin_layout Subsection
+Időjárás előrejelző API
+\end_layout
+
+\begin_layout Standard
+Az adatok gyűjtése jelenleg négy szolgáltató segítségével történik.
+ Ezen szolgáltatók dokumentációja részben vagy egészben különböznek egymástól,
+ viszont a kívánt információk mind a négynél elérhetőek.
+ Általánosságban kijelenthető, hogy több szolgáltatás formát nyújtanak,
+ ez alatt a következőket értem: lekérdezhetőek múltbéli időjárási adatok,
+ hét napos előrejelzés ezen belül is több formátumban mint például óránkénti
+ vagy három órás bontásban, aktuális információk az időjárásról vagy demográfiai
+ adatok.
+ A feladat szempontjából azonban két szolgáltatás volt fontos, a jelenlegi
+ időjárás és az előrejelzés.
+ Ezek általában korlátozott számban ingyenesnek de vannak limit nélküli,
+ akárhányszor lekérhető formában is.
+ Természetesen vannak olyan szolgáltatók melyek adatai nem nyilvánosak,
+ ezek használatához külön engedély kérés kötelez.
+ Magyar szolgáltatók közül ilyen például Időkép és Köpönyeg is, szándékomban
+ állt az ő adataikat is elemezni, sajnos a megkeresésemre nem adtak választ.
+ A négy információt biztosító szolgáltató a következők:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename apisz.png
+	lyxscale 50
+	scale 25
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Cégek logói
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Az Accu Weather amerikai vállalat, kereskedelmi időjárás előrejelzési szolgáltat
+ásokat nyújt nem csak Amerikában de világszerte is.
+ Több developer csomaggal is rendelkezik, ezek mind különböző szolgáltatást
+ nyújtanak ár függvényében.
+ A Limited Trial nevű csomag ami általam is használt, ez teljesen ingyenes
+ azonban csak 50 hívást engedélyez naponta ami a többi szolgáltatót nézve
+ nagyon alacsony szám.
+ Csomag magába foglal többi API-t is mint például Location API, amely az
+ adott város egyedi azonosítóját adja vissza, fontos meghívni hiszen a többi
+ API híváshoz fontos megadni az itt lekért város id-t.
+ Ezen kívül használatban van még a Forecast API amely aktuális időjárási
+ adatokat adja vissza, illetve 5-day Forecast API amely a következő öt nap
+ időjárási adatait mutatja ki.
+ Limited Trial csomagon kívül még eléhertő három fizetős csomag a Standard,
+ Prime és Elite ezek nagyobb összeges kifizetése ellenében már szép számú
+ API hívást engedélyeznek.
+\end_layout
+
+\begin_layout Standard
+A Weather Bit kifejezetten API hívásokra alkalmas csomagokat kínál, itt
+ is hasonló módon összeg arányosan több csomag elérhető Free, Starter, Developer
+ és Advanced.
+ Itt szintén a legkisebb- és ingyenes csomag van használatban amely 500
+ hívást engedélyez naponta, valamit két féle hívást tesz lehetővé, aktuális
+ és öt napos előrejelzést .
+ Kereskedelmi használatra nem alkalmazható.
+ Dokumentációja egyszerűen feldolgozható és nem kell bajlódni város azonosítók
+ lekérésével, könnyedén feldolgozza a város neveket is.
+ Véleményem szerint azon fejlesztőknek is megfelelő akik ismerkednek az
+ API hívásokkal hiszen mint említettem dokumentációja kézenfekvő, valamint
+ a napi 500 engedélyezett hívás is kielégítő.
+\end_layout
+
+\begin_layout Standard
+A Dark Sky Weather Jelenleg Apple tulajdonában lévő cég, 2020 március 31.-én
+ jelentették be csatlakozásukat a hivatalos oldalukon.
+ Weather Bit mellett a másik remek szolgáltatást nyújtó cég.
+ Ezer hívást engedélyez naponta, ezt túllépve minden hívás 0.0001.
+ dollárba kerül.
+ Rengeteg hívás formával rendelkezik, azonban itt is csak az aktuális valamint
+ a 7 napos óránkénti előrejelzés van használatban.
+ Hátránya, hogy szélességi és hosszúsági koordináták alapján szolgáltatja
+ az adatokat, így a Weather Bit-et előbb ajánlanám kezdő fejlesztőknek.
+\end_layout
+
+\begin_layout Standard
+Az Open Weather Csak úgy mint az Accu Weather és a Weather Bit több csomaggal
+ rendelkezik Free, Startup, Developer, Professional és Enterprise.
+ A projektben ismételten elegendő a Free csomag használata mely naponta
+ ezer, percenként pedig 60 hívást foglal magába.
+ Aktuális és 5 napos előrejelzést nyújt, egyszerűen feldolgozza a város
+ neveket , ellenben dokumentációját érdemes alaposan átnézni, az információ
+ amit JSON formájában kapunk vissza részletesebben strukturált mint a többi
+ szolgáltatónál, ezt a program fejlesztése során mérlegelni kell.
+\end_layout
+
+\begin_layout Standard
+Mind a négy szolgáltatónál közös lépés a regisztráció, hogy igénybe tudjuk
+ venni a szolgáltatásaikat.
+ Regisztráció után elérhetővé válik egy egyedi kulcs, amit a hívás során
+ meg kell adni, ennek hiányában az API-k nem hívhatóak.
+ Válaszok XML és JSON formában érhetőek el, a mértékegységeket lehet az
+ európai valamint az amerikai sztenderdek alapján változtatni.
+\end_layout
+
+\begin_layout Subsection
+API hívások
+\end_layout
+
+\begin_layout Standard
+A fejezet bevezetésében már említettem, hogy az egyes folyamatok végbemeneteléér
+t különböző osztályok felelnek.
+ Ilyen folyamat például az API hívások is.
+ Az API-k bemutatása során világossá vált, hogy a szolgáltatók működésének
+ feltételei részben azonosak , viszont vannak eltérések.
+ Megegyeznek abban, hogy két félé formátumban kérdezhetőek le, jelenlegi
+ és 5- vagy 7 napos előjelzés, ebben az esetben az 5 vagy a 7 nap nem számottevő
+ eltérés.
+ Egyedi kulcs alapján működnek, ezeket az adatbázis tárolja.
+ Ellenben eltérnek abban, hogy miképp adható meg az érdekelt város: név,egyedi
+ azonosító vagy szélességi és hosszúsági kör formájában.A hívásokat ellátó
+ osztály ennek függvényében készült el.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset listings
+lstparams "language=Python,basicstyle={\small},breaklines=true,showstringspaces=false,tabsize=6"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+class WeatherAPIBase(ABC):
+\end_layout
+
+\begin_layout Plain Layout
+
+	def __init__(self, location, api):
+\end_layout
+
+\begin_layout Plain Layout
+
+		self.location = location
+\end_layout
+
+\begin_layout Plain Layout
+
+		self.api = api['api']
+\end_layout
+
+\begin_layout Plain Layout
+
+		self.config_name = 
+\end_layout
+
+\begin_layout Plain Layout
+
+		{False: 'ForeCast', True: 'CurrentCast'}
+\end_layout
+
+\begin_layout Plain Layout
+
+		super().__init__()
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+WeatherApiBase konstruktor
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Adott a WeatherAPIBase absztrakt ősosztály, amely vár egy város nevet, API
+ szolgáltató nevét valamint, hogy melyik típusú hívás szeretnék elindítani:
+ Jelenlegi vagy előrejelzést.
+ Szolgáltató az adatbázisból kérhető le, lokáció esetén fenn áll az új helyszín
+ megadási is.Az osztály rendelkezik egy 
+\series bold
+location_key 
+\series default
+függvénnyel mely visszadja a város nevét, Accu Weather és a Dark Sky esetében
+ azonban ez nem elegendő, így a 
+\series bold
+WeatherAPIBase
+\series default
+ osztályból származtatva vannak az 
+\series bold
+AccuWeather
+\series default
+ és a 
+\series bold
+DarkSky
+\series default
+ osztáylok.
+ Accu Weather esetén egyedi azonosító szükséges, ha már a korábbiakban megadtuk
+ a várost, akkor ez tárolva van és egyszerű dolgunk van, hiszen csak le
+ kell kérdezni az adatbázisból, ellenben ha teljesen új városra kérdeztünk
+ rá akkor egy külön Location API hívást kell intézni az Accu Wearher felé.
+ Dark Sky hosszúsági és szélességi köröket vár, így a megadott várost át
+ kell alakítani.
+ Ennek segítségére használatos a Python geopy könyvtára.
+ Ezeket a változtatások a mindkét 
+\series bold
+location_key
+\series default
+ függvényben újra definiálásra kerülnek.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=Python,basicstyle={\small},breaklines=true,showstringspaces=false,tabsize=5"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+def __get_cast(self, current=True):         
+\end_layout
+
+\begin_layout Plain Layout
+
+	locationkey = self.location_key()         
+\end_layout
+
+\begin_layout Plain Layout
+
+	if locationkey != ERROR_MSG:             
+\end_layout
+
+\begin_layout Plain Layout
+
+		return self.request_and_result(
+\end_layout
+
+\begin_layout Plain Layout
+
+			self.api[self.config_name.get(current)].format
+\end_layout
+
+\begin_layout Plain Layout
+
+			(url=self.api['URL'],apikey = 
+\end_layout
+
+\begin_layout Plain Layout
+
+			self.api['APIKey'],location=locationkey))         
+\end_layout
+
+\begin_layout Plain Layout
+
+	else:             
+\end_layout
+
+\begin_layout Plain Layout
+
+		return "Could not reach location through 
+\end_layout
+
+\begin_layout Plain Layout
+
+			{name}".format(name=self.api['Name'])
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+def __result(response):
+\end_layout
+
+\begin_layout Plain Layout
+
+	if response.status_code == HTTP_OK:
+\end_layout
+
+\begin_layout Plain Layout
+
+		return response.json()
+\end_layout
+
+\begin_layout Plain Layout
+
+	else:
+\end_layout
+
+\begin_layout Plain Layout
+
+		return response.status_code
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+__get_cast és __result
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A __get_cast egy privát, magáért a hívásért felelős függvény.
+ Ha a városhoz tartozó kulcs rendben van, hívást kezdeményez az adatbázisban
+ tárolt URL alapján és visszatér egy válasszal.
+ A __result szintén egy privát függvény, ellenőrzi, hogy a hívás státuszkódja
+ a helyes értékekkel az az 200-as kóddal tér-e vissza.
+ Ha az érték nem egyenlő az elvárttal, akkor a hiba státuszkódjával, ha
+ egyezik JSON objektummal tér vissza.
+\end_layout
+
+\begin_layout Subsection
+JSON feldolgozás
+\end_layout
+
+\begin_layout Standard
+A sikeres API hívás után következő teendő a kapott JSON objektum feldolgozása.
+ A feladat nehézsége abban áll, hogy a kapott objektumok felépítése nagy
+ mértékben különbözik.
+ A 11.
+ ábrán látható a a Dark Sky Weather és a Open Weather által kapott egy-egy
+ JSON objektum részlete.
+ Dark Sky esetében 
+\begin_inset Quotes pld
+\end_inset
+
+data
+\begin_inset Quotes prd
+\end_inset
+
+ kulcs alatt megtalálható az összes fontos információt tartalmazó kulcs-érték
+ pár, míg az Open Weather-t tanulmányozva, látható ,hogy több különböző
+ kulcs is létezik amelyek tartalmazzák az érték párokat, 
+\begin_inset Quotes pld
+\end_inset
+
+main
+\begin_inset Quotes prd
+\end_inset
+
+ alatt található például a hőmérséglet és a hozzátartozó érték valamint
+ a nyomás és páratartalom is, míg a 
+\begin_inset Quotes pld
+\end_inset
+
+wind' kulcs alatt található a szél sebessége és iránya fokban.
+ Program írása során, ezek nem elhangolható különbségek.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename json.png
+	scale 72
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Dark Sky Weather és Open Weather JSON
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Segítségül szolgál az adatbázis.
+ Az egyes szolgáltatók attribútumait érdemes nem csak névként eltárolni
+ mint például 
+\begin_inset Quotes pld
+\end_inset
+
+temperature
+\begin_inset Quotes prd
+\end_inset
+
+ vagy 
+\begin_inset Quotes pld
+\end_inset
+
+ temp
+\begin_inset Quotes prd
+\end_inset
+
+, hanem azok pontos helyét az objektumban.
+ Ismét a 10.
+ ábrához térnék vissza, Dark Sky esetén elegendő csak a fontos attribútum
+ nevek tárolni, 
+\begin_inset Quotes pld
+\end_inset
+
+temperature,
+\begin_inset Quotes prd
+\end_inset
+
+ vagy 
+\begin_inset Quotes pld
+\end_inset
+
+windSpeed' hiszen a 
+\begin_inset Quotes pld
+\end_inset
+
+data
+\begin_inset Quotes prd
+\end_inset
+
+ kulcs alatt megtalálható mindent információ, így a feldolgozás során csak
+ a JSON ezen részével foglalkozik a program.
+ Open Weather feldolgozásánál célravezetőbb , ha az adatbázis tárolja azt
+ a kulcsot is ahol a kulcs-érték pár található.
+ Így az adatbázisban 
+\begin_inset Quotes pld
+\end_inset
+
+main/temp
+\begin_inset Quotes prd
+\end_inset
+
+ vagy 
+\begin_inset Quotes pld
+\end_inset
+
+wind/speed
+\begin_inset Quotes prd
+\end_inset
+
+ formájában található.
+ Az adatok ezen bemutatott formában való tárolása sokkal optimálisabb és
+ hatékonyabb a program írása és futási ideje szempontjából.
+\end_layout
+
+\begin_layout Standard
+Python-ban az adatok feldolgozásáért a 
+\series bold
+DataCollector
+\series default
+ nevű abraszkt osztály felel.
+ Az osztály konstruktora a következő: 
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=Python,breaklines=true,showstringspaces=false,tabsize=6"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+def __init__(self, current_cast_json, forecast_json, api):
+\end_layout
+
+\begin_layout Plain Layout
+
+	self.current_cast_json = current_cast_json
+\end_layout
+
+\begin_layout Plain Layout
+
+	self.forecast_json = forecast_json
+\end_layout
+
+\begin_layout Plain Layout
+
+	self.api = api
+\end_layout
+
+\begin_layout Plain Layout
+
+	self.attrs = api['attrs']
+\end_layout
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+DataCollector konstuktor
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+Várja az aktuális valamint a várható időjárási adatokat JSON formában és
+ a szolgáltató nevét amelyhez lekérhetőek a hozzátartozó attribútumok is.
+ Az osztály több függvénnyel is rendelkezik ezek közül a legfontosabban
+ a: 
+\series bold
+__data_collector, __forecast_time, __getvalue.
+
+\series default
+\shape italic
+ 
+\end_layout
+
+\begin_layout Standard
+Az alfejezet elején felvetett JSON objektum különbségére utaló probléma
+ megoldására szolgál a 
+\series bold
+__getvalue
+\series default
+ függvény.
+ Talán a nevéből is adódik, arra szolgál, hogy az objektumból csak a szükséges
+ adatokat szűrje ki, tehát egy-egy értéket.
+ A függvény vár egy objektumot és egy elérési útvonalat.
+ Ahogy a fejezetben már szó esett a különböző objektumok eltérő útvonalai
+ egyedi módon, 
+\begin_inset Quotes pld
+\end_inset
+
+
+\backslash
+
+\begin_inset Quotes prd
+\end_inset
+
+ karakterrel vannak elválasztva.
+ A metódusban ezt az útvonalat a 
+\begin_inset Quotes pld
+\end_inset
+
+
+\backslash
+
+\begin_inset Quotes prd
+\end_inset
+
+ karakterek alapján eltördeli, ezt követően addig iterál az a JSON objektumon
+ keresztül amíg meg nem találja a keresett értéket vagy későbbiekben vizsgálandó
+ objektum egy részét.
+ Így ez a függvény teljesen független bármely szolgáltatóból.
+ Mint ahogy a program többi részében is, itt is él, hogy egy új szolgáltató
+ adatait is könnyedén képes feldolgozni.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=Python,basicstyle={\footnotesize},tabsize=6"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+base = self.api['api']['JSON_Path_' + attr]
+\end_layout
+
+\begin_layout Plain Layout
+
+attr_name = 'JSON_Attr_' + attr
+\end_layout
+
+\begin_layout Plain Layout
+
+data = self.__getvalue(base, data)
+\end_layout
+
+\begin_layout Plain Layout
+
+if current:
+\end_layout
+
+\begin_layout Plain Layout
+
+	values = self.__get_pairs(attr_name, data)
+\end_layout
+
+\begin_layout Plain Layout
+
+else:
+\end_layout
+
+\begin_layout Plain Layout
+
+	values = []
+\end_layout
+
+\begin_layout Plain Layout
+
+	for element in data:
+\end_layout
+
+\begin_layout Plain Layout
+
+		values.append(self.__get_values(attr_name, element))
+\end_layout
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+__data_collector függvény részlet
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A 
+\series bold
+__data_collector
+\series default
+ osztályban a base-ben definiáljuk, hogy pontosan hol kell elkezdeni keresni.
+ A 13.
+ ábrán látható 'JSON_Path + attr' rész mutatja, hogy aktuális idő vagy előrejelz
+és kiinduló pontjáról indul a keresés.
+ Ez után meghívódik a már bemutatott 
+\series bold
+__getvalue
+\series default
+ függvény amely visszatér a JSON azon részletével, ahol az értékek találhatóak.
+ Ez után a 
+\series bold
+__get_pairs
+\series default
+ függvény, ismét meghívja a 
+\series bold
+__getvalue
+\series default
+ függvényt immár a keresendő attributomokkal és JSON objetum részletével,
+ az kapott értékeket átalakítja úgy, hogy azok adatbázisban tárolt azonosítóval
+ legyenek összefűzve.
+ Így lényegében, ha csak az aktuális időt kértük le, az információ készen
+ áll arra, hogy a program eltárolja az adatbázisban.
+ Azonban, ha előrejelzésről van szó szükséges tudni azt is mely időszakra
+ szól az előrejelzés.
+ Mivel ez külön van tárolva az adatbázisban, így én sem vettem fel az attribútum
+ok listája közé.
+ Természetesen ez is, mint minden más tárolva van az adatbázisban, viszont
+ nem az JSON attribútumok között található, hanem az API-val kapcsolatos
+ információk között.
+\end_layout
+
+\begin_layout Standard
+A 
+\series bold
+__data_collector
+\series default
+ mintájára készítettem egy 
+\series bold
+__forecast_time 
+\series default
+nevű metódust, amely alapvetően hasonlóan működik mint a 
+\series bold
+__data_collector
+\series default
+, azonban a végén nincs szükség meghívni a 
+\series bold
+__get_pairs
+\series default
+ metódust.
+ A 
+\series bold
+__getvalue
+\series default
+ az első iteráció végezetével visszatér a pontos idővel, amit át kell alakítani
+ timestamp formátumból a hétköznapokban is ismert formátumra, ezzel megkönnyítve
+ az idő beszúrását az adatbázisba.
+\end_layout
+
+\begin_layout Subsection
+Adatbázis kapcsolat létesítése és hozzátartozó függvények Pythonban
+\end_layout
+
+\begin_layout Standard
+Programban az SQL kapcsolatért felelős és az ahhoz tartozó függvények az
+ 
+\series bold
+SQLConnection
+\series default
+, 
+\series bold
+SQLInsertData
+\series default
+, osztályokban találhatóak.
+ Nem csak kapcsolatot létesít az adatbázissal, de INSERT vagy SELECT műveletek
+ elvégezésére is alkalmas függvényeket tartalmaz.
+ Python-ban rengetek könyvtár áll rendelkezésre az adatbázis kapcsolatok
+ létesítésére.
+ Választásom a Pyodbc, egy népszerű modulra esett, mely ODBC adatbázisokhoz
+ való kapcsolódást segíti.
+ Egyszerű, nem túl komplikált modul valamint a weben rengeteg forrás, információ
+ található a használatához.
+ A kapcsolódáshoz tartozó információkat mint például az adatbázis neve,
+ autentikációhoz tartozó felhasználó és jelszó valamint a szever pontos
+ címe a 
+\shape italic
+config.ini
+\shape default
+ tartalmazza.
+ Kapcsolat konfigurációja a következőképp valósul meg:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=Python,basicstyle={\footnotesize},tabsize=6"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+__DB = 'Database'
+\end_layout
+
+\begin_layout Plain Layout
+
+        __drivers = {
+\end_layout
+
+\begin_layout Plain Layout
+
+           'Darwin': '/usr/local/lib/libtdsodbc.so',
+\end_layout
+
+\begin_layout Plain Layout
+
+           'Linux': 
+\end_layout
+
+\begin_layout Plain Layout
+
+	'/opt/microsoft/msodbcsql17/lib64/libmsodbcsql-17.4.so.1.1',
+\end_layout
+
+\begin_layout Plain Layout
+
+           'Windows': '{SQL Server Native Client 11.0}'
+\end_layout
+
+\begin_layout Plain Layout
+
+        }
+\end_layout
+
+\begin_layout Plain Layout
+
+        __DRIVER = __drivers.get(platform.system())
+\end_layout
+
+\begin_layout Plain Layout
+
+        __SERVER = config.get(__DB, 'server')
+\end_layout
+
+\begin_layout Plain Layout
+
+        __DATABASE = config.get(__DB, 'database')
+\end_layout
+
+\begin_layout Plain Layout
+
+        if __SERVER == 'localhost':
+\end_layout
+
+\begin_layout Plain Layout
+
+            self.__conn = pyodbc.connect('',
+\end_layout
+
+\begin_layout Plain Layout
+
+                                         driver=__DRIVER,
+\end_layout
+
+\begin_layout Plain Layout
+
+                                         server=__SERVER,
+\end_layout
+
+\begin_layout Plain Layout
+
+                                         database=__DATABASE,
+\end_layout
+
+\begin_layout Plain Layout
+
+                                         trusted_connection='yes')
+\end_layout
+
+\begin_layout Plain Layout
+
+        else:
+\end_layout
+
+\begin_layout Plain Layout
+
+            self.__conn = pyodbc.connect('',
+\end_layout
+
+\begin_layout Plain Layout
+
+                                         driver=__DRIVER,
+\end_layout
+
+\begin_layout Plain Layout
+
+                                         server=__SERVER,
+\end_layout
+
+\begin_layout Plain Layout
+
+                                         database=__DATABASE,
+\end_layout
+
+\begin_layout Plain Layout
+
+                                         user=
+\end_layout
+
+\begin_layout Plain Layout
+
+				  config.get(__DB, 'user'),
+\end_layout
+
+\begin_layout Plain Layout
+
+                                         password=
+\end_layout
+
+\begin_layout Plain Layout
+
+				  config.get(__DB, 'password'))
+\end_layout
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Adatbázis konfiguráció
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+Fontos szempont volt, hogy a program multiplatform legyen, így a 14.
+ ábrán látható operációs rendszerek esetén is kompatibilis lesz a szoftver.
+ Ez után ellenőrzi, hogy a szerver localhost-on fut-e, mivelhogy az adatbázis
+ localhost-on való konfigurálására is megvan a lehetőség.
+ A fejlesztés kezdeti fázisában, az éles adatbázis nem az egyetem által
+ biztosított szerveren futott, hanem egy lokális hálózaton.
+ Ha a szerven azonban egyéb címen tálalható, akkor a már említett 
+\shape italic
+config.ini
+\shape default
+ fájlból megtalálhatóak a kapcsolat létesítésére szolgáló adatok.
+ Az 
+\series bold
+SQLConnection
+\series default
+ osztály számos függvénnyel rendelkezik.A 
+\series bold
+get_data 
+\series default
+és
+\series bold
+ get_filtered_data
+\series default
+ függvények, egyszerű SELECT scriptek futtatására szolgálnak, nem tartalmaznak
+ JOIN-t vagy aggregate funkciókat.
+ Értelemszerűen a 
+\series bold
+get_filtered_data
+\series default
+ esetében 
+\begin_inset Quotes pld
+\end_inset
+
+WHERE
+\begin_inset Quotes prd
+\end_inset
+
+ kulcsszó használatával szűrni is tudunk az adatokra.
+ SELECT esetén bonyolultabb függvényekre nincs szükség, hiszen az esetek
+ nagy részében nem magára a táblákra kérdez rá, hanem az adatbázis különböző
+ nézeteire, ami csak a szükséges adatokat tartalmazza.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=Python,basicstyle={\footnotesize},tabsize=6"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+def insert_execute(self, attr_id, values, forecast):
+\end_layout
+
+\begin_layout Plain Layout
+
+        cursor = self.conn.cursor()
+\end_layout
+
+\begin_layout Plain Layout
+
+        sql_statement = 'INSERT INTO vCityWeather(' 
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+                        'ForecastDay, CityName, Name, ValuesInt,
+\end_layout
+
+\begin_layout Plain Layout
+
+		ValuesMoney, ValueVarchar, AttrID ) VALUES '
+\end_layout
+
+\begin_layout Plain Layout
+
+        sql_values = []
+\end_layout
+
+\begin_layout Plain Layout
+
+        if attr_id is not None:
+\end_layout
+
+\begin_layout Plain Layout
+
+            for attr, value in zip(attr_id, values):
+\end_layout
+
+\begin_layout Plain Layout
+
+                val_type = self.attr_type(attr)
+\end_layout
+
+\begin_layout Plain Layout
+
+                val_type = val_type[0]
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+                v_int = None
+\end_layout
+
+\begin_layout Plain Layout
+
+                v_money = None 
+\end_layout
+
+\begin_layout Plain Layout
+
+				v_vc = None
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+                if val_type == 'ValuesInt':
+\end_layout
+
+\begin_layout Plain Layout
+
+                    v_int = value
+\end_layout
+
+\begin_layout Plain Layout
+
+                elif val_type == 'ValuesMoney':
+\end_layout
+
+\begin_layout Plain Layout
+
+                    v_money = value 
+\end_layout
+
+\begin_layout Plain Layout
+
+               elif val_type == 'ValueVarchar':
+\end_layout
+
+\begin_layout Plain Layout
+
+                    v_vc = value
+\end_layout
+
+\begin_layout Plain Layout
+
+                sql_statement += '(?,?,?,?,?,?,?),'
+\end_layout
+
+\begin_layout Plain Layout
+
+                sql_values += [forecast, self.city[0], self.api[0],
+\end_layout
+
+\begin_layout Plain Layout
+
+				v_int, v_money, v_vc, attr]
+\end_layout
+
+\begin_layout Plain Layout
+
+            cursor.execute(sql_statement[:-1], sql_values)
+\end_layout
+
+\begin_layout Plain Layout
+
+            self.conn.commit()
+\end_layout
+
+\begin_layout Plain Layout
+
+        else: 
+\end_layout
+
+\begin_layout Plain Layout
+
+           return None
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+insert_execute függvény
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+Miután a fejezet előző részeiben említett feldolgozó metódusok sikeresen
+ végben mennek, az adatok ténylegesen tárolhatóvá válnak az adatbázisban.
+ SQLInsertData függvényei szolgálnak e bonyolult feladat elindítására.
+ Az osztály konstruktora várja az feldolgozott adatokat, lekért várost,API
+ szolgáltatót valamint az idő tömböt, amik már előzetesen definiálásra kerültek.
+ Ha aktuális időjárási adatról beszélünk utolsó paraméter pontos megadása
+ nem szükséges.
+ Az osztályban két függvényt, az 
+\series bold
+insert_execute
+\series default
+ valamint az 
+\series bold
+InsertData
+\series default
+ emelném ki.
+ Az 
+\series bold
+insert_execute
+\series default
+ feldolgozott adatokat beszúrását futtatja le.
+ Első körben lekérdezi, hogy a konstruktorban definiált feldolgozott adat
+ attribútuma milyen típusú adatbázisban: VARCHAR, INT, MONEY típust különböztet
+ meg.
+ Ennek függvényében ad értéket v_int,v_money,v_vc változonak, amely tipus
+ detektálja megkapja az adattömbben tárolt értéket, a többi NONE típusú
+ marad így az adatbázisban ezek az oszlopok NULL értékkel fognak szerepelni,
+ míg az attribútumhoz tartozó érték pontosan beszúrásra kerül.
+ Ezt követően a értékeket összefűzi és egy lépésben beszúrja az adatbázis
+ vCityWeather nézet táblájába, ahol már előzőekben bemutatott TRIGGER segítségév
+el az adatok a megfelelő helyre kerülnek.
+ InsertData függvényben kerül meghívásra, azonban az aktuális és előrejelzett
+ adatokból kapott tömbök kis mértékben különböznek, így hívásnál is meg
+ kell különböztetni a két típust.
+ Az előrejelzett típus lényegében egy lista ami tömböket tartalmaz, s ezen
+ végig kell iterálni.
+ 
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename táblaq.png
+	rotateOrigin center
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Értékek tárolása
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Az adatgyűjtés során más INSERT scriptre nem kifejezetten van szükség, azonban
+ kivételt képez egy eset amikor egy újonnan lekért város egyedi azonosítóját
+ kell eltárolni, egyenlőre csak egy ilyen szolgáltató van használatban.
+ Ezen szolgáltató esetében szükséges az azonosítók lekérése is.
+ Ezen célból készült a Location osztály mely rendelkezek egy-egy getter
+ és setter függvénnyel.Talán magától értetődő, hogy a getter függvény az
+ azonosító lekérdezésére szolgál és az előzőekben bemutatott
+\series bold
+ get_filtered_data
+\series default
+ metódust használja.
+ Setter pedig vár egy API szolgáltatót, város nevet és a kapott lokáció
+ kulcsot, amit egy API hívás segítségével válik elérhetővé.
+ A függvény a vLocation nézetbe helyezi az adatokat, s hasonló módon mint
+ a vCityWeather esetében egy trigger segítségével kerül az információ a
+ megfelelő táblákba.
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Adatelemzés
+\end_layout
+
+\begin_layout Standard
+Az adatok feldolgozásával, eltárolásával valamint gyűjtésével, egy olyan
+ témakör előtt nyíltak meg lehetőségek, ami számomra az informatika legérdekeseb
+b része.
+ Érdeklődésem az adattudomány és az adatbázisok iránt egyetemi tanulmányaim
+ kezdetére vezethető vissza, midőn egy előadás keretein belül hallottam
+ róla először, majd az egyetem előrehaladtával is világossá vált számomra,
+ hogy a későbbiekben szeretnék ezen a szakterületen fejlődni.
+\end_layout
+
+\begin_layout Standard
+Data Science kifejezés hasonlóan népszerű mint például a Big Data, de mit
+ is jelent valójában ez a tudomány ág.
+ Az adattudományok egy interdiszciplináris területe az informatikának.
+ Lényege, hogy különkülönböző módszerekkel,algoritmusokkal képesek vagyunk
+ új információkhoz jutni, összefüggésekre fényt deríteni vagy a már meglévő
+ adatokból még több adat birtokába jutni.
+ Erősen kapcsolódik a Big Data és az adatbányászati terültekhez.
+ Data Science nem csak a statisztika,adatelemzés és kapcsolódó módszerezek
+ összességét foglalja magába de ezen művelete, feladatok eredményeire is
+ kiterjed.
+ Fontos azonban, hogy nem csak strukturált de strukturálatlan adatok sokaságáról
+ van szó., hiszen legtöbbször -ahogy esetünkben is- ez csak egy szöveg,kép,
+ videó és gyakran különböző webhelyekről származik.
+ 
+\end_layout
+
+\begin_layout Standard
+A következő fejezetben szó lesz arról, hogy milyen módszerek alkalmasak
+ az adatok közti összefüggések vizsgálatára, az elemzés legfontosabb részeire,
+ valamint arról, hogy milyen technikákat alkalmaztam a kezdetleges eredmények
+ feltárásához és ezen eredmények bemutatása is sorra fog kerülni.
+ hiv
+\end_layout
+
+\begin_layout Subsection
+Adat-előkészítés
+\end_layout
+
+\begin_layout Standard
+Mint már említettem a rendelkezésre álló adatok többsége strukturálatlan
+ formában elérhető.
+ Lehetnek inkonzisztensek, hiányosak, hibásak vagy tartalmazhatnak olyan
+ értékeket melyek jelentősen eltérnek az adatok többségétől.
+ Az adatok előkészítése sok módszert magába foglal:adatok iterálását, tisztításá
+t, transzformációját, redukcióját,validációját.
+ Fő célja, hogy az adat mely a későbbiekben feldolgozásra kerül pontos és
+ következetes legyen, így a téma szakértőinek eredményei is konzisztensek
+ lesznek.
+ Annak ellenére, hogy az adatok előkészítésének folyamatai nagymértékben
+ automatizáltak, ezek javítása mégis jelentős mennyiségű időt vesz igénybe,
+ ennek oka az is, hogy elemzésekben felhasznált adatok mennyisége egyre
+ csak növekszik.
+ Az adattudósok gyakran panaszkodnak, hogy idejük nagy részét az adatok
+ keresésével és tisztításával töltik, ahelyett, hogy ténylegesen elemeznék
+ azokat.
+ hiv
+\end_layout
+
+\begin_layout Standard
+Nem véletlen tehát, hogy az adatgyűjtési folyamat ezért volt ennyire körülményes
+en átgondolva és megtervezve.
+ A jelenleg rendelkezésre álló adatok között csak kis mennyiségű hiba lépett
+ fel így adat előkészítésre nem kellett sok időt fordítani, előfordul azonban,
+ hogy fellép egy-egy hibás érték is vagy szükség van az adatok transzformálására
+ is.
+ Hibás alatt legtöbbször hiányzó adatok értendők.
+ Lekérés során előfordul, hogy egy-egy attribútumhoz nem mint például a
+ csapadék formája nem tartozik érték, ez esetben az adatbázisban is NULL
+ formájában lesz megtalálható.
+ Hiányzó adatok kezelésére több módszer is létezik: ha a hiányzó adat nem
+ fordul elő nagy mennyiségben egyszerű sor kihagyással kiküszöbölhető a
+ hiba, ellenben használható még egy globális konstans vagy attribútumok
+ középértéke a hiányzó adatok pótlására, illetve következtetünk különböző
+ módszerekkel mint például binning módszer vagy klaszterezés.
+\end_layout
+
+\begin_layout Subsection
+Összefüggés-vizsgálat
+\end_layout
+
+\begin_layout Standard
+Megfelelő mennyiségű adat gyűjtése után, első és legfontosabb lépés a változok
+ kapcsolatának vizsgálata.
+ Általánosságban a változok közötti kapcsolat nem független, egyes értékek
+ befolyásolhatnak más attribútum értékeket.
+ Kapcsolatuk természete lehet függvényszerű azaz a kapcsolat egy függvénnyel
+ jellemezhető, valamint sztochasztikus ekkor a kapcsolat csak tendencia
+ jellegű.
+ Kapcsolatukat irányultság alapján is meg lehet különböztetni, ekkor aszimmetrik
+us és szimmetrikus vászonról beszélhetünk.
+ Aszimmetrikus ha az attribútumok közül csak egyik hat a másikra, szimmetrikus
+ ha kölcsönös viszonyban állnak.
+\end_layout
+
+\begin_layout Standard
+Az összefüggések vizsgálatára számos módszer létezik attól függően, hogy
+ a változó milyen adattípusú.
+ Nominális változok esetén használható a 
+\begin_inset script superscript
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+
+ statisztika, ordinális változóknál számít a rang az az ,hogy az érték hányadik
+ a rendezett adatsorban, Spearman rangkorreláció az egyik legismertebb módszer
+ ezen változok összefüggésének vizsgálatára.
+ Folytonos változok esetén - mint ahogy esetemben is - szintén különböző
+ módszerek alkalmazhatóak.
+ Használható korreláció analízis abban az esetben ha a viszony szimmetrikus,
+ regresszió analízis pedig ha az ok-okozat viszonyt keressük.
+ Érdemes még pontdiagram segítségével grafikusan is ábrázolni a változókat,
+ hiszen könnyedén következtethetünk azok viszonyára.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-1"
+literal "false"
+
+\end_inset
+
+http://pypl.github.io/PYPL.html
 \end_layout
 
 \end_body
