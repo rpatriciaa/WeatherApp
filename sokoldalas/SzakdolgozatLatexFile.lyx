@@ -3240,27 +3240,26 @@ en átgondolva és megtervezve.
 \end_layout
 
 \begin_layout Subsection
-Összefüggés-vizsgálat
+Összefüggés-vizsgálat és konklúziók
 \end_layout
 
 \begin_layout Standard
-Megfelelő mennyiségű adat gyűjtése után, első és legfontosabb lépés a változok
- kapcsolatának vizsgálata.
+Megfelelő mennyiségű adat gyűjtése után, első és legfontosabb lépésnek a
+ változok kapcsolatának vizsgálatát véltem.
  Általánosságban a változok közötti kapcsolat nem független, egyes értékek
  befolyásolhatnak más attribútum értékeket.
  Kapcsolatuk természete lehet függvényszerű azaz a kapcsolat egy függvénnyel
  jellemezhető, valamint sztochasztikus ekkor a kapcsolat csak tendencia
  jellegű.
  Kapcsolatukat irányultság alapján is meg lehet különböztetni, ekkor aszimmetrik
-us és szimmetrikus vászonról beszélhetünk.
+us és szimmetrikus viszonyról beszélhetünk.
  Aszimmetrikus ha az attribútumok közül csak egyik hat a másikra, szimmetrikus
  ha kölcsönös viszonyban állnak.
 \end_layout
 
 \begin_layout Standard
-Az összefüggések vizsgálatára számos módszer létezik attól függően, hogy
- a változó milyen adattípusú.
- Nominális változok esetén használható a 
+Az összefüggések vizsgálatára számos módszer létezik.
+ Legismertebbek ezek közül a 
 \begin_inset script superscript
 
 \begin_layout Plain Layout
@@ -3269,18 +3268,220 @@ Az összefüggések vizsgálatára számos módszer létezik attól függően, h
 
 \end_inset
 
- statisztika, ordinális változóknál számít a rang az az ,hogy az érték hányadik
- a rendezett adatsorban, Spearman rangkorreláció az egyik legismertebb módszer
- ezen változok összefüggésének vizsgálatára.
- Folytonos változok esetén - mint ahogy esetemben is - szintén különböző
- módszerek alkalmazhatóak.
- Használható korreláció analízis abban az esetben ha a viszony szimmetrikus,
- regresszió analízis pedig ha az ok-okozat viszonyt keressük.
+ statisztika,Kendall féle tau,Spearman rangkorreláció,Pearson féle korreláció
+ valamint regresszió analízis.
+ A korreláció valamint a regresszió abban különbözik, hogy a korreláció
+ szimmetrikus kapcsolatot feltételez ellenben regresszió analízis azt mutatja
+ a változok milyen irányban hatnak egymásra.
  Érdemes még pontdiagram segítségével grafikusan is ábrázolni a változókat,
  hiszen könnyedén következtethetünk azok viszonyára.
 \end_layout
 
 \begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename relationship.png
+	scale 40
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Attribútumok kapcsolata pont diagram segítségévél.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Az 17.
+ ábrából következtetve, arra jutottam, hogy a változok között nem feltétlenül
+ áll fenn lineáris kapcsolat inkább.
+ Ahhoz, hogy a megfelelő vizsgálatot hajtsak végre azt is megvizsgáltam,
+ hogy milyen eloszlásúak.
+ A 18.
+ ábrán látható, hogy nem normál eloszlású változok így eddigi tanulmányaim
+ hivatkozva, Spearman rankorreláció elvégzése tűnt a legbiztosabbnak.
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename temp.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Humidity.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename pres.png
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Egyes attribútumok eloszlása hisztogrammal szemléltetve
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Spearman korreláció azt mutatja mennyire határozza meg az egyik változó
+ nagysága a másik változó nagyságát, valamint az összefüggés mértékét és
+ annak negatív vagy pozitív irányát.Az összefüggés kimutatására használt
+ korrelációs együttható vagy más néven koefficiens -1 és 1 között vesz fel
+ értékeket, jele az r.
+ Ha r -1 akkor teljesen negatív korrelációról beszélünk, 1 esetén pozitív
+ korreláció áll fen, ha az érték 0 akkor a változok között nem áll fenn
+ összefüggés.
+ A módszer azonban ok-okozati viszony feltárására nem alkalmas.
+ A vizsgálatot több adatsoron is elvégeztem, először az előrejelzési adatokat
+ is figyelembe véve.
+ Mivel ez nem hozta meg a kívánt eredményt, így finomítottam az adatsoron
+ és csak az aktuális előrejelzést vettem figyelembe.
+ Ezt követően tisztább képet kaptam a változok kapcsolatáról.
+ 
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename corree.png
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Az r mértéke táblázatba foglalva
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+19.
+ ábrán látható a már említett táblázatos forma, legnagyobb összefüggések
+ a felhőzet és a páratartalom, felhőzet és a csapadékvalószínűség,páratartalom
+ és hőmérséklet között találhatóak.
+ Látható az is , hogy az előrejelzési adatokat is belevéve eltérő összefüggéseke
+t tapasztaltam.
+ Ebből kifolyólag arra a következtetésre jutottam, hogy az előrejelzési
+ adatok nagy mértékben pontatlanok lehetnek.
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Spearman.png
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Hőtérképes ábrázolás
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Az eredményeket nem csak táblázatként, de hőtérkép formájában is virtualizáltam.
+ A hőtérkép kiváló ábra a korreláció mértékének bemutatására, színes cellákat
+ használ, jellemzően monokromatikus skálán, hogy 2D korrelációs mátrixot
+ mutasson be.
+ A cellák színértéke arányos a méretértékeknek megfelelő mérések számával.
+\end_layout
+
+\begin_layout Subsection
+Előrejelzési hibák mértéke
+\end_layout
+
+\begin_layout Standard
+Hibák feltárása és vizsgálata célként szerepelt a szakdolgozat írása kezdetén
+ is.
+ Az összefüggés-vizsgál során is fény derült arra, hogy egyes előrejelzési
+ adatok pontatlanok lehetnek.
+ Ennek mértékét a következő módon vizsgáltam.
+\end_layout
+
+\begin_layout Subsection*
 \begin_inset Newpage pagebreak
 \end_inset
 
