@@ -83,7 +83,7 @@
 \papercolumns 1
 \papersides 1
 \paperpagestyle default
-\tracking_changes false
+\tracking_changes true
 \output_changes false
 \html_math_output 0
 \html_css_as_file 0
@@ -1146,7 +1146,13 @@ Microsoft Sql Server
 A szoftverhez szükséges adatokat Microsoft Sql Server adatbázis tárolja.
  A döntésem azért esett ezen technológia alkalmazására, mivel már tanulmányaim
  során is volt alkalmam találkozni vele, véleményem szerint sokkal többet
- nyújt mint a MYSQL és nagy mennyiségű adattárolására is alkalmas.
+ nyújt mint a M
+\change_deleted 415188692 1588746968
+Y
+\change_inserted 415188692 1588746968
+y
+\change_unchanged
+SQL és nagy mennyiségű adattárolására is alkalmas.
  Jelenleg az adatbázis az egyetem által biztosított szerveren fut, azonban
  könnyedén konfigurálható egy localhost is, így a fejlesztés korai szakaszában
  a tesztelés is kényelmesen történt.
@@ -1175,8 +1181,16 @@ Az adatbázis tervezésénél törekedtem a rekord-orientált felépítésre.
  JOIN-t jelenthet melyek egyes fejlesztők számára első hangzásra bonyolultnak
  tűnhet.
  Ezzel szemben viszont nagyon rugalmas, struktúrája könnyedén változtatható,
- a módosítások nem jelentenék az alkalmazás teljesen összeomlását.
- Ezek mellett legtöbbször sokkal hatékonyabb és időtálló modell.
+ a módosítások nem jelentenék az alkalmazás teljes
+\change_deleted 415188692 1588747025
+en
+\change_unchanged
+ összeomlását.
+ Ezek mellett legtöbbször sokkal hatékonyabb és időtálló
+\change_inserted 415188692 1588747045
+bb
+\change_unchanged
+ modell.
 \end_layout
 
 \begin_layout Subsection
@@ -1184,18 +1198,52 @@ Adatbázis Séma
 \end_layout
 
 \begin_layout Standard
-Az adatbázis kezdetben kevesebb táblát tartalmazott, valamint a táblák is
- kisebb mennyiségű információt tároltak.
- Ebből kifolyólag a program fejlesztése is hosszadalmas és átláthatatlanná
- vált.
+Az adatbázis 
+\change_deleted 415188692 1588747059
+kezdetben
+\change_inserted 415188692 1588747074
+a fejlesztés korai szakaszában
+\change_unchanged
+ kevesebb táblát tartalmazott, valamint a táblák is kisebb mennyiségű információ
+t tároltak.
+ Ebből kifolyólag a program fejlesztése is hosszadalmas 
+\change_inserted 415188692 1588747123
+volt 
+\change_unchanged
+és átláthatatlanná vált.
  Habár az adatbázis már akkor is rekord-orientált formában volt elkészítve,
  mégis a csekély rendelkezésre álló adat miatt ezt a program nem tudta kamatozta
 tni.
  A fő célkitűzés továbbra is a rugalmas, könnyedén bővíthető szoftver készítése
  maradt, ennélfogva át kellett gondolni a már meglévő sémát.
- Szerencsésnek gondolom, hogy már kezdetben is rekord-orientált formában
- volt tervezve, hiszen az új táblák és attribútumok felvétele egyáltalán
- nem jelentett különösebb gondot.
+ Szerencsésnek gondolom, hogy már 
+\change_inserted 415188692 1588747184
+a 
+\change_unchanged
+kezdet
+\change_inserted 415188692 1588747188
+ektől fogva
+\change_deleted 415188692 1588747191
+ben is
+\change_unchanged
+ rekord-orientált 
+\change_inserted 415188692 1588747201
+modellt 
+\change_deleted 415188692 1588747205
+formában volt 
+\change_unchanged
+tervez
+\change_deleted 415188692 1588747207
+v
+\change_inserted 415188692 1588747208
+t
+\change_unchanged
+e
+\change_inserted 415188692 1588747209
+m
+\change_unchanged
+, hiszen az új táblák és attribútumok felvétele egyáltalán nem jelentett
+ különösebb gondot.
  Az séma kibővítésévél létrejött, egy olyan rendkívül jól összetett és használha
 tó adatbázis amely a szoftver működősének közel teljesen egészében az alappillér
 évé vált.
@@ -1247,27 +1295,101 @@ City: Különböző városok adatait tárolja.
 
 \begin_layout Itemize
 CityAPILocation: Egyes API szolgáltatók a városokat egyedi azonosítókkal
- különböztetik meg, elérésük minden hívásnál egy plusz API hívást jelentene,
- így gyors hozzáférés érdekében ezek is tárolásra kerülnek.
+ különböztetik meg, elérésük minden hívásnál egy plusz 
+\change_deleted 415188692 1588747272
+API
+\change_unchanged
+ 
+\change_deleted 415188692 1588747282
+hívást
+\change_inserted 415188692 1588747283
+kérést
+\change_unchanged
+ jelent
+\change_deleted 415188692 1588747288
+ene
+\change_unchanged
+, így 
+\change_inserted 415188692 1588747292
+a 
+\change_unchanged
+gyors hozzáférés érdekében ezek is tárolásra kerülnek.
 \end_layout
 
 \begin_layout Itemize
 API: API szolgáltatok adatait tárolja.
- Részét képezik az API-hoz tartozó kulcsok melyek segítségével az API hívások
- történnek, meghívandó URL, JSON objektum azon részéhez egy elérési útvonal,
- ahol az adatokat találja a program.
+ Részét képezik az 
+\change_inserted 415188692 1588747321
+adott szolgáltatóhoz
+\change_deleted 415188692 1588747323
+API-hoz
+\change_unchanged
+ tartozó kulcsok melyek segítségével az API hívások történnek
+\change_inserted 415188692 1588747340
+.
+ Emellett
+\change_deleted 415188692 1588747342
+,
+\change_inserted 415188692 1588747343
+a
+\change_unchanged
+ meghívandó URL
+\change_inserted 415188692 1588747361
+ és a
+\change_deleted 415188692 1588747361
+,
+\change_unchanged
+ JSON objektum azon részéhez egy elérési útvonal, ahol az adatokat találja
+ a program.
  Mivel ez függ attól is, hogy az objektum előrejelzett vagy aktuális időjárást
  tartalmaz így ez megkülönböztetésre került CC az az Current Cast és FC
  az az Forecast jelöléssel.
- A előrejelzés válaszában megtalálhatóak a dátumok is, melyeket a későbbiek
- létfontpontosságú eltárolni, így ezek elérési útvonala is megtalálható
+ A
+\change_inserted 415188692 1588747381
+z
+\change_unchanged
+ előrejelzés válaszában megtalálhatóak a dátumok is, melyeket a későbbiek
+\change_inserted 415188692 1588747403
+ben
+\change_unchanged
+ létfontpontosságú eltárolni, így ezek elérési útvonala is 
+\change_deleted 415188692 1588747413
+megtalálható
+\change_inserted 415188692 1588747418
+tárolásra kerül
+\change_unchanged
  a táblában.
 \end_layout
 
 \begin_layout Itemize
-Attribute: Tárolja az attribútumomat melyeket vizsgálunk, például: szélirány,hőm
-érséklet.
- Ezek nevei és típusai VARCHAR,INT,MONEY megtalálhatóak a táblában.
+Attribute: Tárolja az attribútumo
+\change_deleted 415188692 1588747427
+m
+\change_inserted 415188692 1588747427
+k
+\change_unchanged
+at melyeket vizsgálunk, például: szélirány,
+\change_inserted 415188692 1588747434
+ 
+\change_unchanged
+hőmérséklet.
+ Ezek nevei és típusai VARCHAR,
+\change_inserted 415188692 1588747439
+ 
+\change_unchanged
+INT,
+\change_inserted 415188692 1588747440
+ 
+\change_unchanged
+MONEY 
+\change_deleted 415188692 1588747447
+meg
+\change_unchanged
+találhatóak 
+\change_inserted 415188692 1588747449
+meg 
+\change_unchanged
+a táblában.
 \end_layout
 
 \begin_layout Itemize
@@ -1279,7 +1401,11 @@ JsonAttributes: Az attribútum nevek és elérési útvonalaik szolgáltatókén
 \end_layout
 
 \begin_layout Itemize
-Weather: Az időjárási adatokat azonosítására szolgál.
+Weather: Az időjárási adatok
+\change_deleted 415188692 1588747499
+at
+\change_unchanged
+ azonosítására szolgál.
  Tárolja a hívás időpontját valamint az előrejelzés dátumát is.
  Megtalálható még a leinformált város azonosítója és API azonosítója is
  ami meghívásra került.
@@ -1287,13 +1413,31 @@ Weather: Az időjárási adatokat azonosítására szolgál.
 
 \begin_layout Itemize
 WeatherAttributes: Kapcsolódik a Weather táblához, itt találhatóak az időjárási
- adatok részletei.Attribútumokhoz tartozó értékek, szöveges érték esetén
- csak egy azonosítót tárol, melynek értéke a ValueVC táblában található.
+ adatok részletei.
+
+\change_inserted 415188692 1588747528
+ 
+\change_unchanged
+Attribútumokhoz tartozó értékek, szöveges érték esetén csak egy azonosítót
+ tárol, melynek értéke a ValueVC táblában található.
 \end_layout
 
 \begin_layout Itemize
-ValueVC: Szöveges értékek tárolására szolgál, segítségével rengeteg felesleges
- adat tárolása kerülhető el, az azonos elnevezésű adatok mint például 
+ValueVC: Szöveges értékek tárolására szolgál, segítségével rengeteg 
+\change_deleted 415188692 1588747555
+felesleges
+\change_inserted 415188692 1588747556
+redundáns
+\change_unchanged
+ adat tárolása kerülhető el, 
+\change_inserted 415188692 1588747567
+mivel 
+\change_unchanged
+az azonos elnevezésű adatok
+\change_inserted 415188692 1588747574
+at
+\change_unchanged
+ mint például 
 \begin_inset Quotes pld
 \end_inset
 
@@ -1315,11 +1459,23 @@ napos idő
 Az ábrán látható, hogy egyes adatokat csak úgy tudunk lekérdezni, hogyha
  több táblát összekapcsolunk.
  Például ha szeretnénk megtudni, hogy Veszprémben egy bizonyos szolgáltató,
- milyen hőmérsékletet ígért egy adott időpontra, szükséges összekapcsolni
- a City, Api, JsonAttributes, Attribute, Weather és WeatherAttributes táblákat.
- Mint említettem ezek elsőre összetettnek és körülményesnek tűnik, viszont
- egy új tábla vagy egy új attribútum könnyedén beépíthető, valamint a felmerülő
- hibák javítása sem okoz teljes összeomlást a rendszerben.
+ milyen hőmérsékletet ígért egy adott időpontra, 
+\change_deleted 415188692 1588747607
+szükséges 
+\change_unchanged
+össze
+\change_inserted 415188692 1588747610
+ kell 
+\change_unchanged
+kapcsolni a City, Api, JsonAttributes, Attribute, Weather és WeatherAttributes
+ táblákat.
+ Mint említettem ez
+\change_deleted 415188692 1588747625
+ek
+\change_unchanged
+ elsőre összetettnek és körülményesnek tűnik, viszont egy új tábla vagy
+ egy új attribútum könnyedén beépíthető, valamint a felmerülő hibák javítása
+ sem okoz teljes összeomlást a rendszerben.
 \end_layout
 
 \begin_layout Subsection
@@ -1327,12 +1483,18 @@ Fejlesztés során használt nézetek és trigger-ek
 \end_layout
 
 \begin_layout Standard
-A már említett rekord-orientált adatbázis egyik legnagyobb hátulütője azaz
- a kapcsolatok sokasága már a fejlesztés korai szakaszában jelenetezett,
+A már említett rekord-orientált adatbázis egyik legnagyobb hátulütője
+\change_inserted 415188692 1588747659
+,
+\change_unchanged
+ azaz a kapcsolatok sokasága már a fejlesztés korai szakaszában jelenetezett,
  azonban ez a probléma egyszerűen kiküszöbölhető.
- Az adatok gyors és egyszerű tárolása valamint elérése érdekébe különböző
- nézeteket és triggereket alkalmaztam, így sikerült elkerülni, hogy a bonyolult
- lekérdezéseket magában a programkódban kelljen megírni.
+ Az adatok gyors és egyszerű tárolása valamint elérése érdekébe
+\change_inserted 415188692 1588747683
+n
+\change_unchanged
+ különböző nézeteket és triggereket alkalmaztam, így sikerült elkerülni,
+ hogy a bonyolult lekérdezéseket magában a programkódban kelljen megírni.
 \end_layout
 
 \begin_layout Standard
@@ -1341,13 +1503,22 @@ Elsősorban, ahhoz hogy az API hívások rugalmasan történhessenek, szüksége
 \series bold
 vAPI
 \series default
- nézet, amely visszaadja az aktív szolgáltatok adatait.
+ nézet, amely visszaadja az aktív szolgáltat
+\change_deleted 415188692 1588747715
+o
+\change_inserted 415188692 1588747715
+ó
+\change_unchanged
+k adatait.
  E mellett egy 
 \series bold
 vCity
 \series default
  nézet készítése is megtörtént, mely tárolja az aktív városok nevét.
- Az adatok feldolgozása során tudni kell azt is, hogy egyes attribútumokat
+ Az adatok feldolgozása során tudni kell azt is, hogy egyes attribútumok
+\change_deleted 415188692 1588747737
+at
+\change_unchanged
  mint például a szélirány vagy a hőmérséklet milyen néven találhatóak meg
  az adott szolgáltatónál.
  Erre szolgál a 
@@ -1363,8 +1534,25 @@ API, Attributes
  JSONAttributes
 \series default
  táblákat.
- Már szó esett arról , hogy vannak olyan szolgáltatók, melyek nem város
- név alapján dolgozzák fel a hívások, hanem egyedi azonosítót használnak.
+ Már szó esett arról
+\change_deleted 415188692 1588747754
+ 
+\change_unchanged
+, hogy vannak olyan szolgáltatók, melyek nem város
+\change_deleted 415188692 1588747769
+ 
+\change_unchanged
+név alapján dolgozzák fel a 
+\change_deleted 415188692 1588747797
+hívások
+\change_inserted 415188692 1588747798
+kéréseket
+\change_unchanged
+, hanem 
+\change_inserted 415188692 1588747814
+a helységet meghatározó, 
+\change_unchanged
+egyedi azonosítót használnak.
  Az adatbázisban a 
 \series bold
 City
@@ -1375,14 +1563,44 @@ CityAPILocation
 \series default
  táblákat össze kell kapcsolni ahhoz, hogy elérhető legyen a városhoz tartozó
  kulcs.
- vLocation nézet összeköti ezeket a táblákat, azonban van olyan eset is,
- amikor olyan várost ad bementenek a felhasználó, amely még nem szerepel
- az adatbázisban.
+ 
+\change_inserted 415188692 1588747832
+A 
+\change_unchanged
+
+\series bold
+vLocation
+\series default
+ nézet összeköti ezeket a táblákat, azonban van olyan eset is, amikor olyan
+ várost ad bementenek a felhasználó, amely még nem szerepel az adatbázisban.
  Ebben az esetben elkerülhetetlenné válik az extra API hívás intézése a
  szolgáltató felé.
- Hívás sikeres elvégzése után termesztésen az új információk tárolásra kerülnek,
- viszont a program csak a nézet táblába szúrja be azokat.
- A 
+ 
+\change_inserted 415188692 1588747857
+A h
+\change_deleted 415188692 1588747858
+H
+\change_unchanged
+ívás sikeres elvégzése után termesztésen az új információk tárolásra kerülnek
+\change_inserted 415188692 1588747875
+ úgy
+\change_unchanged
+, 
+\change_deleted 415188692 1588747880
+viszont
+\change_inserted 415188692 1588747880
+hogy
+\change_unchanged
+ a program csak a nézet táblába szúrja be azokat.
+ 
+\change_inserted 415188692 1588747911
+Az így beszúrt adatok 
+\change_deleted 415188692 1588747912
+A
+\change_inserted 415188692 1588747912
+a
+\change_unchanged
+ 
 \series bold
 City
 \series default
@@ -1390,17 +1608,37 @@ City
 \series bold
 CityAPILocation
 \series default
- táblákban trigger az az 
+ táblákba
+\change_deleted 415188692 1588747916
+n
+\change_unchanged
+ 
+\change_inserted 415188692 1588747929
+a 
 \series bold
 tr_CAL
 \series default
- segítségével jut el.
+ 
+\change_unchanged
+trigger 
+\change_deleted 415188692 1588747932
+az az 
+\series bold
+tr_CAL
+\series default
+ 
+\change_unchanged
+segítségével jut el.
  A folyamat egyszerű, első sorban a 
 \series bold
 City
 \series default
- táblába kerülnek be a városok neveit, az ezekhez tartozó azonosítóhoz pedig
- hozzárendeli a lekért kulcsot a 
+ táblába kerülnek be a városok nevei
+\change_deleted 415188692 1588747954
+t
+\change_unchanged
+, az ezekhez tartozó azonosítóhoz pedig hozzárendeli a lekért kulcsot a
+ 
 \series bold
 CityAPILocation
 \series default
@@ -1408,11 +1646,25 @@ CityAPILocation
 \end_layout
 
 \begin_layout Standard
-Ahhoz, hogy az adatok megfelelő formában kerüljenek és készen álljanak a
- tárolásra rengeteg folyamatnak kell lefutnia azonban ez csak a dolgozat
- későbbi szakaszában kerül részletezésre.
+Ahhoz, hogy az adatok megfelelő formába
+\change_deleted 415188692 1588747970
+n
+\change_unchanged
+ kerüljenek és készen álljanak a tárolásra rengeteg folyamatnak kell lefutnia
+\change_inserted 415188692 1588748302
+,
+\change_unchanged
+ azonban ez csak a dolgozat későbbi szakaszában kerül részletezésre.
  Tegyük fel, hogy az összes folyamat sikeresen végbe megy és már csak egyetlen
- fázis van hátra az: adatbázisban való tárolás.
+ fázis van hátra
+\change_inserted 415188692 1588748317
+:
+\change_unchanged
+ az
+\change_deleted 415188692 1588748318
+:
+\change_unchanged
+ adatbázisban való tárolás.
  Az adatbázis felépítése miatt több táblát is össze kell kapcsolni.
  Ennek megvalósítása problémás lett volna a programozás során.
  A feladat megkönnyítésére szolgál a 
@@ -1551,10 +1803,21 @@ City, Api, JSONAttributes, Attribute
  műveletet is.
  A nézethez tartozik
 \series bold
- tr_CW 
+ 
+\change_inserted 415188692 1588748363
+
 \series default
-elnevezésű trigger is, ennek segítségévél könnyedén és egyszerre beszúrható
- az összes adat.
+a 
+\change_unchanged
+
+\series bold
+tr_CW 
+\series default
+elnevezésű trigger is, 
+\change_inserted 415188692 1588748373
+így 
+\change_unchanged
+ennek segítségévél könnyedén és egyszerre beszúrható az összes adat.
 \begin_inset Float figure
 wide false
 sideways false
@@ -1664,8 +1927,24 @@ City és VARHCAR tipusú változok tárolása
 
 \end_inset
 
-Először ahogy az 6.
- ábrán látható tárolja, azon városok valamint 
+
+\change_inserted 415188692 1588748421
+A trigger 
+\change_deleted 415188692 1588748422
+E
+\change_inserted 415188692 1588748422
+e
+\change_unchanged
+lőször 
+\change_inserted 415188692 1588748410
+- 
+\change_unchanged
+ahogy az 6.
+ ábrán látható 
+\change_inserted 415188692 1588748414
+- 
+\change_unchanged
+tárolja, azon városok valamint 
 \begin_inset Quotes pld
 \end_inset
 
@@ -1673,7 +1952,11 @@ VARCHAR
 \begin_inset Quotes prd
 \end_inset
 
- típusú adatok mint például 
+ típusú adatok 
+\change_inserted 415188692 1588748455
+- 
+\change_unchanged
+mint például 
 \begin_inset Quotes pld
 \end_inset
 
@@ -1689,8 +1972,21 @@ cloudy
 \begin_inset Quotes prd
 \end_inset
 
- nevét melyek nem szerepelnek az adatbázisban, illetve kiválasztja az ezekhez
- tartozó azonosítót.
+ 
+\change_inserted 415188692 1588748458
+- 
+\change_unchanged
+nevét melyek 
+\change_inserted 415188692 1588748466
+még 
+\change_unchanged
+nem szerepelnek az adatbázisban
+\change_inserted 415188692 1588748481
+.
+\change_deleted 415188692 1588748484
+, illetve kiválasztja az ezekhez tartozó azonosítót.
+
+\change_unchanged
  
 \begin_inset Float figure
 wide false
@@ -1835,28 +2131,84 @@ Weather és WeatherValues táblák feltöltése
 
 \end_layout
 
-\begin_layout Plain Layout
-
-\end_layout
-
 \end_inset
 
-Ez után a 
+
+\change_inserted 415188692 1588748513
+Következő lépésként a trigger
+\change_deleted 415188692 1588748515
+Ez után
+\change_unchanged
+ a 
 \series bold
 Weather
 \series default
- táblába beszúrja a hívás dátumát, a lekért időszak dátumát továbbá a szolgáltat
-ó azonosítóját és a korábban lekérdezett város azonosítóját is.
+ táblába 
+\change_deleted 415188692 1588748520
+be
+\change_unchanged
+szúrja
+\change_inserted 415188692 1588748522
+ be
+\change_unchanged
+ a hívás 
+\change_inserted 415188692 1588748529
+és
+\change_deleted 415188692 1588748531
+dátumát,
+\change_unchanged
+ a lekért időszak dátumát
+\change_inserted 415188692 1588748534
+,
+\change_unchanged
+ továbbá a szolgáltató azonosítóját és a korábban lekérdezett város 
+\change_deleted 415188692 1588748556
+azonosítóját
+\change_inserted 415188692 1588748558
+kódját
+\change_unchanged
+ is.
  Az adatok részletes tárolása a 
 \series bold
 WeatherValues
 \series default
- táblában történik.Az adatokat 
+ táblában történik.
+
+\change_inserted 415188692 1588748566
+ 
+\change_unchanged
+Az adatokat
+\change_inserted 415188692 1588748572
+ a
+\change_unchanged
+ 
 \series bold
 Weather
 \series default
  tábla azonosítójához köti.
- Táblában be kerülnek az időjárási adatok értékei az adott attribútumokhoz,
+ 
+\change_inserted 415188692 1588748588
+A 
+\change_deleted 415188692 1588748588
+T
+\change_inserted 415188692 1588748588
+t
+\change_unchanged
+áblába
+\change_deleted 415188692 1588748590
+n
+\change_unchanged
+ be
+\change_deleted 415188692 1588748591
+ 
+\change_unchanged
+kerülnek az időjárási adatok értékei az adott attribútumokhoz
+\change_deleted 415188692 1588748601
+,
+\change_inserted 415188692 1588748601
+.
+
+\change_unchanged
  VARCHAR típusú attribútum esetén szintén csak egy azonosítót tárol, hiszen
  egy-egy érték szerepelhet többször is, ezeket felesleges többször tárolni.
  
@@ -1878,17 +2230,72 @@ Adatgyűjtés Python segítségével
 \end_layout
 
 \begin_layout Standard
-Ebben a fejezetben részletesen szeretném kifejteni ezek működését, valamint
- bemutatni a program felépítését.
- A program készítése során fő szempont volt, hogy rugalmas legyen és átlátható.
- Ebben nagyban hozzájárult a már jól felépített adatbázis is.
- Szeretnék kitérni a már sokszor említett API szolgáltatókra , ezek dokumentáció
-jára valamint a szolgáltatásra amit nyújtanak.
- Az adatok gyűjtése majd továbbítása Python-ban történik.
- A programban különböző osztályok felelnek az egyes folyamatokért legyen
- az API hívás vagy JSON feldolgozás.
- Ezen osztályok funkciói pedig különböző feladatokat látnak el.
+Ebben a fejezetben részletesen szeretném kifejteni 
+\change_deleted 415188692 1588748648
+ezek
+\change_inserted 415188692 1588748663
+az adatgyűjtéshez kapcsolódó algoritmusok és rutinok
+\change_unchanged
+ működését, valamint bemutatni a program felépítését.
+ A
+\change_inserted 415188692 1588748668
+z
+\change_unchanged
  
+\change_deleted 415188692 1588748670
+program
+\change_inserted 415188692 1588748672
+alkalmazás
+\change_unchanged
+ készítése során fő szempont volt, hogy rugalmas 
+\change_deleted 415188692 1588748680
+legyen 
+\change_unchanged
+és átlátható
+\change_inserted 415188692 1588748682
+ legyen
+\change_unchanged
+.
+ E
+\change_deleted 415188692 1588748688
+bb
+\change_inserted 415188692 1588748688
+hh
+\change_unchanged
+e
+\change_deleted 415188692 1588748689
+n
+\change_inserted 415188692 1588748689
+z
+\change_unchanged
+ nagyban hozzájárult a már jól felépített adatbázis is.
+ Szeretnék kitérni a már sokszor említett API szolgáltatókra
+\change_deleted 415188692 1588748702
+ 
+\change_unchanged
+, ezek dokumentációjára valamint a
+\change_inserted 415188692 1588748719
+z általuk nyújtott
+\change_unchanged
+ 
+\change_deleted 415188692 1588748734
+szolgáltatásra amit nyújtanak
+\change_inserted 415188692 1588748738
+lekérdezési lehetőségekre is
+\change_unchanged
+.
+ Az adatok gyűjtése majd továbbítása Python-ban történik.
+ A programban különböző osztályok felelnek az egyes folyamatokért 
+\change_inserted 415188692 1588748757
+- 
+\change_unchanged
+legyen az API hívás vagy JSON feldolgozás.
+ Ezen osztályok funkciói pedig különböző feladatokat látnak el.
+
+\change_deleted 415188692 1588748769
+ 
+\change_unchanged
+
 \end_layout
 
 \begin_layout Subsection
@@ -1897,22 +2304,112 @@ Időjárás előrejelző API
 
 \begin_layout Standard
 Az adatok gyűjtése jelenleg négy szolgáltató segítségével történik.
- Ezen szolgáltatók dokumentációja részben vagy egészben különböznek egymástól,
- viszont a kívánt információk mind a négynél elérhetőek.
- Általánosságban kijelenthető, hogy több szolgáltatás formát nyújtanak,
- ez alatt a következőket értem: lekérdezhetőek múltbéli időjárási adatok,
- hét napos előrejelzés ezen belül is több formátumban mint például óránkénti
- vagy három órás bontásban, aktuális információk az időjárásról vagy demográfiai
- adatok.
+ Ezen szolgáltatók dokumentáció
+\change_deleted 415188692 1588748794
+ja
+\change_inserted 415188692 1588748794
+i
+\change_unchanged
+ részben vagy egészben különböznek egymástól, viszont a kívánt információk
+ mind a négynél elérhetőek.
+ Általánosságban kijelenthető, hogy több szolgáltatás
+\change_deleted 415188692 1588748820
+ 
+\change_unchanged
+formát nyújtanak, ez alatt a következőket értem: lekérdezhetőek múltbéli
+ időjárási adatok, hét napos előrejelzés 
+\change_inserted 415188692 1588748832
+- 
+\change_unchanged
+ezen belül is több formátumban mint például óránkénti vagy három órás bontásban
+\change_inserted 415188692 1588748838
+ -
+\change_deleted 415188692 1588748841
+,
+\change_unchanged
+ 
+\change_inserted 415188692 1588748851
+valamint 
+\change_unchanged
+aktuális információk az időjárásról vagy 
+\change_inserted 415188692 1588748857
+akár 
+\change_unchanged
+demográfiai adatok.
  A feladat szempontjából azonban két szolgáltatás volt fontos, a jelenlegi
  időjárás és az előrejelzés.
- Ezek általában korlátozott számban ingyenesnek de vannak limit nélküli,
- akárhányszor lekérhető formában is.
+ Ezek általában 
+\change_inserted 415188692 1588748884
+csak 
+\change_unchanged
+korlátozott számban ingyenesnek
+\change_inserted 415188692 1588748888
+,
+\change_unchanged
+ de 
+\change_deleted 415188692 1588748893
+vannak
+\change_inserted 415188692 1588748895
+előfordul
+\change_unchanged
+ limit nélküli, akárhányszor lekérhető formában is.
  Természetesen vannak olyan szolgáltatók melyek adatai nem nyilvánosak,
- ezek használatához külön engedély kérés kötelez.
- Magyar szolgáltatók közül ilyen például Időkép és Köpönyeg is, szándékomban
- állt az ő adataikat is elemezni, sajnos a megkeresésemre nem adtak választ.
- A négy információt biztosító szolgáltató a következők:
+ ezek használatához külön engedély
+\change_deleted 415188692 1588748938
+ 
+\change_unchanged
+kérés 
+\change_deleted 415188692 1588748940
+kötelez
+\change_inserted 415188692 1588748942
+szükséges
+\change_unchanged
+.
+ Magyar szolgáltatók közül ilyen például 
+\change_inserted 415188692 1588748953
+az 
+\change_unchanged
+Időkép és Köpönyeg is
+\change_deleted 415188692 1588748966
+,
+\change_inserted 415188692 1588748966
+.
+
+\change_unchanged
+ 
+\change_deleted 415188692 1588748968
+s
+\change_inserted 415188692 1588748968
+S
+\change_unchanged
+zándékomban állt 
+\change_inserted 415188692 1588748988
+e két szolgáltató
+\change_deleted 415188692 1588748989
+az ő 
+\change_inserted 415188692 1588748992
+ 
+\change_unchanged
+adatai
+\change_deleted 415188692 1588749004
+ka
+\change_unchanged
+t is elemezni, 
+\change_inserted 415188692 1588749010
+de 
+\change_unchanged
+sajnos a megkeresésemre nem 
+\change_deleted 415188692 1588749019
+adtak
+\change_inserted 415188692 1588749020
+kaptam
+\change_unchanged
+ választ.
+ A négy
+\change_inserted 415188692 1588749028
+,
+\change_unchanged
+ információt biztosító szolgáltató a következők:
 \end_layout
 
 \begin_layout Standard
@@ -1948,69 +2445,366 @@ Cégek logói
 \end_layout
 
 \begin_layout Standard
-Az Accu Weather amerikai vállalat, kereskedelmi időjárás előrejelzési szolgáltat
-ásokat nyújt nem csak Amerikában de világszerte is.
- Több developer csomaggal is rendelkezik, ezek mind különböző szolgáltatást
- nyújtanak ár függvényében.
- A Limited Trial nevű csomag ami általam is használt, ez teljesen ingyenes
- azonban csak 50 hívást engedélyez naponta ami a többi szolgáltatót nézve
- nagyon alacsony szám.
- Csomag magába foglal többi API-t is mint például Location API, amely az
- adott város egyedi azonosítóját adja vissza, fontos meghívni hiszen a többi
- API híváshoz fontos megadni az itt lekért város id-t.
+Az Accu Weather amerikai vállalat, 
+\change_inserted 415188692 1588749046
+mely 
+\change_unchanged
+kereskedelmi időjárás előrejelzési szolgáltatásokat nyújt nem csak 
+\change_inserted 415188692 1588749065
+az Egyesült Államokban
+\change_deleted 415188692 1588749066
+Amerikában
+\change_unchanged
+ 
+\change_deleted 415188692 1588749069
+de
+\change_inserted 415188692 1588749069
+hanem
+\change_unchanged
+ világszerte is.
+ Több 
+\change_deleted 415188692 1588749083
+developer
+\change_inserted 415188692 1588749084
+fejlesztői
+\change_unchanged
+ csomaggal is rendelkezik, ezek mind különböző szolgáltatást nyújtanak 
+\change_inserted 415188692 1588749080
+az 
+\change_unchanged
+ár függvényében.
+ A Limited Trial nevű csomag 
+\change_inserted 415188692 1588749093
+- 
+\change_unchanged
+ami 
+\change_inserted 415188692 1588749096
+az 
+\change_unchanged
+általam is használt
+\change_inserted 415188692 1588749099
+ -
+\change_deleted 415188692 1588749100
+,
+\change_unchanged
+ 
+\change_deleted 415188692 1588749101
+ez 
+\change_unchanged
+teljesen ingyenes
+\change_inserted 415188692 1588749105
+,
+\change_unchanged
+ azonban csak 50 hívást engedélyez naponta 
+\change_inserted 415188692 1588749125
+- 
+\change_unchanged
+ami a többi szolgáltatót nézve nagyon alacsony szám.
+ 
+\change_inserted 415188692 1588749131
+A 
+\change_deleted 415188692 1588749131
+C
+\change_inserted 415188692 1588749131
+c
+\change_unchanged
+somag magába foglal többi API-t is mint például Location API, amely az adott
+ város egyedi azonosítóját adja vissza
+\change_deleted 415188692 1588749148
+,
+\change_inserted 415188692 1588749148
+.
+
+\change_unchanged
+ 
+\change_deleted 415188692 1588749149
+f
+\change_inserted 415188692 1588749149
+F
+\change_unchanged
+ontos meghívni 
+\change_inserted 415188692 1588749158
+ezt a szolgáltatást is, 
+\change_unchanged
+hiszen a többi API híváshoz fontos megadni az itt lekért város 
+\change_deleted 415188692 1588749164
+id-t
+\change_inserted 415188692 1588749167
+azonosítóját
+\change_unchanged
+.
  Ezen kívül használatban van még a Forecast API amely aktuális időjárási
- adatokat adja vissza, illetve 5-day Forecast API amely a következő öt nap
- időjárási adatait mutatja ki.
- Limited Trial csomagon kívül még eléhertő három fizetős csomag a Standard,
- Prime és Elite ezek nagyobb összeges kifizetése ellenében már szép számú
- API hívást engedélyeznek.
+ adatokat adja vissza, illetve 5-day Forecast API amely 
+\change_inserted 415188692 1588749200
+segítségével 
+\change_unchanged
+a következő öt nap időjárási adatai
+\change_deleted 415188692 1588749203
+t
+\change_unchanged
+ 
+\change_deleted 415188692 1588749205
+mutatja ki
+\change_inserted 415188692 1588749207
+kérdezhetők le
+\change_unchanged
+.
+ 
+\change_inserted 415188692 1588749210
+A 
+\change_unchanged
+Limited Trial csomagon kívül még eléhertő három fizetős csomag a Standard,
+ Prime és Elite
+\change_inserted 415188692 1588749220
+.
+
+\change_unchanged
+ 
+\change_deleted 415188692 1588749220
+e
+\change_inserted 415188692 1588749220
+E
+\change_unchanged
+zek nagyobb összeges kifizetése ellenében már szép számú API hívást engedélyezne
+k.
 \end_layout
 
 \begin_layout Standard
-A Weather Bit kifejezetten API hívásokra alkalmas csomagokat kínál, itt
- is hasonló módon összeg arányosan több csomag elérhető Free, Starter, Developer
- és Advanced.
- Itt szintén a legkisebb- és ingyenes csomag van használatban amely 500
- hívást engedélyez naponta, valamit két féle hívást tesz lehetővé, aktuális
- és öt napos előrejelzést .
- Kereskedelmi használatra nem alkalmazható.
+A Weather Bit kifejezetten API hívásokra alkalmas csomagokat kínál
+\change_inserted 415188692 1588749251
+.
+\change_deleted 415188692 1588749250
+,
+\change_unchanged
+ 
+\change_inserted 415188692 1588749257
+Ennél a szolgáltatónál
+\change_deleted 415188692 1588749261
+itt
+\change_unchanged
+ is hasonló módon
+\change_inserted 415188692 1588749291
+,
+\change_unchanged
+ összeg
+\change_deleted 415188692 1588749293
+ 
+\change_inserted 415188692 1588749293
+-
+\change_unchanged
+arányosan több csomag 
+\change_deleted 415188692 1588749299
+el
+\change_unchanged
+érhető
+\change_inserted 415188692 1588749304
+ el:
+\change_unchanged
+ Free, Starter, Developer és Advanced.
+ Itt szintén a legkisebb- és ingyenes csomag
+\change_inserted 415188692 1588749313
+ot
+\change_unchanged
+ 
+\change_deleted 415188692 1588749315
+van 
+\change_unchanged
+használ
+\change_deleted 415188692 1588749320
+atban
+\change_inserted 415188692 1588749322
+tam,
+\change_unchanged
+ amely 500 hívást engedélyez naponta, valami
+\change_inserted 415188692 1588749332
+n
+\change_unchanged
+t két
+\change_deleted 415188692 1588749336
+ 
+\change_unchanged
+féle 
+\change_deleted 415188692 1588749340
+hívást
+\change_inserted 415188692 1588749344
+szolgáltatás elérését
+\change_unchanged
+ tesz
+\change_inserted 415188692 1588749345
+i
+\change_unchanged
+ lehetővé, 
+\change_inserted 415188692 1588749350
+az 
+\change_unchanged
+aktuális és 
+\change_inserted 415188692 1588749353
+az 
+\change_unchanged
+öt napos előrejelzést
+\change_deleted 415188692 1588749357
+ 
+\change_unchanged
+.
+ 
+\change_inserted 415188692 1588749371
+Ez a csomag 
+\change_deleted 415188692 1588749372
+K
+\change_inserted 415188692 1588749372
+k
+\change_unchanged
+ereskedelmi használatra nem alkalmazható.
  Dokumentációja egyszerűen feldolgozható és nem kell bajlódni város azonosítók
- lekérésével, könnyedén feldolgozza a város neveket is.
- Véleményem szerint azon fejlesztőknek is megfelelő akik ismerkednek az
- API hívásokkal hiszen mint említettem dokumentációja kézenfekvő, valamint
- a napi 500 engedélyezett hívás is kielégítő.
+ lekérésével
+\change_inserted 415188692 1588749384
+ sem
+\change_unchanged
+, könnyedén feldolgozza a város
+\change_deleted 415188692 1588749392
+ 
+\change_unchanged
+neveket is.
+ Véleményem szerint azon fejlesztőknek is megfelelő akik 
+\change_inserted 415188692 1588749402
+még csak 
+\change_unchanged
+ismerkednek az API hívásokkal
+\change_inserted 415188692 1588749408
+,
+\change_unchanged
+ hiszen mint említettem dokumentációja kézenfekvő, valamint a napi 500 engedélye
+zett hívás is kielégítő.
 \end_layout
 
 \begin_layout Standard
-A Dark Sky Weather Jelenleg Apple tulajdonában lévő cég, 2020 március 31.-én
- jelentették be csatlakozásukat a hivatalos oldalukon.
- Weather Bit mellett a másik remek szolgáltatást nyújtó cég.
- Ezer hívást engedélyez naponta, ezt túllépve minden hívás 0.0001.
+A Dark Sky Weather Jelenleg 
+\change_inserted 415188692 1588749416
+az 
+\change_unchanged
+Apple tulajdonában lévő cég, 2020 március 31.-én jelentették be csatlakozásukat
+ a hivatalos oldalukon.
+ 
+\change_inserted 415188692 1588749434
+A 
+\change_unchanged
+Weather Bit mellett a másik remek szolgáltatást nyújtó cég.
+ Ezer hívást engedélyez naponta
+\change_inserted 415188692 1588749452
+ ingyenesen
+\change_unchanged
+, 
+\change_inserted 415188692 1588749454
+majd 
+\change_unchanged
+ezt túllépve minden 
+\change_deleted 415188692 1588749461
+hívás
+\change_inserted 415188692 1588749461
+kérés
+\change_unchanged
+ 0.0001
+\change_deleted 415188692 1588749466
+.
+
+\change_unchanged
  dollárba kerül.
  Rengeteg hívás formával rendelkezik, azonban itt is csak az aktuális valamint
- a 7 napos óránkénti előrejelzés van használatban.
+ a 7 napos óránkénti előrejelzés
+\change_inserted 415188692 1588749482
+t
+\change_unchanged
+ 
+\change_deleted 415188692 1588749485
+van használatban
+\change_inserted 415188692 1588749486
+használom
+\change_unchanged
+.
  Hátránya, hogy szélességi és hosszúsági koordináták alapján szolgáltatja
  az adatokat, így a Weather Bit-et előbb ajánlanám kezdő fejlesztőknek.
 \end_layout
 
 \begin_layout Standard
 Az Open Weather Csak úgy mint az Accu Weather és a Weather Bit több csomaggal
- rendelkezik Free, Startup, Developer, Professional és Enterprise.
+ rendelkezik
+\change_inserted 415188692 1588749503
+:
+\change_unchanged
+ Free, Startup, Developer, Professional és Enterprise.
  A projektben ismételten elegendő a Free csomag használata mely naponta
  ezer, percenként pedig 60 hívást foglal magába.
  Aktuális és 5 napos előrejelzést nyújt, egyszerűen feldolgozza a város
- neveket , ellenben dokumentációját érdemes alaposan átnézni, az információ
- amit JSON formájában kapunk vissza részletesebben strukturált mint a többi
- szolgáltatónál, ezt a program fejlesztése során mérlegelni kell.
+\change_deleted 415188692 1588749518
+ 
+\change_unchanged
+neveket
+\change_deleted 415188692 1588749519
+ 
+\change_unchanged
+, ellenben 
+\change_inserted 415188692 1588749522
+a 
+\change_unchanged
+dokumentációját érdemes alaposan átnézni
+\change_inserted 415188692 1588749530
+.
+\change_deleted 415188692 1588749530
+,
+\change_unchanged
+ 
+\change_deleted 415188692 1588749531
+a
+\change_inserted 415188692 1588749531
+A
+\change_unchanged
+z információ amit JSON formájában kapunk vissza részletesebben strukturált
+ mint a többi szolgáltatónál
+\change_deleted 415188692 1588749583
+, ezt a program fejlesztése során mérlegelni kell
+\change_unchanged
+.
 \end_layout
 
 \begin_layout Standard
-Mind a négy szolgáltatónál közös lépés a regisztráció, hogy igénybe tudjuk
- venni a szolgáltatásaikat.
+Mind a négy 
+\change_deleted 415188692 1588749604
+szolgáltatónál
+\change_inserted 415188692 1588749609
+cég esetében
+\change_unchanged
+ közös lépés a regisztráció, 
+\change_inserted 415188692 1588749641
+ami elengedhetetlen ahhoz, 
+\change_unchanged
+hogy igénybe tudjuk venni a szolgáltatásaikat.
  Regisztráció után elérhetővé válik egy egyedi kulcs, amit a hívás során
- meg kell adni, ennek hiányában az API-k nem hívhatóak.
- Válaszok XML és JSON formában érhetőek el, a mértékegységeket lehet az
- európai valamint az amerikai sztenderdek alapján változtatni.
+ meg kell adni
+\change_inserted 415188692 1588749654
+ -
+\change_deleted 415188692 1588749654
+,
+\change_unchanged
+ ennek hiányában az API-k nem 
+\change_deleted 415188692 1588749662
+hívhatóak
+\change_inserted 415188692 1588749669
+visszautasítják a kérést
+\change_unchanged
+.
+ 
+\change_inserted 415188692 1588749703
+A 
+\change_deleted 415188692 1588749703
+V
+\change_inserted 415188692 1588749703
+v
+\change_unchanged
+álaszok XML és JSON formában érhetőek el, a mértékegységeket 
+\change_inserted 415188692 1588749734
+pedig 
+\change_unchanged
+lehet az európai valamint az amerikai sztenderdek alapján változtatni.
 \end_layout
 
 \begin_layout Subsection
@@ -2020,16 +2814,65 @@ API hívások
 \begin_layout Standard
 A fejezet bevezetésében már említettem, hogy az egyes folyamatok végbemeneteléér
 t különböző osztályok felelnek.
- Ilyen folyamat például az API hívások is.
+ Ilyen folyamat például az API hívás
+\change_deleted 415188692 1588749761
+ok
+\change_unchanged
+ is.
  Az API-k bemutatása során világossá vált, hogy a szolgáltatók működésének
- feltételei részben azonosak , viszont vannak eltérések.
- Megegyeznek abban, hogy két félé formátumban kérdezhetőek le, jelenlegi
- és 5- vagy 7 napos előjelzés, ebben az esetben az 5 vagy a 7 nap nem számottevő
- eltérés.
+ feltételei részben azonosak
+\change_deleted 415188692 1588749770
+ 
+\change_unchanged
+, viszont vannak eltérések
+\change_inserted 415188692 1588749773
+ is
+\change_unchanged
+.
+ Megegyeznek abban, hogy két
+\change_deleted 415188692 1588749780
+ 
+\change_unchanged
+fél
+\change_deleted 415188692 1588749782
+é
+\change_inserted 415188692 1588749782
+e
+\change_unchanged
+ formátumban kérdezhetőek le, jelenlegi és 5- vagy 7 napos előjelzés, 
+\change_inserted 415188692 1588749821
+de 
+\change_unchanged
+ebben az esetben az 5 vagy a 7 nap nem számottevő eltérés.
  Egyedi kulcs alapján működnek, ezeket az adatbázis tárolja.
- Ellenben eltérnek abban, hogy miképp adható meg az érdekelt város: név,egyedi
- azonosító vagy szélességi és hosszúsági kör formájában.A hívásokat ellátó
- osztály ennek függvényében készült el.
+ Ellenben eltérnek abban, hogy miképp adható meg az érdekelt város: név,
+\change_inserted 415188692 1588749841
+ 
+\change_unchanged
+egyedi azonosító vagy szélességi és hosszúsági 
+\change_deleted 415188692 1588749851
+kör
+\change_inserted 415188692 1588749853
+koordináta
+\change_unchanged
+ formájában.
+
+\change_inserted 415188692 1588749857
+ 
+\change_unchanged
+A hívásokat 
+\change_deleted 415188692 1588749862
+ellátó
+\change_inserted 415188692 1588749863
+elvégző
+\change_unchanged
+ osztály e
+\change_inserted 415188692 1588749888
+zek
+\change_deleted 415188692 1588749890
+nnek
+\change_unchanged
+ függvényében készült el.
 \end_layout
 
 \begin_layout Standard
@@ -2108,20 +2951,99 @@ WeatherApiBase konstruktor
 \end_layout
 
 \begin_layout Standard
-Adott a WeatherAPIBase absztrakt ősosztály, amely vár egy város nevet, API
- szolgáltató nevét valamint, hogy melyik típusú hívás szeretnék elindítani:
- Jelenlegi vagy előrejelzést.
- Szolgáltató az adatbázisból kérhető le, lokáció esetén fenn áll az új helyszín
- megadási is.Az osztály rendelkezik egy 
+Adott a WeatherAPIBase absztrakt ősosztály, amely 
+\change_deleted 415188692 1588749924
+vár 
+\change_unchanged
+egy város
+\change_deleted 415188692 1588749903
+ 
+\change_unchanged
+nevet
+\change_inserted 415188692 1588750022
+ 
+\change_deleted 415188692 1588750026
+,
+\change_inserted 415188692 1588750026
+és
+\change_unchanged
+ 
+\change_inserted 415188692 1588749932
+az 
+\change_unchanged
+API szolgáltató 
+\change_deleted 415188692 1588749949
+nevét
+\change_inserted 415188692 1588749952
+paramétereit
+\change_unchanged
+ 
+\change_inserted 415188692 1588754164
+várja a kontrsuktor paramétereként.
+\change_deleted 415188692 1588750050
+valamint, hogy melyik típusú hívás szeretnék elindítani: Jelenlegi vagy
+ előrejelzést.
+
+\change_unchanged
+ 
+\change_inserted 415188692 1588750052
+A 
+\change_deleted 415188692 1588750052
+S
+\change_inserted 415188692 1588750053
+s
+\change_unchanged
+zolgáltató az adatbázisból kérhető le, lokáció esetén 
+\change_inserted 415188692 1588750075
+pedig megadható új helyszín is.
+\change_deleted 415188692 1588750077
+fenn áll az új helyszín megadási is.
+
+\change_inserted 415188692 1588750079
+ 
+\change_unchanged
+Az osztály rendelkezik egy 
 \series bold
 location_key 
 \series default
-függvénnyel mely visszadja a város nevét, Accu Weather és a Dark Sky esetében
- azonban ez nem elegendő, így a 
+függvénnyel mely 
+\change_inserted 415188692 1588750097
+alapértelmezettként 
+\change_unchanged
+vissza
+\change_inserted 415188692 1588750086
+a
+\change_unchanged
+dja a város nevét
+\change_deleted 415188692 1588750110
+,
+\change_inserted 415188692 1588750110
+.
+
+\change_unchanged
+ 
+\change_inserted 415188692 1588750113
+Az 
+\change_unchanged
+Accu Weather és a Dark Sky 
+\change_inserted 415188692 1588750118
+szolgáltatók 
+\change_unchanged
+esetében azonban ez nem elegendő, így a 
 \series bold
 WeatherAPIBase
 \series default
- osztályból származtatva vannak az 
+ osztályból származtat
+\change_deleted 415188692 1588750133
+va
+\change_inserted 415188692 1588750134
+tam
+\change_unchanged
+ 
+\change_deleted 415188692 1588750138
+vannak 
+\change_unchanged
+az 
 \series bold
 AccuWeather
 \series default
@@ -2129,15 +3051,90 @@ AccuWeather
 \series bold
 DarkSky
 \series default
- osztáylok.
- Accu Weather esetén egyedi azonosító szükséges, ha már a korábbiakban megadtuk
- a várost, akkor ez tárolva van és egyszerű dolgunk van, hiszen csak le
- kell kérdezni az adatbázisból, ellenben ha teljesen új városra kérdeztünk
- rá akkor egy külön Location API hívást kell intézni az Accu Wearher felé.
- Dark Sky hosszúsági és szélességi köröket vár, így a megadott várost át
- kell alakítani.
+ osztáylok
+\change_inserted 415188692 1588750143
+at
+\change_unchanged
+.
+ Accu Weather esetén egyedi azonosító szükséges
+\change_inserted 415188692 1588750156
+:
+\change_deleted 415188692 1588750155
+,
+\change_unchanged
+ ha már a korábbiakban 
+\change_deleted 415188692 1588750164
+megadtuk
+\change_inserted 415188692 1588750166
+használtuk
+\change_unchanged
+ a 
+\change_inserted 415188692 1588750171
+megadott 
+\change_unchanged
+várost, akkor e
+\change_inserted 415188692 1588750223
+nnek paraméterei megtalálhatók az adatbázisban, csak 
+\change_deleted 415188692 1588750228
+z tárolva van és egyszerű dolgunk van, hiszen
+\change_unchanged
+ csak le kell kérdezni
+\change_inserted 415188692 1588750233
+.
+
+\change_unchanged
+ 
+\change_deleted 415188692 1588750235
+az adatbázisból,
+\change_inserted 415188692 1588750236
+Ezzel
+\change_unchanged
+ ellen
+\change_inserted 415188692 1588750242
+tét
+\change_unchanged
+ben ha teljesen új városra kérdeztünk rá
+\change_inserted 415188692 1588750250
+,
+\change_unchanged
+ akkor egy külön Location API hívást kell intézni az Accu Wearher felé
+\change_inserted 415188692 1588750264
+, majd a visszakapott adatokat tárolni
+\change_unchanged
+.
+ 
+\change_inserted 415188692 1588750359
+A 
+\change_unchanged
+Dark Sky hosszúsági és szélességi 
+\change_deleted 415188692 1588750362
+köröket
+\change_inserted 415188692 1588750364
+koordinátákat
+\change_unchanged
+ vár, így a megadott város
+\change_inserted 415188692 1588750370
+ alapján
+\change_deleted 415188692 1588750371
+t
+\change_unchanged
+ 
+\change_deleted 415188692 1588750376
+át kell alakítani
+\change_inserted 415188692 1588750387
+ezeket meg kell határozni
+\change_unchanged
+.
  Ennek segítségére használatos a Python geopy könyvtára.
- Ezeket a változtatások a mindkét 
+ Ezek
+\change_deleted 415188692 1588750416
+et
+\change_unchanged
+ a változtatások 
+\change_deleted 415188692 1588750420
+a 
+\change_unchanged
+mindkét 
 \series bold
 location_key
 \series default
@@ -2262,9 +3259,17 @@ A __get_cast egy privát, magáért a hívásért felelős függvény.
  Ha a városhoz tartozó kulcs rendben van, hívást kezdeményez az adatbázisban
  tárolt URL alapján és visszatér egy válasszal.
  A __result szintén egy privát függvény, ellenőrzi, hogy a hívás státuszkódja
- a helyes értékekkel az az 200-as kóddal tér-e vissza.
+ a helyes értékekkel
+\change_inserted 415188692 1588750455
+,
+\change_unchanged
+ az az 200-as kóddal tér-e vissza.
  Ha az érték nem egyenlő az elvárttal, akkor a hiba státuszkódjával, ha
- egyezik JSON objektummal tér vissza.
+ egyezik 
+\change_inserted 415188692 1588750469
+egy 
+\change_unchanged
+JSON objektummal tér vissza.
 \end_layout
 
 \begin_layout Subsection
@@ -2287,8 +3292,38 @@ data
 \end_inset
 
  kulcs alatt megtalálható az összes fontos információt tartalmazó kulcs-érték
- pár, míg az Open Weather-t tanulmányozva, látható ,hogy több különböző
- kulcs is létezik amelyek tartalmazzák az érték párokat, 
+ pár
+\change_inserted 415188692 1588753544
+.
+\change_deleted 415188692 1588753545
+,
+\change_unchanged
+ 
+\change_deleted 415188692 1588753547
+míg a
+\change_inserted 415188692 1588753547
+A
+\change_unchanged
+z Open Weather-t tanulmányozva, látható
+\change_deleted 415188692 1588753528
+ 
+\change_unchanged
+,
+\change_inserted 415188692 1588753529
+ 
+\change_unchanged
+hogy több különböző kulcs is létezik amelyek tartalmazzák az érték párokat
+\change_deleted 415188692 1588753558
+,
+\change_inserted 415188692 1588753558
+.
+
+\change_unchanged
+ 
+\change_inserted 415188692 1588753559
+A 
+\change_unchanged
+
 \begin_inset Quotes pld
 \end_inset
 
@@ -2296,13 +3331,43 @@ main
 \begin_inset Quotes prd
 \end_inset
 
- alatt található például a hőmérséglet és a hozzátartozó érték valamint
- a nyomás és páratartalom is, míg a 
+ alatt található például a hőmérsé
+\change_deleted 415188692 1588753565
+g
+\change_inserted 415188692 1588753565
+k
+\change_unchanged
+let és a hozzátartozó érték valamint a nyomás és páratartalom is, míg a
+ 
 \begin_inset Quotes pld
 \end_inset
 
-wind' kulcs alatt található a szél sebessége és iránya fokban.
- Program írása során, ezek nem elhangolható különbségek.
+wind
+\change_deleted 415188692 1588753580
+'
+\change_inserted 415188692 1588753580
+
+\begin_inset Quotes prd
+\end_inset
+
+
+\change_unchanged
+ kulcs alatt 
+\change_deleted 415188692 1588753599
+található
+\change_inserted 415188692 1588753601
+kapot helyet
+\change_unchanged
+ a szél sebessége és iránya fokban.
+ 
+\change_inserted 415188692 1588753613
+Az alkalmazás 
+\change_deleted 415188692 1588753615
+Program írása
+\change_inserted 415188692 1588753617
+fejlesztése
+\change_unchanged
+ során, ezek nem elhangolható különbségek.
 \end_layout
 
 \begin_layout Standard
@@ -2362,6 +3427,11 @@ temperature
  Ismét a 10.
  ábrához térnék vissza, Dark Sky esetén elegendő csak a fontos attribútum
  nevek tárolni, 
+\change_inserted 415188692 1588753651
+pl.
+ 
+\change_unchanged
+
 \begin_inset Quotes pld
 \end_inset
 
@@ -2373,7 +3443,17 @@ temperature,
 \begin_inset Quotes pld
 \end_inset
 
-windSpeed' hiszen a 
+windSpeed
+\change_deleted 415188692 1588754031
+'
+\change_inserted 415188692 1588754031
+
+\begin_inset Quotes prd
+\end_inset
+
+
+\change_unchanged
+ hiszen a 
 \begin_inset Quotes pld
 \end_inset
 
@@ -2381,10 +3461,17 @@ data
 \begin_inset Quotes prd
 \end_inset
 
- kulcs alatt megtalálható mindent információ, így a feldolgozás során csak
- a JSON ezen részével foglalkozik a program.
- Open Weather feldolgozásánál célravezetőbb , ha az adatbázis tárolja azt
- a kulcsot is ahol a kulcs-érték pár található.
+ kulcs alatt megtalálható minden
+\change_deleted 415188692 1588754043
+t
+\change_unchanged
+ információ, így a feldolgozás során csak a JSON ezen részével foglalkozik
+ a program.
+ Open Weather feldolgozásánál célravezetőbb
+\change_deleted 415188692 1588754050
+ 
+\change_unchanged
+, ha az adatbázis tárolja azt a kulcsot is ahol a kulcs-érték pár található.
  Így az adatbázisban 
 \begin_inset Quotes pld
 \end_inset
@@ -2402,8 +3489,15 @@ wind/speed
 \end_inset
 
  formájában található.
- Az adatok ezen bemutatott formában való tárolása sokkal optimálisabb és
- hatékonyabb a program írása és futási ideje szempontjából.
+ Az adatok ezen bemutatott formában való tárolása sokkal 
+\change_deleted 415188692 1588754089
+optimálisabb és
+\change_unchanged
+ hatékonyabb a program írása és futási ideje szempontjából
+\change_inserted 415188692 1588754130
+ is
+\change_unchanged
+.
 \end_layout
 
 \begin_layout Standard
@@ -2465,9 +3559,31 @@ DataCollector konstuktor
 
 \end_inset
 
-Várja az aktuális valamint a várható időjárási adatokat JSON formában és
- a szolgáltató nevét amelyhez lekérhetőek a hozzátartozó attribútumok is.
- Az osztály több függvénnyel is rendelkezik ezek közül a legfontosabban
+
+\change_inserted 415188692 1588754983
+A konstruktor három paramétert vár: 
+\change_deleted 415188692 1588754987
+Várja 
+\change_unchanged
+az aktuális
+\change_deleted 415188692 1588754241
+ valamint a
+\change_inserted 415188692 1588754242
+ és
+\change_unchanged
+ várható időjárási adatokat JSON formában
+\change_inserted 415188692 1588754253
+, majd 
+\change_deleted 415188692 1588754255
+ és 
+\change_unchanged
+a szolgáltató nevét amelyhez lekérhetőek a hozzátartozó attribútumok is.
+ Az osztály több függvénnyel is rendelkezik ezek közül a legfontosabba
+\change_deleted 415188692 1588755006
+n
+\change_inserted 415188692 1588755006
+k
+\change_unchanged
  a: 
 \series bold
 __data_collector, __forecast_time, __getvalue.
@@ -2513,8 +3629,13 @@ __getvalue
  keresztül amíg meg nem találja a keresett értéket vagy későbbiekben vizsgálandó
  objektum egy részét.
  Így ez a függvény teljesen független bármely szolgáltatóból.
- Mint ahogy a program többi részében is, itt is él, hogy egy új szolgáltató
- adatait is könnyedén képes feldolgozni.
+ Mint ahogy a program többi részében is, itt is 
+\change_deleted 415188692 1588755055
+él
+\change_inserted 415188692 1588755056
+igaz
+\change_unchanged
+, hogy egy új szolgáltató adatait is könnyedén képes feldolgozni.
 \end_layout
 
 \begin_layout Standard
@@ -2604,14 +3725,25 @@ __data_collector
 \series default
  osztályban a base-ben definiáljuk, hogy pontosan hol kell elkezdeni keresni.
  A 13.
- ábrán látható 'JSON_Path + attr' rész mutatja, hogy aktuális idő vagy előrejelz
-és kiinduló pontjáról indul a keresés.
- Ez után meghívódik a már bemutatott 
+ ábrán látható 'JSON_Path + attr' rész mutatja, hogy 
+\change_inserted 415188692 1588755120
+az 
+\change_unchanged
+aktuális idő vagy előrejelzés kiinduló pontjáról indul a keresés.
+ Ez
+\change_deleted 415188692 1588755650
+ 
+\change_unchanged
+után meghívódik a már bemutatott 
 \series bold
 __getvalue
 \series default
  függvény amely visszatér a JSON azon részletével, ahol az értékek találhatóak.
- Ez után a 
+ Ez
+\change_deleted 415188692 1588755385
+ 
+\change_unchanged
+után a 
 \series bold
 __get_pairs
 \series default
@@ -2619,18 +3751,61 @@ __get_pairs
 \series bold
 __getvalue
 \series default
- függvényt immár a keresendő attributomokkal és JSON objetum részletével,
- az kapott értékeket átalakítja úgy, hogy azok adatbázisban tárolt azonosítóval
+ függvényt immár a keresendő attributomokkal és JSON obje
+\change_inserted 415188692 1588755701
+k
+\change_unchanged
+tum részletével, a
+\change_deleted 415188692 1588755731
+z
+\change_unchanged
+ kapott értékeket átalakítja úgy, hogy azok adatbázisban tárolt azonosítóval
  legyenek összefűzve.
  Így lényegében, ha csak az aktuális időt kértük le, az információ készen
  áll arra, hogy a program eltárolja az adatbázisban.
  Azonban, ha előrejelzésről van szó szükséges tudni azt is mely időszakra
- szól az előrejelzés.
- Mivel ez külön van tárolva az adatbázisban, így én sem vettem fel az attribútum
-ok listája közé.
- Természetesen ez is, mint minden más tárolva van az adatbázisban, viszont
- nem az JSON attribútumok között található, hanem az API-val kapcsolatos
- információk között.
+ szól
+\change_inserted 415188692 1588755760
+nak
+\change_unchanged
+ az 
+\change_deleted 415188692 1588755763
+előrejelzés
+\change_inserted 415188692 1588755764
+adatok
+\change_unchanged
+.
+ Mivel ez
+\change_inserted 415188692 1588755769
+t
+\change_unchanged
+ külön 
+\change_deleted 415188692 1588755771
+van 
+\change_unchanged
+tárol
+\change_deleted 415188692 1588755774
+va
+\change_inserted 415188692 1588755774
+om
+\change_unchanged
+ az adatbázisban, így én sem vettem fel az attribútumok listája közé.
+ Természetesen ez
+\change_inserted 415188692 1588755903
+t
+\change_unchanged
+ is, mint minden más 
+\change_inserted 415188692 1588755906
+adatot 
+\change_deleted 415188692 1588755915
+tárolva van 
+\change_unchanged
+az adatbázisban
+\change_inserted 415188692 1588755918
+ tárolok
+\change_unchanged
+, viszont nem az JSON attribútumok között található, hanem az API-val kapcsolato
+s információk között.
 \end_layout
 
 \begin_layout Standard
@@ -2646,7 +3821,17 @@ nevű metódust, amely alapvetően hasonlóan működik mint a
 \series bold
 __data_collector
 \series default
-, azonban a végén nincs szükség meghívni a 
+, azonban a végén 
+\change_deleted 415188692 1588755933
+nincs
+\change_inserted 415188692 1588755933
+nem
+\change_unchanged
+ szükség
+\change_inserted 415188692 1588755935
+es
+\change_unchanged
+ meghívni a 
 \series bold
 __get_pairs
 \series default
@@ -2656,8 +3841,14 @@ __get_pairs
 __getvalue
 \series default
  az első iteráció végezetével visszatér a pontos idővel, amit át kell alakítani
- timestamp formátumból a hétköznapokban is ismert formátumra, ezzel megkönnyítve
- az idő beszúrását az adatbázisba.
+ timestamp 
+\change_deleted 415188692 1588755971
+formátumból
+\change_inserted 415188692 1588755973
+objektumból
+\change_unchanged
+ a hétköznapokban is ismert formátumra, ezzel megkönnyítve az idő beszúrását
+ az adatbázisba.
 \end_layout
 
 \begin_layout Subsection
@@ -2665,32 +3856,79 @@ Adatbázis kapcsolat létesítése és hozzátartozó függvények Pythonban
 \end_layout
 
 \begin_layout Standard
-Programban az SQL kapcsolatért felelős és az ahhoz tartozó függvények az
- 
+
+\change_inserted 415188692 1588755987
+Az 
+\change_deleted 415188692 1588755990
+Programban
+\change_inserted 415188692 1588755992
+alkalmazásban
+\change_unchanged
+ az SQL kapcsolatért felelős 
+\change_inserted 415188692 1588756054
+metódus 
+\change_unchanged
+és az ahhoz tartozó függvények az 
 \series bold
 SQLConnection
+\change_inserted 415188692 1588756072
+
 \series default
-, 
+ és az
+\change_deleted 415188692 1588756073
+,
+\change_unchanged
+ 
 \series bold
 SQLInsertData
+\change_deleted 415188692 1588756074
+
 \series default
-, osztályokban találhatóak.
+,
+\change_unchanged
+ osztályokban találhatóak.
  Nem csak kapcsolatot létesít az adatbázissal, de INSERT vagy SELECT műveletek
  elvégezésére is alkalmas függvényeket tartalmaz.
  Python-ban rengetek könyvtár áll rendelkezésre az adatbázis kapcsolatok
  létesítésére.
- Választásom a Pyodbc, egy népszerű modulra esett, mely ODBC adatbázisokhoz
- való kapcsolódást segíti.
- Egyszerű, nem túl komplikált modul valamint a weben rengeteg forrás, információ
- található a használatához.
- A kapcsolódáshoz tartozó információkat mint például az adatbázis neve,
- autentikációhoz tartozó felhasználó és jelszó valamint a szever pontos
- címe a 
+ Választásom a Pyodbc
+\change_deleted 415188692 1588756127
+, egy
+\change_unchanged
+ népszerű modulra esett, mely ODBC adatbázisokhoz való kapcsolódást segíti.
+ Egyszerű, nem túl
+\change_deleted 415188692 1588756180
+ 
+\change_unchanged
+komplikált modul valamint a weben rengeteg forrás, információ található
+ a használatához.
+ A kapcsolódáshoz tartozó információkat
+\change_inserted 415188692 1588756216
+ -
+\change_unchanged
+ mint például az adatbázis neve, autentikációhoz tartozó felhasználó és
+ jelszó valamint a szever pontos címe 
+\change_inserted 415188692 1588756226
+- 
+\change_unchanged
+a 
 \shape italic
 config.ini
 \shape default
- tartalmazza.
- Kapcsolat konfigurációja a következőképp valósul meg:
+ 
+\change_inserted 415188692 1588756229
+állomány 
+\change_unchanged
+tartalmazza.
+ 
+\change_inserted 415188692 1588756233
+A 
+\change_deleted 415188692 1588756233
+K
+\change_inserted 415188692 1588756234
+k
+\change_unchanged
+apcsolat konfigurációja a következőképp valósul meg:
 \end_layout
 
 \begin_layout Standard
@@ -2852,20 +4090,41 @@ Adatbázis konfiguráció
 
 Fontos szempont volt, hogy a program multiplatform legyen, így a 14.
  ábrán látható operációs rendszerek esetén is kompatibilis lesz a szoftver.
- Ez után ellenőrzi, hogy a szerver localhost-on fut-e, mivelhogy az adatbázis
+ Ez
+\change_deleted 415188692 1588756012
+ 
+\change_unchanged
+után ellenőrzi, hogy a szerver localhost-on fut-e, mivelhogy az adatbázis
  localhost-on való konfigurálására is megvan a lehetőség.
  A fejlesztés kezdeti fázisában, az éles adatbázis nem az egyetem által
  biztosított szerveren futott, hanem egy lokális hálózaton.
- Ha a szerven azonban egyéb címen tálalható, akkor a már említett 
+ Ha a szerve
+\change_deleted 415188692 1588756270
+n
+\change_inserted 415188692 1588756270
+r
+\change_unchanged
+ azonban egyéb címen tálalható, akkor a már említett 
 \shape italic
 config.ini
 \shape default
- fájlból megtalálhatóak a kapcsolat létesítésére szolgáló adatok.
+ fájlból 
+\change_deleted 415188692 1588756286
+megtalálhatóak
+\change_inserted 415188692 1588756289
+olvashatók ki
+\change_unchanged
+ a kapcsolat létesítésére szolgáló adatok.
  Az 
 \series bold
 SQLConnection
 \series default
- osztály számos függvénnyel rendelkezik.A 
+ osztály számos függvénnyel rendelkezik.
+
+\change_inserted 415188692 1588756294
+ 
+\change_unchanged
+A 
 \series bold
 get_data 
 \series default
@@ -2873,8 +4132,18 @@ get_data
 \series bold
  get_filtered_data
 \series default
- függvények, egyszerű SELECT scriptek futtatására szolgálnak, nem tartalmaznak
- JOIN-t vagy aggregate funkciókat.
+ függvények
+\change_deleted 415188692 1588756302
+,
+\change_unchanged
+ egyszerű SELECT scriptek futtatására szolgálnak, nem tartalmaznak JOIN-t
+ vagy aggreg
+\change_deleted 415188692 1588756313
+ate
+\change_inserted 415188692 1588756313
+ált
+\change_unchanged
+ funkciókat.
  Értelemszerűen a 
 \series bold
 get_filtered_data
@@ -2889,8 +4158,12 @@ WHERE
 
  kulcsszó használatával szűrni is tudunk az adatokra.
  SELECT esetén bonyolultabb függvényekre nincs szükség, hiszen az esetek
- nagy részében nem magára a táblákra kérdez rá, hanem az adatbázis különböző
- nézeteire, ami csak a szükséges adatokat tartalmazza.
+ nagy részében nem magára a táblákra kérdez rá
+\change_inserted 415188692 1588756334
+ az alkalmazás
+\change_unchanged
+, hanem az adatbázis különböző nézeteire, ami csak a szükséges adatokat
+ tartalmazza.
  
 \end_layout
 
@@ -3067,40 +4340,135 @@ insert_execute függvény
 
 Miután a fejezet előző részeiben említett feldolgozó metódusok sikeresen
  végben mennek, az adatok ténylegesen tárolhatóvá válnak az adatbázisban.
- SQLInsertData függvényei szolgálnak e bonyolult feladat elindítására.
- Az osztály konstruktora várja az feldolgozott adatokat, lekért várost,API
- szolgáltatót valamint az idő tömböt, amik már előzetesen definiálásra kerültek.
- Ha aktuális időjárási adatról beszélünk utolsó paraméter pontos megadása
- nem szükséges.
+ 
+\series bold
+SQLInsertData
+\series default
+ függvényei szolgálnak e bonyolult feladat elindítására.
+ Az osztály konstruktora várja az feldolgozott adatokat, lekért várost,
+\change_inserted 415188692 1588756367
+ 
+\change_unchanged
+API szolgáltatót valamint az idő tömböt, amik már előzetesen definiálásra
+ kerültek.
+ Ha aktuális időjárási adatról beszélünk
+\change_inserted 415188692 1588756386
+, akkor az
+\change_unchanged
+ utolsó paraméter pontos megadása nem szükséges.
  Az osztályban két függvényt, az 
 \series bold
 insert_execute
+\change_inserted 415188692 1588756421
+
 \series default
+-ot
+\change_unchanged
  valamint az 
 \series bold
 InsertData
+\change_inserted 415188692 1588756415
+
 \series default
+-t
+\change_unchanged
  emelném ki.
  Az 
 \series bold
 insert_execute
 \series default
- feldolgozott adatokat beszúrását futtatja le.
+ feldolgozott adatok
+\change_deleted 415188692 1588756432
+at
+\change_unchanged
+ beszúrását futtatja le.
  Első körben lekérdezi, hogy a konstruktorban definiált feldolgozott adat
- attribútuma milyen típusú adatbázisban: VARCHAR, INT, MONEY típust különböztet
- meg.
- Ennek függvényében ad értéket v_int,v_money,v_vc változonak, amely tipus
+ attribútuma milyen típusú 
+\change_inserted 415188692 1588756446
+az 
+\change_unchanged
+adatbázisban: VARCHAR, INT, MONEY típust különböztet meg.
+ Ennek függvényében ad értéket 
+\change_inserted 415188692 1588756461
+a 
+\change_unchanged
+v_int,
+\change_inserted 415188692 1588756463
+ 
+\change_unchanged
+v_money
+\change_inserted 415188692 1588756497
+ és 
+\change_deleted 415188692 1588756466
+,
+\change_unchanged
+v_vc változ
+\change_inserted 415188692 1588756499
+ók
+\change_deleted 415188692 1588756486
+o
+\change_unchanged
+nak
+\change_deleted 415188692 1588756515
+,
+\change_inserted 415188692 1588756515
+.
+
+\change_unchanged
+ 
+\change_deleted 415188692 1588756516
+a
+\change_inserted 415188692 1588756516
+A
+\change_unchanged
+mely t
+\change_deleted 415188692 1588756494
+i
+\change_inserted 415188692 1588756494
+í
+\change_unchanged
+pus
+\change_inserted 415188692 1588756517
+t
+\change_unchanged
  detektálja megkapja az adattömbben tárolt értéket, a többi NONE típusú
- marad így az adatbázisban ezek az oszlopok NULL értékkel fognak szerepelni,
- míg az attribútumhoz tartozó érték pontosan beszúrásra kerül.
- Ezt követően a értékeket összefűzi és egy lépésben beszúrja az adatbázis
- vCityWeather nézet táblájába, ahol már előzőekben bemutatott TRIGGER segítségév
-el az adatok a megfelelő helyre kerülnek.
+ marad
+\change_inserted 415188692 1588756544
+.
+
+\change_unchanged
+ 
+\change_deleted 415188692 1588756546
+így
+\change_inserted 415188692 1588756549
+Ezzel a megoldással
+\change_unchanged
+ az adatbázisban ezek az oszlopok NULL értékkel fognak szerepelni, míg az
+ attribútumhoz tartozó érték pontosan beszúrásra kerül.
+ Ezt követően a
+\change_inserted 415188692 1588756562
+z
+\change_unchanged
+ értékeket összefűzi és egy lépésben beszúrja az adatbázis vCityWeather
+ nézet táblájába, ahol már 
+\change_inserted 415188692 1588756580
+az 
+\change_unchanged
+előzőekben bemutatott TRIGGER segítségével az adatok a megfelelő helyre
+ kerülnek.
  InsertData függvényben kerül meghívásra, azonban az aktuális és előrejelzett
  adatokból kapott tömbök kis mértékben különböznek, így hívásnál is meg
  kell különböztetni a két típust.
  Az előrejelzett típus lényegében egy lista ami tömböket tartalmaz, s ezen
- végig kell iterálni.
+ 
+\change_inserted 415188692 1588756610
+kell 
+\change_unchanged
+végig
+\change_deleted 415188692 1588756613
+ kell 
+\change_unchanged
+iterálni.
  
 \begin_inset Float figure
 wide false
@@ -3138,17 +4506,48 @@ status open
 \begin_layout Standard
 Az adatgyűjtés során más INSERT scriptre nem kifejezetten van szükség, azonban
  kivételt képez egy eset amikor egy újonnan lekért város egyedi azonosítóját
- kell eltárolni, egyenlőre csak egy ilyen szolgáltató van használatban.
+ kell eltárolni
+\change_deleted 415188692 1588756635
+,
+\change_inserted 415188692 1588756635
+ -
+\change_unchanged
+ egyenlőre csak egy ilyen szolgáltató van használatban.
  Ezen szolgáltató esetében szükséges az azonosítók lekérése is.
- Ezen célból készült a Location osztály mely rendelkezek egy-egy getter
- és setter függvénnyel.Talán magától értetődő, hogy a getter függvény az
- azonosító lekérdezésére szolgál és az előzőekben bemutatott
+ Ezen célból készült a Location osztály mely rendelkez
+\change_deleted 415188692 1588756648
+e
+\change_inserted 415188692 1588756648
+i
+\change_unchanged
+k egy-egy getter és setter függvénnyel.
+
+\change_inserted 415188692 1588756652
+ 
+\change_unchanged
+Talán magától értetődő, hogy a getter függvény az azonosító lekérdezésére
+ szolgál és az előzőekben bemutatott
 \series bold
  get_filtered_data
 \series default
  metódust használja.
- Setter pedig vár egy API szolgáltatót, város nevet és a kapott lokáció
- kulcsot, amit egy API hívás segítségével válik elérhetővé.
+ 
+\change_inserted 415188692 1588756661
+A 
+\change_deleted 415188692 1588756661
+S
+\change_inserted 415188692 1588756661
+s
+\change_unchanged
+etter pedig vár egy API szolgáltatót, város nevet és a kapott lokáció
+\change_deleted 415188692 1588756668
+ 
+\change_unchanged
+kulcsot, ami
+\change_deleted 415188692 1588756673
+t
+\change_unchanged
+ egy API hívás segítségével válik elérhetővé.
  A függvény a vLocation nézetbe helyezi az adatokat, s hasonló módon mint
  a vCityWeather esetében egy trigger segítségével kerül az információ a
  megfelelő táblákba.
@@ -3163,9 +4562,22 @@ Adatelemzés
 \end_layout
 
 \begin_layout Standard
-Az adatok feldolgozásával, eltárolásával valamint gyűjtésével, egy olyan
- témakör előtt nyíltak meg lehetőségek, ami számomra az informatika legérdekeseb
-b része.
+Az adatok
+\change_inserted 415188692 1588756871
+ gyűjtésével,
+\change_unchanged
+ feldolgozásával
+\change_inserted 415188692 1588756875
+ valamint
+\change_deleted 415188692 1588756875
+,
+\change_unchanged
+ eltárolásával 
+\change_deleted 415188692 1588756882
+valamint gyűjtésével,
+\change_unchanged
+ egy olyan témakör előtt nyíltak meg lehetőségek, ami számomra az informatika
+ legérdekesebb része.
  Érdeklődésem az adattudomány és az adatbázisok iránt egyetemi tanulmányaim
  kezdetére vezethető vissza, midőn egy előadás keretein belül hallottam
  róla először, majd az egyetem előrehaladtával is világossá vált számomra,
@@ -3173,19 +4585,70 @@ b része.
 \end_layout
 
 \begin_layout Standard
+
+\change_inserted 415188692 1588756916
+A 
+\change_unchanged
 Data Science kifejezés hasonlóan népszerű mint például a Big Data, de mit
- is jelent valójában ez a tudomány ág.
+ is jelent valójában ez a tudomány
+\change_deleted 415188692 1588756931
+ 
+\change_unchanged
+ág.
  Az adattudományok egy interdiszciplináris területe az informatikának.
- Lényege, hogy különkülönböző módszerekkel,algoritmusokkal képesek vagyunk
- új információkhoz jutni, összefüggésekre fényt deríteni vagy a már meglévő
- adatokból még több adat birtokába jutni.
+ Lényege, hogy különkülönböző módszerekkel,
+\change_inserted 415188692 1588756940
+ 
+\change_unchanged
+algoritmusokkal képesek vagyunk új információkhoz jutni, összefüggésekre
+ fényt deríteni vagy a már meglévő adatokból még több 
+\change_deleted 415188692 1588756952
+adat
+\change_inserted 415188692 1588756953
+információ
+\change_unchanged
+ birtokába jutni.
  Erősen kapcsolódik a Big Data és az adatbányászati terültekhez.
- Data Science nem csak a statisztika,adatelemzés és kapcsolódó módszerezek
- összességét foglalja magába de ezen művelete, feladatok eredményeire is
- kiterjed.
- Fontos azonban, hogy nem csak strukturált de strukturálatlan adatok sokaságáról
- van szó., hiszen legtöbbször -ahogy esetünkben is- ez csak egy szöveg,kép,
- videó és gyakran különböző webhelyekről származik.
+ 
+\change_inserted 415188692 1588756962
+A 
+\change_unchanged
+Data Science nem csak a statisztika,
+\change_inserted 415188692 1588756967
+ 
+\change_unchanged
+adatelemzés és kapcsolódó módszere
+\change_deleted 415188692 1588756972
+ze
+\change_unchanged
+k összességét foglalja magába de ezen művelete
+\change_inserted 415188692 1588756981
+k
+\change_unchanged
+, feladatok eredményeire is kiterjed.
+ Fontos azonban, hogy nem csak strukturált 
+\change_deleted 415188692 1588756992
+de
+\change_inserted 415188692 1588756993
+hanem
+\change_unchanged
+ strukturálatlan adatok sokaságáról van szó
+\change_deleted 415188692 1588757006
+.
+\change_unchanged
+, hiszen legtöbbször -
+\change_inserted 415188692 1588757010
+ 
+\change_unchanged
+ahogy esetünkben is
+\change_inserted 415188692 1588757011
+ 
+\change_unchanged
+- ez csak egy szöveg,
+\change_inserted 415188692 1588757015
+ 
+\change_unchanged
+kép, videó és gyakran különböző webhelyekről származik.
  
 \end_layout
 
@@ -3193,7 +4656,18 @@ Data Science kifejezés hasonlóan népszerű mint például a Big Data, de mit
 A következő fejezetben szó lesz arról, hogy milyen módszerek alkalmasak
  az adatok közti összefüggések vizsgálatára, az elemzés legfontosabb részeire,
  valamint arról, hogy milyen technikákat alkalmaztam a kezdetleges eredmények
- feltárásához és ezen eredmények bemutatása is sorra fog kerülni.
+ feltárásához
+\change_inserted 415188692 1588757080
+.
+
+\change_unchanged
+ 
+\change_deleted 415188692 1588757082
+és
+\change_inserted 415188692 1588757083
+Végül
+\change_unchanged
+ ezen eredmények bemutatása is sorra fog kerülni.
  hiv
 \end_layout
 
@@ -3203,18 +4677,55 @@ Adat-előkészítés
 
 \begin_layout Standard
 Mint már említettem a rendelkezésre álló adatok többsége strukturálatlan
- formában elérhető.
+ 
+\change_inserted 415188692 1588757191
+vagy félig-strukturált 
+\change_unchanged
+formában 
+\change_deleted 415188692 1588757167
+el
+\change_unchanged
+érhető
+\change_inserted 415188692 1588757169
+ el
+\change_unchanged
+.
  Lehetnek inkonzisztensek, hiányosak, hibásak vagy tartalmazhatnak olyan
  értékeket melyek jelentősen eltérnek az adatok többségétől.
- Az adatok előkészítése sok módszert magába foglal:adatok iterálását, tisztításá
-t, transzformációját, redukcióját,validációját.
+ Az adatok előkészítése sok módszert 
+\change_inserted 415188692 1588757226
+foglal 
+\change_unchanged
+magába
+\change_deleted 415188692 1588757233
+ foglal
+\change_unchanged
+:adatok iterálását, tisztítását, transzformációját, redukcióját,
+\change_inserted 415188692 1588757240
+ 
+\change_unchanged
+validációját.
  Fő célja, hogy az adat mely a későbbiekben feldolgozásra kerül pontos és
  következetes legyen, így a téma szakértőinek eredményei is konzisztensek
  lesznek.
  Annak ellenére, hogy az adatok előkészítésének folyamatai nagymértékben
- automatizáltak, ezek javítása mégis jelentős mennyiségű időt vesz igénybe,
- ennek oka az is, hogy elemzésekben felhasznált adatok mennyisége egyre
- csak növekszik.
+ automatizáltak, ezek javítása mégis jelentős mennyiségű időt vesz igénybe
+\change_inserted 415188692 1588757264
+.
+\change_deleted 415188692 1588757265
+,
+\change_unchanged
+ 
+\change_deleted 415188692 1588757266
+e
+\change_inserted 415188692 1588757266
+E
+\change_unchanged
+nnek oka az is, hogy 
+\change_inserted 415188692 1588757272
+az 
+\change_unchanged
+elemzésekben felhasznált adatok mennyisége egyre csak növekszik.
  Az adattudósok gyakran panaszkodnak, hogy idejük nagy részét az adatok
  keresésével és tisztításával töltik, ahelyett, hogy ténylegesen elemeznék
  azokat.
@@ -3222,21 +4733,101 @@ t, transzformációját, redukcióját,validációját.
 \end_layout
 
 \begin_layout Standard
-Nem véletlen tehát, hogy az adatgyűjtési folyamat ezért volt ennyire körülményes
-en átgondolva és megtervezve.
+Nem véletlen tehát, hogy az adatgyűjtési folyamat
+\change_inserted 415188692 1588757322
+ megtervezésére nagy figyelmet fordítottam.
+
+\change_deleted 415188692 1588757326
+ ezért volt ennyire körülményesen átgondolva és megtervezve.
+
+\change_unchanged
  A jelenleg rendelkezésre álló adatok között csak kis mennyiségű hiba lépett
- fel így adat előkészítésre nem kellett sok időt fordítani, előfordul azonban,
- hogy fellép egy-egy hibás érték is vagy szükség van az adatok transzformálására
- is.
- Hibás alatt legtöbbször hiányzó adatok értendők.
- Lekérés során előfordul, hogy egy-egy attribútumhoz nem mint például a
- csapadék formája nem tartozik érték, ez esetben az adatbázisban is NULL
- formájában lesz megtalálható.
- Hiányzó adatok kezelésére több módszer is létezik: ha a hiányzó adat nem
+ fel
+\change_inserted 415188692 1588757334
+,
+\change_unchanged
+ így 
+\change_inserted 415188692 1588757339
+az 
+\change_unchanged
+adat
+\change_deleted 415188692 1588757340
+ 
+\change_inserted 415188692 1588757353
+-
+\change_unchanged
+előkészítésre nem kellett sok időt fordítani
+\change_inserted 415188692 1588757358
+.
+\change_deleted 415188692 1588757359
+,
+\change_unchanged
+ 
+\change_deleted 415188692 1588757363
+e
+\change_inserted 415188692 1588757363
+E
+\change_unchanged
+lőfordul azonban, hogy fellép egy-egy hibás érték is vagy szükség van az
+ adatok transzformálására
+\change_deleted 415188692 1588757373
+ is
+\change_unchanged
+.
+ 
+\change_inserted 415188692 1588757423
+Jelen esetben 
+\change_deleted 415188692 1588757423
+H
+\change_inserted 415188692 1588757423
+h
+\change_unchanged
+ibás alatt legtöbbször hiányzó adatok érte
+\change_deleted 415188692 1588757431
+ndők
+\change_inserted 415188692 1588757431
+k
+\change_unchanged
+.
+ Lekérés során előfordul, hogy egy-egy attribútumhoz 
+\change_deleted 415188692 1588757400
+nem 
+\change_inserted 415188692 1588757407
+- 
+\change_unchanged
+mint például a csapadék formája 
+\change_inserted 415188692 1588757411
+- 
+\change_unchanged
+nem tartozik érték, ez esetben az adatbázisban is NULL formájában lesz megtalálh
+ató.
+ 
+\change_inserted 415188692 1588757437
+A 
+\change_deleted 415188692 1588757438
+H
+\change_inserted 415188692 1588757438
+h
+\change_unchanged
+iányzó adatok kezelésére több módszer is létezik: ha a hiányzó adat nem
  fordul elő nagy mennyiségben egyszerű sor kihagyással kiküszöbölhető a
- hiba, ellenben használható még egy globális konstans vagy attribútumok
- középértéke a hiányzó adatok pótlására, illetve következtetünk különböző
- módszerekkel mint például binning módszer vagy klaszterezés.
+ hiba
+\change_inserted 415188692 1588757463
+.
+ 
+\change_deleted 415188692 1588757466
+, ellenben h
+\change_inserted 415188692 1588757470
+Ezen kívül h
+\change_unchanged
+asználható még egy globális konstans vagy attribútumok középértéke a hiányzó
+ adatok pótlására, illetve következtetünk különböző 
+\change_deleted 415188692 1588757487
+módszerekkel
+\change_inserted 415188692 1588757490
+algoritmusokkal
+\change_unchanged
+ mint például binning módszer vagy klaszterezés.
 \end_layout
 
 \begin_layout Subsection
@@ -3244,13 +4835,38 @@ en átgondolva és megtervezve.
 \end_layout
 
 \begin_layout Standard
-Megfelelő mennyiségű adat gyűjtése után, első és legfontosabb lépésnek a
- változok kapcsolatának vizsgálatát véltem.
- Általánosságban a változok közötti kapcsolat nem független, egyes értékek
- befolyásolhatnak más attribútum értékeket.
- Kapcsolatuk természete lehet függvényszerű azaz a kapcsolat egy függvénnyel
- jellemezhető, valamint sztochasztikus ekkor a kapcsolat csak tendencia
- jellegű.
+Megfelelő mennyiségű adat gyűjtése után, 
+\change_inserted 415188692 1588757506
+az 
+\change_unchanged
+első és legfontosabb lépésnek a változ
+\change_inserted 415188692 1588757508
+ó
+\change_deleted 415188692 1588757508
+o
+\change_unchanged
+k kapcsolatának vizsgálatát véltem.
+ Általánosságban a változ
+\change_deleted 415188692 1588757517
+o
+\change_inserted 415188692 1588757517
+ó
+\change_unchanged
+k közötti kapcsolat nem független, egyes értékek befolyásolhatnak más attribútum
+ értékeket.
+ Kapcsolatuk természete lehet függvényszerű 
+\change_inserted 415188692 1588757538
+- 
+\change_unchanged
+azaz a kapcsolat egy függvénnyel jellemezhető,
+\change_inserted 415188692 1588757542
+ -
+\change_unchanged
+ valamint sztochasztikus 
+\change_inserted 415188692 1588757546
+- 
+\change_unchanged
+ekkor a kapcsolat csak tendencia jellegű.
  Kapcsolatukat irányultság alapján is meg lehet különböztetni, ekkor aszimmetrik
 us és szimmetrikus viszonyról beszélhetünk.
  Aszimmetrikus ha az attribútumok közül csak egyik hat a másikra, szimmetrikus
@@ -3268,13 +4884,41 @@ Az összefüggések vizsgálatára számos módszer létezik.
 
 \end_inset
 
- statisztika,Kendall féle tau,Spearman rangkorreláció,Pearson féle korreláció
- valamint regresszió analízis.
+ statisztika,
+\change_inserted 415188692 1588757603
+ a 
+\change_unchanged
+Kendall féle tau,
+\change_inserted 415188692 1588757605
+ a 
+\change_unchanged
+Spearman rangkorreláció,
+\change_inserted 415188692 1588757611
+ a 
+\change_unchanged
+Pearson féle korreláció valamint 
+\change_inserted 415188692 1588757617
+a 
+\change_unchanged
+regresszió analízis.
  A korreláció valamint a regresszió abban különbözik, hogy a korreláció
  szimmetrikus kapcsolatot feltételez ellenben regresszió analízis azt mutatja
- a változok milyen irányban hatnak egymásra.
- Érdemes még pontdiagram segítségével grafikusan is ábrázolni a változókat,
- hiszen könnyedén következtethetünk azok viszonyára.
+\change_inserted 415188692 1588757629
+, hogy
+\change_unchanged
+ a változ
+\change_inserted 415188692 1588757631
+ó
+\change_deleted 415188692 1588757631
+o
+\change_unchanged
+k milyen irányban hatnak egymásra.
+ Érdemes még pontdiagram segítségével
+\change_inserted 415188692 1588757640
+,
+\change_unchanged
+ grafikusan is ábrázolni a változókat, hiszen könnyedén következtethetünk
+ azok viszonyára.
 \end_layout
 
 \begin_layout Standard
@@ -3313,13 +4957,52 @@ Attribútumok kapcsolata pont diagram segítségévél.
 
 \begin_layout Standard
 Az 17.
- ábrából következtetve, arra jutottam, hogy a változok között nem feltétlenül
- áll fenn lineáris kapcsolat inkább.
- Ahhoz, hogy a megfelelő vizsgálatot hajtsak végre azt is megvizsgáltam,
- hogy milyen eloszlásúak.
+ ábrából következtetve, arra jutottam, hogy a változ
+\change_deleted 415188692 1588757656
+o
+\change_inserted 415188692 1588757656
+ó
+\change_unchanged
+k között nem feltétlenül áll fenn lineáris kapcsolat
+\change_deleted 415188692 1588757668
+ inkább
+\change_unchanged
+.
+ Ahhoz, hogy 
+\change_deleted 415188692 1588757675
+a 
+\change_unchanged
+megfelelő vizsgálatot hajtsak végre azt is megvizsgáltam, hogy 
+\change_inserted 415188692 1588757691
+az értékek 
+\change_unchanged
+milyen eloszlásúak.
  A 18.
- ábrán látható, hogy nem normál eloszlású változok így eddigi tanulmányaim
- hivatkozva, Spearman rankorreláció elvégzése tűnt a legbiztosabbnak.
+ ábrán látható, hogy nem normál eloszlású változ
+\change_deleted 415188692 1588757698
+o
+\change_inserted 415188692 1588757698
+ó
+\change_unchanged
+k 
+\change_inserted 415188692 1588757715
+- 
+\change_unchanged
+így eddigi tanulmányaim
+\change_inserted 415188692 1588757711
+ra
+\change_unchanged
+ hivatkozva
+\change_inserted 415188692 1588757724
+ - a
+\change_deleted 415188692 1588757724
+,
+\change_unchanged
+ Spearman ran
+\change_inserted 415188692 1588757741
+g
+\change_unchanged
+korreláció elvégzése tűnt a legbiztosabbnak.
 \begin_inset Float figure
 wide false
 sideways false
@@ -3373,11 +5056,32 @@ Egyes attribútumok eloszlása hisztogrammal szemléltetve
 \end_layout
 
 \begin_layout Standard
+
+\change_inserted 415188692 1588757763
+A 
+\change_unchanged
 Spearman korreláció azt mutatja mennyire határozza meg az egyik változó
  nagysága a másik változó nagyságát, valamint az összefüggés mértékét és
- annak negatív vagy pozitív irányát.Az összefüggés kimutatására használt
- korrelációs együttható vagy más néven koefficiens -1 és 1 között vesz fel
- értékeket, jele az r.
+ annak negatív vagy pozitív irányát.
+
+\change_inserted 415188692 1588757785
+ 
+\change_unchanged
+Az összefüggés kimutatására használt korrelációs együttható
+\change_inserted 415188692 1588757800
+,
+\change_deleted 415188692 1588757799
+ 
+\change_inserted 415188692 1588757794
+ 
+\change_unchanged
+vagy más néven koefficiens -1 és 1 között vesz fel értékeket
+\change_inserted 415188692 1588757817
+ és
+\change_deleted 415188692 1588757817
+,
+\change_unchanged
+ jele az r.
  Ha r -1 akkor teljesen negatív korrelációról beszélünk, 1 esetén pozitív
  korreláció áll fen, ha az érték 0 akkor a változok között nem áll fenn
  összefüggés.
@@ -3421,12 +5125,41 @@ Az r mértéke táblázatba foglalva
 
 \end_inset
 
+
+\change_inserted 415188692 1588757867
+A 
+\change_unchanged
 19.
- ábrán látható a már említett táblázatos forma, legnagyobb összefüggések
- a felhőzet és a páratartalom, felhőzet és a csapadékvalószínűség,páratartalom
- és hőmérséklet között találhatóak.
- Látható az is , hogy az előrejelzési adatokat is belevéve eltérő összefüggéseke
-t tapasztaltam.
+ ábrán látható a már említett táblázatos forma
+\change_inserted 415188692 1588757878
+.
+\change_deleted 415188692 1588757878
+,
+\change_inserted 415188692 1588757879
+A
+\change_unchanged
+ legnagyobb összefüggések a felhőzet és a páratartalom, 
+\change_inserted 415188692 1588757901
+a 
+\change_unchanged
+felhőzet és a csapadék
+\change_inserted 415188692 1588757889
+ 
+\change_unchanged
+valószínűség
+\change_inserted 415188692 1588757891
+e
+\change_unchanged
+,
+\change_inserted 415188692 1588757921
+ valamint a 
+\change_unchanged
+páratartalom és hőmérséklet között találhatóak.
+ Látható az is
+\change_deleted 415188692 1588757929
+ 
+\change_unchanged
+, hogy az előrejelzési adatokat is belevéve eltérő összefüggéseket tapasztaltam.
  Ebből kifolyólag arra a következtetésre jutottam, hogy az előrejelzési
  adatok nagy mértékben pontatlanok lehetnek.
 \begin_inset Float figure
@@ -3462,7 +5195,13 @@ Hőtérképes ábrázolás
 \end_layout
 
 \begin_layout Standard
-Az eredményeket nem csak táblázatként, de hőtérkép formájában is virtualizáltam.
+Az eredményeket nem csak táblázatként, de hőtérkép formájában is vi
+\change_deleted 415188692 1588757976
+rt
+\change_inserted 415188692 1588757976
+z
+\change_unchanged
+ualizáltam.
  A hőtérkép kiváló ábra a korreláció mértékének bemutatására, színes cellákat
  használ, jellemzően monokromatikus skálán, hogy 2D korrelációs mátrixot
  mutasson be.
@@ -3476,8 +5215,11 @@ Előrejelzési hibák mértéke
 \begin_layout Standard
 Hibák feltárása és vizsgálata célként szerepelt a szakdolgozat írása kezdetén
  is.
- Az összefüggés-vizsgál során is fény derült arra, hogy egyes előrejelzési
- adatok pontatlanok lehetnek.
+ Az összefüggés-vizsgál
+\change_inserted 415188692 1588758013
+at
+\change_unchanged
+ során is fény derült arra, hogy egyes előrejelzési adatok pontatlanok lehetnek.
  Ennek mértékét a következő módon vizsgáltam.
 \end_layout
 
