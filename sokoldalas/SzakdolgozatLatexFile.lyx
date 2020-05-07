@@ -85,11 +85,12 @@
 \papercolumns 1
 \papersides 1
 \paperpagestyle default
-\tracking_changes false
+\tracking_changes true
 \output_changes false
 \html_math_output 0
 \html_css_as_file 0
 \html_be_strict false
+\author 415188692 "Machalik Károly"
 \end_header
 
 \begin_body
@@ -270,7 +271,11 @@ Műszaki Informatikai Kar
 \align center
 
 \size large
-Rendszer- Számítástudományi Tanszék
+Rendszer- 
+\change_inserted 415188692 1588855638
+és 
+\change_unchanged
+Számítástudományi Tanszék
 \begin_inset Newline newline
 \end_inset
 
@@ -308,8 +313,13 @@ Nyilatkozat
 
 \begin_layout Standard
 Alulírott Rácsik Patrícia hallgató, kijelentem, hogy a dolgozatot a Pannon
- Egyetem Rendszer- és Számítástudományi tanszékén készítettem a mérnökinformatik
-us végzettség megszerzése érdekében.
+ Egyetem Rendszer- és Számítástudományi tanszékén készítettem a 
+\change_deleted 415188692 1588854681
+mérnökinformatikus
+\change_inserted 415188692 1588854681
+programtervező informatikus
+\change_unchanged
+ végzettség megszerzése érdekében.
  Kijelentem, hogy a dolgozatban lévő érdemi rész saját munkám eredménye,
  az érdemi részen kívül csak a hivatkozott forrásokat (szakirodalom, eszközök,
  stb.) használtam fel.
@@ -319,7 +329,13 @@ hatja.
 \end_layout
 
 \begin_layout Standard
-Szombathely, 2020.
+
+\change_deleted 415188692 1588854702
+Szombathely
+\change_inserted 415188692 1588854704
+Veszprém
+\change_unchanged
+, 2020.
  Május 7.
 \end_layout
 
@@ -351,9 +367,19 @@ aláírás
 \end_layout
 
 \begin_layout Standard
-Alulírott Machalik Károly témavezető kijelentem, hogy a dolgozatot Machalik
- Károly a Pannon Egyetem Rendszer- és Számítástudományi tanszékén készítette
- mérnökinformatikus végzettség megszerzése érdekében.
+Alulírott Machalik Károly témavezető kijelentem, hogy a dolgozatot 
+\change_deleted 415188692 1588854538
+Machalik Károly
+\change_inserted 415188692 1588854542
+Rácsik Patrícia
+\change_unchanged
+ a Pannon Egyetem Rendszer- és Számítástudományi tanszékén készítette 
+\change_deleted 415188692 1588854715
+mérnökinformatikus
+\change_inserted 415188692 1588854715
+programtervező informatikus
+\change_unchanged
+ végzettség megszerzése érdekében.
  Kijelentem, hogy a dolgozat védésre bocsátását engedélyezem.
 \end_layout
 
@@ -452,20 +478,43 @@ Abstract
 \begin_inset Newline newline
 \end_inset
 
-Thanks to the huge technological developement of the last decade, almost
- every person has the availability to use surfaces of the web that are designed
- to make everyday life easier.
+Thanks to the huge technological develop
+\change_deleted 415188692 1588854831
+e
+\change_unchanged
+ment of the last decade, almost every person has the availability to use
+ surfaces of the web that are designed to make everyday life easier.
  Some of these are the weather forecasting sites.
  But have we ever wondered how similar or different the forecasting is?
- The average man would expect to see a very similar information but maybe
- with a different design.
+ The average man would expect to see 
+\change_deleted 415188692 1588855462
+a 
+\change_unchanged
+very similar information but maybe with a different design.
  Unfortunately, most of my experience differs from this and as I know there
- is no solution to compare these information.
- In my essay I am looking for a solution.
+ is no solution to compare th
+\change_deleted 415188692 1588855496
+ese
+\change_inserted 415188692 1588855496
+is
+\change_unchanged
+ information.
+ In my essay
+\change_inserted 415188692 1588855522
+,
+\change_unchanged
+ I am looking for a solution.
  I will examine different weather data using different statistical and numerical
  methods.
- The essay contains application programming interfaces (APIs),software developem
-ent, data processing, data analysis and visualization.
+ The essay contains application programming interfaces (APIs),
+\change_inserted 415188692 1588854751
+ 
+\change_unchanged
+software develop
+\change_deleted 415188692 1588854837
+e
+\change_unchanged
+ment, data processing, data analysis and visualization.
 \end_layout
 
 \begin_layout Standard
@@ -1317,7 +1366,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename database.png
-	scale 70
+	width 100text%
 
 \end_inset
 
@@ -1356,7 +1405,13 @@ CityAPILocation: Egyes API szolgáltatók a városokat egyedi azonosítókkal
 \end_layout
 
 \begin_layout Itemize
-API: API szolgáltatok adatait tárolja.
+API: API s
+\change_deleted 415188692 1588854405
+zolgáltatok
+\change_inserted 415188692 1588854405
+zolgáltatók
+\change_unchanged
+ adatait tárolja.
  Részét képezik az adott szolgáltatóhoz tartozó kulcsok melyek segítségével
  az API hívások történnek.
  Emelletta meghívandó URL és a JSON objektum azon részéhez egy elérési útvonal,
@@ -1765,7 +1820,13 @@ INSERT [City] ([CityName])
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-City és VARHCAR tipusú változok tárolása
+City és VARHCAR tipusú v
+\change_deleted 415188692 1588854428
+áltozok
+\change_inserted 415188692 1588854428
+áltozók
+\change_unchanged
+ tárolása
 \end_layout
 
 \end_inset
@@ -3205,11 +3266,19 @@ et meg.
  Ezzel a megoldással az adatbázisban ezek az oszlopok NULL értékkel fognak
  szerepelni, míg az attribútumhoz tartozó érték pontosan beszúrásra kerül.
  Ezt követően az értékeket összefűzi és egy lépésben beszúrja az adatbázis
- vCityWeather nézet táblájába, ahol már az előzőekben bemutatott TRIGGER
- segítségével az adatok a megfelelő helyre kerülnek.
- InsertData függvényben kerül meghívásra, azonban az aktuális és előrejelzett
- adatokból kapott tömbök kis mértékben különböznek, így hívásnál is meg
- kell különböztetni a két típust.
+ 
+\series bold
+vCityWeather
+\series default
+ nézet táblájába, ahol már az előzőekben bemutatott TRIGGER segítségével
+ az adatok a megfelelő helyre kerülnek.
+ 
+\series bold
+InsertData
+\series default
+ függvényben kerül meghívásra, azonban az aktuális és előrejelzett adatokból
+ kapott tömbök kis mértékben különböznek, így hívásnál is meg kell különböztetni
+ a két típust.
  Az előrejelzett típus lényegében egy lista ami tömböket tartalmaz, s ezen
  kell végigiterálni.
  
@@ -3261,9 +3330,15 @@ Az adatgyűjtés során más INSERT scriptre nem kifejezetten van szükség, azo
  metódust használja.
  A setter pedig vár egy API szolgáltatót, város nevet és a kapott lokációkulcsot
 , ami egy API hívás segítségével válik elérhetővé.
- A függvény a vLocation nézetbe helyezi az adatokat, s hasonló módon mint
- a vCityWeather esetében egy trigger segítségével kerül az információ a
- megfelelő táblákba.
+ A függvény a 
+\series bold
+vLocation
+\series default
+ nézetbe helyezi az adatokat, s hasonló módon mint a 
+\series bold
+vCityWeather
+\series default
+ esetében egy trigger segítségével kerül az információ a megfelelő táblákba.
 \begin_inset Newpage pagebreak
 \end_inset
 
@@ -3495,8 +3570,13 @@ A Spearman korreláció azt mutatja mennyire határozza meg az egyik változó
  Az összefüggés kimutatására használt korrelációs együttható, vagy más néven
  koefficiens -1 és 1 között vesz fel értékeket és jele az r.
  Ha r -1 akkor teljesen negatív korrelációról beszélünk, 1 esetén pozitív
- korreláció áll fen, ha az érték 0 akkor a változok között nem áll fenn
- összefüggés.
+ korreláció áll fen, ha az érték 0 akkor a v
+\change_deleted 415188692 1588854432
+áltozok
+\change_inserted 415188692 1588854432
+áltozók
+\change_unchanged
+ között nem áll fenn összefüggés.
  A módszer azonban ok-okozati viszony feltárására nem alkalmas.
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -3508,13 +3588,44 @@ literal "false"
  A vizsgálatot több adatsoron is elvégeztem, először az előrejelzési adatokat
  és az összes szolgáltatót is figyelembe véve.
  Mivel ez nem hozta meg a kívánt eredményt, így finomítottam az adatsoron.
- Külön-külön kezdtem vizsgálni a szolgáltatok aktuális és előrejelzett adatait.
+ Külön-külön kezdtem vizsgálni a szolgáltat
+\change_deleted 415188692 1588852670
+o
+\change_inserted 415188692 1588852670
+ó
+\change_unchanged
+k aktuális és előrejelzett adatait.
  Így a vizsgálat kielégítőbb eredményt mutatott, de még mindig tudtam finomítani
- az adatokonés csak az aktuális előrejelzést vettem figyelembe.Ezt követően
- tisztább képet kaptam a változok kapcsolatáról.
- Legjobb eredményt Dark Sky szolgáltató segítségivel értem el.
- Munkám eredményét az researchgate.net weboldalon található eredményekkel
- is össze hasonlítottam.
+ az adatokon
+\change_inserted 415188692 1588852698
+ 
+\change_unchanged
+és csak az aktuális előrejelzést vettem figyelembe.
+
+\change_inserted 415188692 1588852759
+ 
+\change_unchanged
+Ezt követően tisztább képet kaptam a változ
+\change_deleted 415188692 1588852775
+o
+\change_inserted 415188692 1588852775
+ó
+\change_unchanged
+k kapcsolatáról.
+ Legjobb eredményt 
+\change_inserted 415188692 1588852664
+a 
+\change_unchanged
+Dark Sky szolgáltató segítségivel értem el.
+ Munkám eredményét a
+\change_deleted 415188692 1588852755
+z
+\change_unchanged
+ researchgate.net weboldalon található eredményekkel is össze
+\change_deleted 415188692 1588852802
+ 
+\change_unchanged
+hasonlítottam.
  
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -3554,15 +3665,27 @@ Az r mértéke táblázatba foglalva
 \end_inset
 
 A 19.
- ábrán látható a már említett táblázatos forma.A legnagyobb összefüggések
- a felhőzet és a páratartalom, a felhőzet és a csapadék valószínűsége, valamint
- a páratartalom és hőmérséklet között találhatóak.
+ ábrán látható a már említett táblázatos forma.
+
+\change_inserted 415188692 1588853354
+ 
+\change_unchanged
+A legnagyobb összefüggések a felhőzet és a páratartalom, a felhőzet és a
+ csapadék valószínűsége, valamint a páratartalom és hőmérséklet között található
+ak.
  Látható az is, hogy a Dark Sky szolgáltató esetében előrejelzési adatokat
  is belevéve eltérő összefüggéseket tapasztaltam.
  Ebből kifolyólag arra a következtetésre jutottam, hogy az előrejelzési
  adatok nagy mértékben pontatlanok lehetnek, főleg a másik három szolgáltató
- esetében ahol az adatok mennyisége jóval kevesebb valamint az előrejelzés
- minősége is rosszabb lehet..
+ esetében ahol az adatok mennyisége jóval kevesebb
+\change_inserted 415188692 1588853431
+,
+\change_unchanged
+ valamint az előrejelzés minősége is rosszabb lehet.
+\change_deleted 415188692 1588853410
+.
+\change_unchanged
+
 \begin_inset Float figure
 wide false
 sideways false
@@ -3611,8 +3734,13 @@ Hibák feltárása és vizsgálata célként szerepelt a szakdolgozat írása ke
  Ennek mértékét a következő módon vizsgáltam.
  Első sorban ábrázoltam a mért és a szolgáltató által becsült értékeket.
  A 21.
- ábrán látható képek tükrözök egy-egy adott időpontban jósolt és mért érték
- különbségét.
+ ábrán látható képek tükrözök egy-egy adott időpont
+\change_deleted 415188692 1588853514
+ban
+\change_inserted 415188692 1588853514
+ra
+\change_unchanged
+ jósolt és mért érték különbségét.
  Az előre jelzett értékek egységesen öt nappal az aktuális időjárási adat
  felvétele előtt lettek eltárolva.
  Szemmel látható, hogy az attribútumok nagyon különbözőek.
@@ -3672,8 +3800,11 @@ Különböző attribútumok eltérése
 
 \end_inset
 
-Első ábrázolás után, kiszámoltam az egyes pontok hibát majd úgy nevezett
- 
+Első ábrázolás után, kiszámoltam az egyes pontok hibá
+\change_inserted 415188692 1588853546
+i
+\change_unchanged
+t majd úgy nevezett 
 \begin_inset Quotes pld
 \end_inset
 
@@ -3879,10 +4010,22 @@ RMSE értékek a már feltüntetett attribútumokra
 \end_layout
 
 \begin_layout Standard
-Az elemzés során kiderült, vannak szolgáltatók, melyek sajnos ebben a formában
- nem alkalmasak arra, hogy vizsgálatot végezzek.
- Egy esetleges nagyobb azonban fizetős csomag esetén már komolyabb összehasonlít
-ás és hibaanalízis is elvégezhető lenne.
+Az elemzés során kiderült, 
+\change_inserted 415188692 1588853591
+hogy 
+\change_unchanged
+vannak szolgáltatók, melyek sajnos ebben a formában nem alkalmasak arra,
+ hogy vizsgálatot végezzek.
+ Egy esetleges nagyobb 
+\change_inserted 415188692 1588853611
+- 
+\change_unchanged
+azonban fizetős 
+\change_inserted 415188692 1588853613
+- 
+\change_unchanged
+csomag esetén már komolyabb összehasonlítás és hibaanalízis is elvégezhető
+ lenne.
 \end_layout
 
 \begin_layout Section
@@ -3896,46 +4039,251 @@ A fejezetben és a dolgozat zárásaként szeretném összefoglalni, a legfontos
  Továbbá szeretnék említést tenni azokról a továbbfejlesztési lehetőségekről
  melyeket a későbbiek folyamán, akár egy mesterdiploma keretein belül kívánok
  megvalósítani.
- Hiszen a feladat még rengetegek mindent hordoz magában, fejlesztés fázisa
- teljesen megvalósult azonban csak kevés részt érint az adattudományokban.
+ 
+\change_deleted 415188692 1588853662
+Hiszen a
+\change_inserted 415188692 1588853662
+A
+\change_unchanged
+ feladat még rengetegek mindent hordoz magában
+\change_inserted 415188692 1588853683
+.
+ Bár 
+\change_deleted 415188692 1588853676
+,
+\change_inserted 415188692 1588853681
+a
+\change_unchanged
+ fejlesztés fázisa 
+\change_inserted 415188692 1588853742
+gyakorlatilag 
+\change_unchanged
+teljesen megvalósult
+\change_inserted 415188692 1588853714
+,
+\change_unchanged
+ 
+\change_deleted 415188692 1588853764
+azonban csak kevés részt érint 
+\change_unchanged
+az adattudományokban
+\change_inserted 415188692 1588853789
+ még sok olyan terület található melyeket szeretnék megismerni és felhasználni
+\change_unchanged
+.
  További elemzésekkel segítséget nyújthatunk például az agráriumnak vagy
- megfigyelhetjük azt is milyen kapcsolatban áll az emberek fizikális és
- mentális egészségére.
- A figyelt előrejelzéseket neurális hálózatok tanításával javítani is lehet,
- egy saját előrejelzés készítése is a feladatban rejlik.
+ megfigyelhetjük azt is
+\change_inserted 415188692 1588853804
+, hogy
+\change_unchanged
+ 
+\change_inserted 415188692 1588853862
+az időjárás és a rá jellemző paraméterek 
+\change_unchanged
+milyen kapcsolatban áll
+\change_inserted 415188692 1588853865
+nak
+\change_unchanged
+ az emberek fizikális és mentális egészségé
+\change_inserted 415188692 1588853875
+vel
+\change_deleted 415188692 1588853874
+re
+\change_unchanged
+.
+ A 
+\change_inserted 415188692 1588853887
+meg
+\change_unchanged
+figyelt előrejelzéseket neurális hálózatok 
+\change_deleted 415188692 1588853906
+tanításával
+\change_inserted 415188692 1588853908
+segítségével
+\change_unchanged
+ javítani is lehet, 
+\change_inserted 415188692 1588853915
+illetve 
+\change_unchanged
+egy saját előrejelzés készítése is a feladatban rejlik.
 \end_layout
 
 \begin_layout Standard
 Véleményem szerint a adatgyűjtési folyamat megvalósítása rendkívül alaposan
- elkészült.
- Átgondolt, stabilan elkészített program , mely könnyen bővíthető és érthető
- is más fejlesztők számára, a feladat ezen része, úgy gondolom, hogy teljesen
- a maximális precizitással valósult meg.
+ 
+\change_deleted 415188692 1588853956
+el
+\change_unchanged
+készült
+\change_inserted 415188692 1588853958
+ el
+\change_unchanged
+.
+ Átgondolt, stabilan elkészített program
+\change_deleted 415188692 1588853949
+ 
+\change_unchanged
+, mely könnyen bővíthető és érthető 
+\change_deleted 415188692 1588854000
+is 
+\change_unchanged
+más fejlesztők számára
+\change_inserted 415188692 1588854017
+ is.
+\change_deleted 415188692 1588854017
+,
+\change_unchanged
+ 
+\change_deleted 415188692 1588854018
+a
+\change_inserted 415188692 1588854018
+A
+\change_unchanged
+ feladat ezen rész
+\change_inserted 415188692 1588854022
+ét
+\change_deleted 415188692 1588854022
+e
+\change_inserted 415188692 1588854036
+ megpróbáltam 
+\change_deleted 415188692 1588854038
+, úgy gondolom, hogy
+\change_unchanged
+ teljes
+\change_deleted 415188692 1588854042
+en
+\change_unchanged
+ 
+\change_inserted 415188692 1588854048
+odafigyeléssel, 
+\change_deleted 415188692 1588854049
+a 
+\change_unchanged
+maximális precizitással 
+\change_deleted 415188692 1588854054
+valósult meg
+\change_inserted 415188692 1588854055
+elkészíteni
+\change_unchanged
+.
  Az adatbázis jól felépített, szintén rugalmas és alaposan átgondolt.
- Hátrány azonban , hogy a program elkészítése és az adatok gyűjtése nagyon
- időigényes feladatnak, bizonyult így nem maradt elegendő idő az adatok
- elemzésére, valamint arra, hogy az adattudományokat alaposan és mélyen
- megtudjam ismerni, azonban megerősített mindabban, hogy a Python kiválóan
- alkalmazható ezen terület problémáinak feltárására, valamint azt gondolom,
- sikerült megértenem az egyes változok vizsgálásra alkalmas módszereket
- és összefüggéseket.
+ Hátrány azonban
+\change_deleted 415188692 1588854066
+ 
+\change_unchanged
+, hogy a program elkészítése és az adatok gyűjtése nagyon időigényes feladatnak
+\change_deleted 415188692 1588854077
+,
+\change_unchanged
+ bizonyult
+\change_inserted 415188692 1588854081
+,
+\change_unchanged
+ így nem maradt elegendő idő az adatok elemzésére, valamint arra, hogy az
+ adattudományokat alaposan és mélyen meg
+\change_inserted 415188692 1588854091
+ 
+\change_unchanged
+tudjam ismerni
+\change_inserted 415188692 1588854117
+.
+ 
+\change_deleted 415188692 1588854120
+,
+\change_inserted 415188692 1588854137
+A fejlesztés és kutatás tejles szakasza
+\change_unchanged
+ azonban megerősített mindabban, hogy a Python kiválóan alkalmazható ezen
+ terület problémáinak feltárására, valamint azt gondolom, sikerült megértenem
+ az egyes változ
+\change_inserted 415188692 1588854153
+ó
+\change_deleted 415188692 1588854151
+o
+\change_unchanged
+k vizsgálásra alkalmas módszereket és összefüggéseket
+\change_inserted 415188692 1588854158
+ is
+\change_unchanged
+.
  Világossá vált az is, hogy a jó eredmények eléréséhez, sokkal több adatra
- lenne szükség, valamint új szolgáltatók felvétele és meglévők szelektálása
- is szükséges.
+ lenne szükség, 
+\change_inserted 415188692 1588854177
+amihez 
+\change_deleted 415188692 1588854180
+valamint
+\change_inserted 415188692 1588854183
+elengedhetetlen
+\change_unchanged
+ új szolgáltatók felvétele és 
+\change_inserted 415188692 1588854189
+a 
+\change_unchanged
+meglévők szelektálása
+\change_deleted 415188692 1588854194
+ is szükséges
+\change_unchanged
+.
 \end_layout
 
 \begin_layout Standard
 A feladat ezzel azonban nem zárul le számomra, jövendőbeli terveim között
- szerepel, hogy mester képzés keretein belül, elmélyítsem ismereteimet a
- Data Science területén és a tudást a dolgozat továbbfejlesztésén is kamatoztass
-am.
- Véleményem szerint az összefüggés vizsgálat is rengeteg megválaszolatlan
- kérdést rejt magában.
- Következő fázis egy saját modell készítése volna mely képes időjárás előrejelzé
-s is.
- Mivel az alkalmazás nem rendelkezik grafikus felülettel, így GUI fejlesztése
- is terveim között szerepel, valamint az adatok ezen felületen való összehasonlí
-tása az átlag felhasználó számára.
+ szerepel, hogy mester
+\change_deleted 415188692 1588854217
+ 
+\change_unchanged
+képzés keretein belül
+\change_deleted 415188692 1588854224
+,
+\change_unchanged
+ elmélyítsem ismereteimet a Data Science területén és a 
+\change_inserted 415188692 1588854234
+megszerzett 
+\change_unchanged
+tudást a 
+\change_deleted 415188692 1588854267
+dolgozat
+\change_inserted 415188692 1588854268
+feladat
+\change_unchanged
+ továbbfejlesztésén is kamatoztassam.
+ Véleményem szerint az összefüggés
+\change_deleted 415188692 1588854282
+ 
+\change_inserted 415188692 1588854282
+-
+\change_unchanged
+vizsgálat is rengeteg megválaszolatlan kérdést rejt magában.
+ Következő fázis egy saját modell készítése 
+\change_deleted 415188692 1588854303
+volna
+\change_inserted 415188692 1588854303
+lenne
+\change_unchanged
+ mely képes 
+\change_inserted 415188692 1588854311
+az 
+\change_unchanged
+időjárás előrejelzés
+\change_inserted 415188692 1588854315
+ére
+\change_unchanged
+ is.
+ Mivel az alkalmazás 
+\change_inserted 415188692 1588854328
+jelenleg 
+\change_unchanged
+nem rendelkezik grafikus felülettel, így 
+\change_inserted 415188692 1588854337
+a 
+\change_unchanged
+GUI fejlesztése is terveim között szerepel, 
+\change_inserted 415188692 1588854359
+mint ahogy 
+\change_deleted 415188692 1588854361
+valamint 
+\change_unchanged
+az adatok ezen felületen való összehasonlítása az átlag felhasználó számára.
 \end_layout
 
 \begin_layout Standard
